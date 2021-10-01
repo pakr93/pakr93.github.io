@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index-style.css">
+  <script src='./script.js' defer></script>
+  <title>Home | Kraus Web Design</title>
+</head>
+<body>
+  <div id='backdrop' class='mobile closed'></div>
+  <header>
+    <a href='index.html'><h2 id='title'>Kraus Web Design</h2></a>
+    <nav>
+      <button id='menu-button' class='mobile'>
+        <div class='menu-button-line'></div>
+        <div class='menu-button-line'></div>
+        <div class='menu-button-line'></div>
+      </button>
+      <ul class='desktop'>
+        <a href='#introduction'><li>Introduction</li></a>
+        <a href='#my-projects'><li>My Projects</li></a>
+        <a href='contact.html'><li>Contact me</li></a>
+      </ul>
+      <ul id='mobile-nav' class='mobile closed'>
+        <a href='#introduction'><li>Introduction</li></a>
+        <a href='#my-projects'><li>My Projects</li></a>
+        <a href='contact.html'><li>Contact me</li></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id='introduction'>
+        <h1>I'm Patrik<br>I design websites for businesses</h1>
+      <img id='my-photo' src='./resources/images/my-photo.jpeg' alt="My Photo">
+    </section>
+    <section id='my-projects'>
+      <h2>Here are few of my previous projects</h2>
+      <div id='projects'>
+      <div class='project'>
+        <div class='project-image'>
+          <img src='./resources/images/Calisthenics-Club.PNG' alt='Calisthenics Club'>
+          <em class='technologies-used'>HTML / CSS / Javascript</em>
+        </div>
+        <a href='https://pakr93.github.io/Calisthenics-Club/'><h2>Calisthenics Club</h2></a>
+        <p>Created this website for local calisthenics enthusiasts.<br>You'll find here all the info you need to start with calisthenics.</p>
+      </div>
+      <div class='project'>
+        <div class='project-image'>
+          <img src='./resources/images/Excursion.PNG' alt='Excursion'>
+          <em class='technologies-used'>HTML / CSS</em>
+        </div>
+        <a href='https://pakr93.github.io/excursion/'><h2>Excursion</h2></a>
+        <p>A simple landing page for a travel guide application</p>
+      </div>
+    </div>
+    </section>
+  </main>
+  <footer>
+    <section>
+    <ul id='footer-nav'>
+        <h3>Navigation</h3>
+        <a href='#introduction'><li>Introduction</li></a>
+        <a href='#my-projects'><li>My Projects</li></a>
+        <a href='#contact'><li>Contact me</li></a>
+      </ul>
+    </section>
+    <section id='contact'>
+      <h3>Contact</h3>
+      <h4>Patrik Kraus</h5>
+      <a href='mailto:kraus.patrik@gmail.com'><em>kraus.patrik@gmail.com</em></a>
+    </section>
+</footer>
+</body>
+</html>

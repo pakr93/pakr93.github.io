@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact-style.css">
+  <script src='./script.js' defer></script>
+  <title>Home | Kraus Web Design</title>
+</head>
+<body>
+  <div id='backdrop' class='mobile closed'></div>
+  <header>
+    <a href='index.html'><h2 id='title'>Kraus Web Design</h2></a>
+    <nav>
+      <button id='menu-button' class='mobile'>
+        <div class='menu-button-line'></div>
+        <div class='menu-button-line'></div>
+        <div class='menu-button-line'></div>
+      </button>
+      <ul class='desktop'>
+        <a href='index.html#introduction'><li>Introduction</li></a>
+        <a href='index.html#my-projects'><li>My Projects</li></a>
+        <a href='#'><li>Contact me</li></a>
+      </ul>
+      <ul id='mobile-nav' class='mobile closed'>
+        <a href='index.html#introduction'><li>Introduction</li></a>
+        <a href='index.html#my-projects'><li>My Projects</li></a>
+        <a href='#'><li>Contact me</li></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact me</h1>
+    <img src='./resources/images/my-photo.jpeg' id='my-photo-contact'>
+    <p>If you're interested in working with me, feel free to contact me:</p>
+    <form method="POST" id='contact-form' action='message-sent.html'> 
+      <label for="name" >Name<span class='required'> * </span></label>
+      <input id='name' type="text" name="name" required>
+      <label for='email'>E-mail<span class='required'> * </span></label>
+      <input id='email' type='email' name='email' required>
+      <label for='user-message'>Your Message<span class='required'> * </span></label>
+      <textarea minlength='50' id='user-message' cols='50' rows='8'name='user-message' required></textarea>
+      <input type='submit' value='Submit'>
+    </form>
+    <p>Alternatively, you can write me an <a style='color: var(--tertiary-color); font-weight:bold;' href='mailto:kraus.patrik@gmail.com'>email</a>.</p>
+  </main>
+  <footer>
+    <section>
+    <ul id='footer-nav'>
+        <h3>Navigation</h3>
+        <a href='#introduction'><li>Introduction</li></a>
+        <a href='#my-projects'><li>My Projects</li></a>
+        <a href='#'><li>Contact me</li></a>
+      </ul>
+    </section>
+    <section id='contact'>
+      <h3>Contact</h3>
+      <h4>Patrik Kraus</h5>
+      <a href='mailto:kraus.patrik@gmail.com'><em>kraus.patrik@gmail.com</em></a>
+    </section>
+  </footer>
+</body>
+</html>

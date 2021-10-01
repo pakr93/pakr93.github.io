@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #586e72;
+  --secondary-color: #f0dcbf;
+  --tertiary-color: #e44644;
+  --bg-color: #ffffff;
+  --header-height: 150px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg-color);
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: var(--main-color);
+  height: var(--header-height);
+}
+
+header #title {
+  font-size: 1.4rem;
+  border: none;
+  width: 100%;
+  letter-spacing: 4px;
+}
+
+header nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: auto 2rem;
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2 {
+  border-bottom: 3px solid var(--main-color);
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.mobile {
+  display: block;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.75);
+}
+
+.closed {
+  display: none;
+}
+
+#mobile-nav {
+  position: fixed;
+  /* margin-top: var(--header-height); */
+  border-top: 3px solid var(--main-color);
+  padding-top: var(--header-height);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: var(--bg-color);
+  z-index: 10;
+}
+
+#mobile-nav a li {
+  margin: 3rem auto;
+}
+
+.desktop {
+  display: none;
+}
+
+#menu-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.menu-button-line {
+  width: 80%;
+  height: 4px;
+  margin: 4px;
+  background-color: var(--main-color);
+}
+
+header nav ul li:hover,
+header nav ul li:active,
+header nav ul li:focus,
+.project a:hover,
+.project a:active,
+.project a:focus,
+#footer-nav li:focus,
+#footer-nav li:hover,
+#footer-nav li:active  {
+  color: var(--tertiary-color);
+  transition: color 0.25s linear;
+}
+
+#introduction {
+  padding: 5rem 0;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: center;
+  min-height: 350px;
+  background-color: var(--main-color);
+}
+
+#introduction h1 {
+  font-size: 3rem;
+}
+
+#introduction #my-photo {
+  width: 250px;
+  border-radius: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#my-projects  {
+  width: 100%;
+  margin: 3rem auto;
+}
+
+#projects {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-projects .project {
+  min-width: 200px;
+  max-width: 500px;
+  margin: 2rem;
+  padding: 0;
+  border: 5px solid var(--main-color);
+  border-left:none;
+  border-right: none;
+}
+
+#my-projects .project .project-image {
+  position: relative;
+}
+
+#my-projects .project .project-image img {
+  width: 100%;
+}
+
+#my-projects .project a h2 {
+  width: 100%;
+}
+
+#my-projects .project .project-image .technologies-used {
+  background-color: var(--tertiary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 0.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.85;
+}
+
+footer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  min-height: var(--header-height);
+  background-color: var(--main-color);
+  padding: 1rem;
+}
+
+#contact :not(h3) {
+  color: var(--bg-color);
+  margin: 0.5rem auto;
+  padding: 0;
+}
+
+#footer-nav {
+  display: flex;
+  flex-flow: column nowrap;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+#footer-nav li {
+  color: var(--bg-color);
+}
+
+
+@media (min-width: 700px) {
+
+  main {
+    padding: 0 0.5rem;
+  }
+
+  #introduction {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    max-height: 400px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex
+  }
+
+  #introduction h1 {
+    width: 50%;
+  }
+
+  #projects {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  #projects .project {
+    min-width: 350px;
+    max-width: 30%;
+    min-height: 400px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
