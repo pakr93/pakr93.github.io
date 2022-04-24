@@ -1,8 +1,7 @@
 // mark today with a red border-top & red border-bottom to let the user know what day it is
 const tagToday = (day) => {
   // list of all days in the week
-  const todayRow =
-    document.getElementsByClassName("opening-hours-row")[day - 1];
+  const todayRow = document.getElementsByClassName("opening-hours-row")[day === 0 ? 6 : (day - 1)];
 
   // mark today in the opening hours
   todayRow.classList.add("today-opening-hours");
@@ -21,3 +20,5 @@ const closeNavBar = () => {
 };
 
 tagToday(new Date().getDay());
+
+console.log('okay');
