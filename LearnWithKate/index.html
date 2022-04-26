@@ -20,14 +20,13 @@
   <script src="./assets/js/theme.js" defer></script>
   <script src="./assets/js/custom.js" defer></script>
 </head>
-
 <body>
   <div style="margin-top: 1rem;" class="content-wrapper">
     <header class="wrapper bg-light pt-1">
       <nav style="background-color: transparent !important;"
         class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
-          <div style="margin: auto; box-shadow: none;"
+          <div style="margin: auto;"
             class="navbar-collapse-wrapper px-4 bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand">
               <a class="logo-link" href="./index.html">
@@ -99,36 +98,39 @@
   <!-- /header -->
   <section class=" wrapper bg-light ">
     <div class=" container ">
-      <div style=" position:relative; overflow: hidden; " class=" card bg-soft-green rounded-4 mt-2 ">
+      <div style=" position:relative; z-index: 1; overflow: hidden; " class=" card bg-soft-green mt-2 ">
         <span class=" book-a-lesson-btn "><a class=" bg-green text-black py-2 px-10 text-white
     book-a-lesson-link " target=" _blank " href=" https://learnwithkate.setmore.com/ ">Book a Lesson</a></span>
+    <div id="flag-background"></div>
+    <div id='flags-background-mobile'>
+      <img class=" flag-mobile" src=" ./assets/img/photos/Czech-Flag.svg" alt=" an image of a Czech flag " />
+      <img class=" flag-mobile" src="./assets/img/photos/US-Flag.svg" alt=" an image of an US flag " />
+      <img class=" flag-mobile " src="./assets/img/photos/French-Flag.svg " alt=" an image of a French flag " />
+    </div>
         <a href='#problem'><img class=" direction-arrow " src=" ./assets/img/icons/Arrow-Down-icon.png " alt="Arrow icon pointing down" /></a>
         <div class=" card-body p-md-10 py-xl-10 px-xl-15 first-section">
-          <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center ">
+          <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center">
             <div class=" col-lg-6 position-relative order-2 ">
               <div class=" row gx-md-5 gy-5 position-relative ">
                 <div class=" col-6 ">
                 </div>
                 <!-- /column -->
                 <div class=" col-6 flags">
-                  <img class=" img-fluid shadow flag " src=" ./assets/img/photos/Czech-Flag.svg" alt=" an image of a Czech flag " />
-                  <img class=" img-fluid shadow flag " src="./assets/img/photos/US-flag.svg" alt=" an image of an US flag " />
-                  <img class=" img-fluid shadow flag " src="./assets/img/photos/French-flag.svg " alt=" an image of a French flag " />                                       
+                  <img class=" img-fluid shadow flag" src=" ./assets/img/photos/Czech-Flag.svg" alt=" an image of a Czech flag " />
+                  <img class=" img-fluid shadow flag " src="./assets/img/photos/US-Flag.svg" alt=" an image of an US flag " />
+                  <img class=" img-fluid shadow flag " src="./assets/img/photos/French-Flag.svg " alt=" an image of a French flag " />
                   </div>
                 <!-- /column -->
               </div>
               <!-- /.row -->
             </div>
-            <div class=" col-lg-6 text-center text-lg-start order-1 " data-cues=" slideInDown " data-group=" page-title "
+            <div class=" col-lg-6 text-center text-lg-start order-1 px-8 pt-4 pb-8 bg-pale-green rounded-4 shadow opacity-90" data-cues=" slideInDown " data-group=" page-title "
               data-delay=" 500 ">
               <h4 style=" margin-top: 2rem; " class=" text-ash slogan ">Catch Your Dream Language</h4>
-              <div class=" my-2 ">
                 <h2 class=" text-black mt-5 ">Learn How To<br /></h2>
-                <h1 class=" rotator-fade display-1 text-green text-wrap my-6">Communicate with Confidence,Overcome Fear of Speaking,Master any Conversation</h1>
+                <h1 class=" rotator-fade rotator-fs display-1 text-green text-wrap w-100">Communicate with Confidence,Overcome Fear of Speaking,Master any Conversation</h1>
               <h3 class=" text-black mb-6 ">in Your Language of Choice.</h3>
-            </div>
-              <p class=" lead fs-md mb-10 pe-xxl-2 text-black">In the last <span style=" font-weight:
-    700; " >7+ years</span>, I have taught
+              <p id="brief-info" class=" lead fs-md mb-10 pe-xxl-2 text-black">In the last <span style=" font-weight:700; " >7+ years</span>, I have taught
                 <span style=" font-weight: 700; " >90+ students</span> to communicate in
                 <span style=" font-weight: 700; " >Czech</span>, <span style=" font-weight:
     700; " >English</span>, or <span style=" font-weight: 700; " >French</span> language.</p>
@@ -157,15 +159,15 @@
           <h3 class=" display-4 mb-4 ">You Don't Have to Struggle</h3>
           <p class=" lead fs-md mb-4 pe-xxl-2 ">Learning any language by yourself can be a huge challenge.</p>
             <p class=" lead fs-md mb-4 pe-xxl-2 ">You need to learn so many little things to become a skilled communicator in your chosen language.</p>
-            
+
             <p class=" lead fs-md mb-4 pe-xxl-2 ">Having a teacher, a guide, a helping hand who knows which direction to push you in, can be a great advantage. </p>
-            
+
             <p class=" lead fs-md mb-4 pe-xxl-2 ">For this reason, many of my students come to me for help.</p>
-            
+
             <p class=" lead fs-md mb-4 pe-xxl-2 ">Stop spending long hours learning everything on your own!</p>
-            
+
             <p class=" lead fs-md mb-8 pe-xxl-2 ">I can help you achieve your language goals fast and with ease.</p>
-            
+
             <h4 class=" mb-3 ">Does this sound like you?</h4>
            </p>
           <div class=" row gy-3 ">
@@ -213,7 +215,7 @@
             <em>To learn more about the teaching process and information about how I do what I do in detail, see <a href=" #faq " class=" hover text-green ">FAQ</a>. </em>
             <div class=" d-flex justify-content-center justify-content-lg-center info-buttons align-items-center align-items-sm-start mt-6 order-4 " data-cues=" slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
             <span><a href=" ./about-me.html " class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 order-2 ">Learn More About Me</a></span>
-          
+
           </div>
         </div>
         <!--/column -->
@@ -330,8 +332,8 @@
           <div class=" position-relative ">
             <div class=" swiper-container dots-closer mb-6 " data-margin=" 0 " data-dots=" true " data-items-xl=" 3 "
               data-items-md=" 2 " data-items-xs=" 1 ">
-              <div class=" swiper ">
-                <div class=" swiper-wrapper ">
+              <div class=" swiper">
+                <div class=" swiper-wrapper mb-12">
                   <!--/.swiper-slide -->
                   <div class=" swiper-slide ">
                     <div class=" item-inner ">
@@ -339,8 +341,8 @@
                         <div class=" card-body ">
                           <blockquote class=" icon mb-0 ">
                             <p>I cannot speak too highly of Katka as a teacher. She is enthusiastic, positive and professional.
-                               Her lessons are well-organised and she always keeps them on track without getting diverted into small talk. 
-                               She gets her points across clearly and simply, making it easy to learn. Most amazingly, she makes grammar fun. 
+                               Her lessons are well-organised and she always keeps them on track without getting diverted into small talk.
+                               She gets her points across clearly and simply, making it easy to learn. Most amazingly, she makes grammar fun.
                                She is a truly inspiring teacher.</p>
                             <div class=" blockquote-details ">
                               <img class=" rounded-circle w-12 " src=" ./assets/img/avatars/st2.jpg "
@@ -362,7 +364,7 @@
                       <div class=" card ">
                         <div class=" card-body ">
                           <blockquote class=" icon mb-0 ">
-                            <p>Katka is an amazing teacher! She individualizes each class to the student(s) and allows for learning tangents and improvisations when students have questions. 
+                            <p>Katka is an amazing teacher! She individualizes each class to the student(s) and allows for learning tangents and improvisations when students have questions.
                               I highly recommend her!!</p>
                             <div class=" blockquote-details ">
                               <img class=" rounded-circle w-12 " src=" ./assets/img/avatars/st1.jpg "
@@ -384,8 +386,8 @@
                       <div class=" card ">
                         <div class=" card-body ">
                           <blockquote class=" icon mb-0 ">
-                            <p>Kate is a fabulous teacher who always comes prepared with interesting and fun lessons! She is so knowledgeable when it comes to the language, 
-                              that she makes even something as difficult as Czech grammar easy to understand. 
+                            <p>Kate is a fabulous teacher who always comes prepared with interesting and fun lessons! She is so knowledgeable when it comes to the language,
+                              that she makes even something as difficult as Czech grammar easy to understand.
                               She’s super encouraging and always finds fun tips and tricks to help me remember things.<br />
                               Highly recommend!☺️
                               </p>
@@ -409,6 +411,11 @@
                 </div>
                 <!--/.swiper-wrapper -->
               </div>
+              <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal mb-8">
+                <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1" aria-current="true"></span>
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+              </div>
               <!-- /.swiper -->
             </div>
             <!-- /.swiper-container -->
@@ -418,8 +425,7 @@
         <div style=" flex-direction: column; " class=" d-flex justify-content-center justify-content-center
     align-items-center info-buttons mt-6 " data-cues=" slideInDown "
         data-group=" page-title-buttons " data-delay=" 300 ">
-        <span><a href=" https://www.facebook.com/learnandteachwkate/reviews/?ref=page_internal " target="
-    _blank " class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Read More Testimonials</a></span>
+        <span><a href=" https://www.facebook.com/learnandteachwkate/reviews/?ref=page_internal " target="_blank " class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Read More Testimonials</a></span>
         <span><a href=" #contact-me " class=" btn btn-lg btn-outline-orange rounded-pill ">Contact Me</a></span>
       </div>
         <!-- /.container -->
@@ -528,7 +534,7 @@
                 <div class="card-body">
                   <p>I offer <strong>general and specialized classes, tutoring, graduation preparation, preparation for
                     language and state exams and job interviews</strong>. (I also assist with <em>content editing,
-                    proofreading, writing essays, and presentation preparation</em>). 
+                    proofreading, writing essays, and presentation preparation</em>).
                     </p>
                 </div>
                 <!-- /.card-body -->
@@ -542,8 +548,8 @@
               <!-- /.card-header -->
               <div id="accordion-collapse-1-3" class="collapse" aria-labelledby="accordion-heading-1-3" data-bs-target="#accordion-1">
                 <div class="card-body">
-                  <p>Most of my students are looking for a <strong>One-to-One, fully custom</strong> approach where the focus is uniquely on them and their goals and they can cast away their shyness.</p> 
-                   <p><strong>They're motivated by the idea of being able to speak without fear, making less mistakes and being able to lead a conversation in a foreign language</strong>, 
+                  <p>Most of my students are looking for a <strong>One-to-One, fully custom</strong> approach where the focus is uniquely on them and their goals and they can cast away their shyness.</p>
+                   <p><strong>They're motivated by the idea of being able to speak without fear, making less mistakes and being able to lead a conversation in a foreign language</strong>,
                     whether that makes them the spokesperson for their family on vacation or empowers them to deal with foreign-language aspects of their job on a professional level.</p>
                    <p><strong>They want to feel comfortable while communicating in their selected language</strong>.</p>
                 </div>
@@ -558,7 +564,7 @@
               <!-- /.card-header -->
               <div id="accordion-collapse-2-6" class="collapse" aria-labelledby="accordion-heading-2-6" data-bs-target="#accordion-2">
                 <div class="card-body">
-                  <p>Most students can see the progress <strong>really fast</strong>, generally. 
+                  <p>Most students can see the progress <strong>really fast</strong>, generally.
                     Especially where it matters most – spoken interaction.</p>
                     <p>They feel more confident thanks to their new skills and they want to use them! </p>
                     They love that I'm always in a good mood, bringing loads of energy to each lesson,
@@ -613,7 +619,7 @@
               <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
                 <div class="card-body">
                   <p>I provide both <strong>Online</strong> and <strong>Offline</strong> lessons.<br />
-                    Offline (in-person) lessons are usually located in my apartment, 
+                    Offline (in-person) lessons are usually located in my apartment,
                     near my apartment (in a café) or I can commute to your place for a fee.</p>
                 </div>
                 <!-- /.card-body -->
@@ -631,11 +637,11 @@
           <div id="accordion-2" class="accordion-wrapper">
             <!-- /.card -->
             <div class="card accordion-item">
-              <div class="card-header" id="accordion-heading-2-2">
-                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-2" aria-expanded="false" aria-controls="accordion-collapse-2-2">Is it possible to change the location of the lesson?</button>
+              <div class="card-header" id="accordion-heading-2-3">
+                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">Is it possible to change the location of the lesson?</button>
               </div>
               <!-- /.card-header -->
-              <div id="accordion-collapse-2-2" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
+              <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-2" data-bs-target="#accordion-2">
                 <div class="card-body">
                   <p>Yes, it's possible, if the location is at a similar distance.</p>
                 </div>
@@ -644,11 +650,11 @@
               <!-- /.collapse -->
             </div>
             <div class="card accordion-item">
-              <div class="card-header" id="accordion-heading-2-3">
-                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-3" aria-expanded="false" aria-controls="accordion-collapse-2-3">Can I have an online lesson instead of an in-person lesson or vice versa?</button>
+              <div class="card-header" id="accordion-heading-2-4">
+                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-4" aria-expanded="false" aria-controls="accordion-collapse-2-4">Can I have an online lesson instead of an in-person lesson or vice versa?</button>
               </div>
               <!-- /.card-header -->
-              <div id="accordion-collapse-2-3" class="collapse" aria-labelledby="accordion-heading-2-3" data-bs-target="#accordion-2">
+              <div id="accordion-collapse-2-4" class="collapse" aria-labelledby="accordion-heading-2-4" data-bs-target="#accordion-2">
                 <div class="card-body">
                   <p>For an online lesson, it's not a problem :) For an offline lesson, it's possible, if the location is near my apartment or on the way from another lesson.</p>
                 </div>
@@ -658,11 +664,11 @@
             </div>
             <!-- /.card -->
             <div class="card accordion-item">
-              <div class="card-header" id="accordion-heading-2-4">
-                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-4" aria-expanded="false" aria-controls="accordion-collapse-2-4">How many lessons per week should I have?</button>
+              <div class="card-header" id="accordion-heading-2-5">
+                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-5" aria-expanded="false" aria-controls="accordion-collapse-2-5">How many lessons per week should I have?</button>
               </div>
               <!-- /.card-header -->
-              <div id="accordion-collapse-2-4" class="collapse" aria-labelledby="accordion-heading-2-4" data-bs-target="#accordion-2">
+              <div id="accordion-collapse-2-5" class="collapse" aria-labelledby="accordion-heading-2-4" data-bs-target="#accordion-2">
                 <div class="card-body">
                   <p></p>
                 </div>
@@ -671,13 +677,13 @@
               <!-- /.collapse -->
             </div>
             <div class="card accordion-item">
-              <div class="card-header" id="accordion-heading-2-5">
-                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-5" aria-expanded="false" aria-controls="accordion-collapse-2-5">Will I have access to any student materials?</button>
+              <div class="card-header" id="accordion-heading-2-8">
+                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-8" aria-expanded="false" aria-controls="accordion-collapse-2-8">Will I have access to any student materials?</button>
               </div>
               <!-- /.card-header -->
-              <div id="accordion-collapse-2-5" class="collapse" aria-labelledby="accordion-heading-2-5" data-bs-target="#accordion-2">
+              <div id="accordion-collapse-2-8" class="collapse" aria-labelledby="accordion-heading-2-8" data-bs-target="#accordion-2">
                 <div class="card-body">
-                  <p>All my students get <strong>their own space on Google Drive </strong> where we share interactive boards, visual aids (we attribute pictures to new words), 
+                  <p>All my students get <strong>their own space on Google Drive </strong> where we share interactive boards, visual aids (we attribute pictures to new words),
                     optional homework and other materials they encounter and want to share with me or that I want them to have.</p>
                 </div>
                 <!-- /.card-body -->
@@ -699,7 +705,7 @@
             </div>
             <div class="card accordion-item">
               <div class="card-header" id="accordion-heading-2-7">
-                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-7" 
+                <button class="collapsed faq-item" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2-7"
                 aria-expanded="false" aria-controls="accordion-collapse-2-7">What information would you like from me first?
                 </button>
               </div>
@@ -735,7 +741,7 @@
   <!-- /section -->
   <!-- /.content-wrapper -->
   <section class=" wrapper bg-light bg-dark section py-12 " id='contact-me'>
-    <div class=" container bg-pale-green py-6 px-4 px-lg-12 rounded-4 ">
+    <div class=" container bg-pale-orange py-6 px-4 px-lg-12 rounded-4 ">
       <h2 class=" display-4 mb-4 text-center ">Contact Me</h2>
     <p class="lead fs-md mb-8 pe-xxl-2 text-center mx-auto">Feel free to use any contact method available.<br />I will reply
       as soon as I can.</p>

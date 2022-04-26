@@ -19,6 +19,27 @@ const closeNavBar = () => {
   backdrop.classList.remove("show");
 };
 
-tagToday(new Date().getDay());
+const setBackgroundFlag = () => {
+  const flagBackground = document.getElementById('flag-background');
+  const randomNumber = Math.floor(Math.random() * 100 % 3);
+  let url;
+  switch(randomNumber) {
+    case 0:
+    url = "url('assets/img/photos/Czech-Flag.svg')";
+    break;
+    case 1:
+    url = "url('assets/img/photos/French-Flag.svg')";
+    break;
+    case 2:
+    url = "url('assets/img/photos/US-Flag.svg')";
+    break;
 
-console.log('okay');
+    default:
+      url = "url('../img/photos/Czech-Flag.svg')"
+  }
+  flagBackground.style.backgroundImage = url;
+};
+
+setBackgroundFlag();
+
+tagToday(new Date().getDay());

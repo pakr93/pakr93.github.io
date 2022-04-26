@@ -31634,7 +31634,7 @@ button.hamburger:before {
   border-color: #fff;
 }
 .swiper-container.dots-closer .swiper-pagination {
-  bottom: -2rem;
+  bottom: -1rem;
 }
 .swiper-slide.bg-overlay:before {
   content: "";

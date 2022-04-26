@@ -78,12 +78,44 @@ a:hover {
   flex-direction: column;
 }
 
+#flag-background {
+  display: none;
+}
+
+#flags-background-mobile {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-height: 100vh;
+}
+
+.flag-mobile {
+  width: 100%;
+  max-height: 33.33%;
+}
+
+.rotator-fs {
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.opacity-90 {
+  opacity: 0.9;
+}
+
+.first-section {
+  /* min-height: 85vh; */
+}
+
 .book-a-lesson-btn {
   position: absolute;
   right: -55px;
   top: 39px;
   transform: rotate(45deg);
-  z-index: 0;
+  z-index: 10;
   -webkit-box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
   box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
 }
@@ -132,6 +164,14 @@ a:hover {
   text-align: center;
 }
 
+.first-section {
+  border-radius: 0 !important;
+}
+
+#brief-info {
+  max-width: 50ch;
+}
+
 .table tr:nth-child(odd) {
   background-color: #fef6f5;
 }
@@ -158,7 +198,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .flag {
@@ -174,7 +214,7 @@ a:hover {
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 0px 15px 7px rgba(108,108,108,0.5) !important; 
+  -webkit-box-shadow: 0px 0px 15px 7px rgba(108,108,108,0.5) !important;
   box-shadow: 0px 0px 15px 7px rgba(108,108,108,0.5) !important;
 }
 
@@ -187,7 +227,7 @@ a:hover {
   background-color: #006b4c!important;
 }
 
-button.collapsed:hover, 
+button.collapsed:hover,
 button.collapsed:active,
 button.collapsed:visited {
   color: var(--custom-color-primary) !important;
@@ -257,8 +297,8 @@ button.collapsed:visited {
     padding-bottom: 3rem;
   }
 
-  .shadow {
-    box-shadow: none !important;
+  #brief-info {
+    margin: auto;
   }
 
   .navbar-nav .nav-item > .nav-link {
@@ -270,7 +310,7 @@ button.collapsed:visited {
 @media (min-width: 991.98px) {
 
   .flags {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: flex-end;
   }
 
@@ -282,6 +322,29 @@ button.collapsed:visited {
 
   .flag:first-child {
     margin-top: 2rem;
+  }
+
+  #flag-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url('../img/photos/Czech-Flag.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position:center;
+    z-index: -1;
+    opacity: 0.65;
+  }
+
+  #flags-background-mobile {
+    display: none;
+  }
+
+  .rotator-fs {
+    margin-right: auto;
   }
 
   .direction-arrow {
@@ -335,12 +398,6 @@ button.collapsed:visited {
   .swiper-slide:hover {
     transform: scale(1.05);
     transition: transform 250ms linear;
-  }
-}
-
-@media (min-height: 700px) {
-  .first-section {
-    min-height: 85vh;
   }
 }
 
