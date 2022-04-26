@@ -19,10 +19,10 @@ const closeNavBar = () => {
   backdrop.classList.remove("show");
 };
 
-const setBackgroundFlag = () => {
-  const flagBackground = document.getElementById('flag-background');
+const setBackgroundFlag = (element) => {
   const randomNumber = Math.floor(Math.random() * 100 % 3);
   let url;
+
   switch(randomNumber) {
     case 0:
     url = "url('assets/img/photos/Czech-Flag.svg')";
@@ -37,9 +37,49 @@ const setBackgroundFlag = () => {
     default:
       url = "url('../img/photos/Czech-Flag.svg')"
   }
-  flagBackground.style.backgroundImage = url;
+  element.style.backgroundImage = url;
 };
 
-setBackgroundFlag();
+const setBackgroundFlagMobile = (element1, element2) => {
+  const randomNumber = Math.floor(Math.random() * 100 % 6);
+  let url1, url2;
+
+  switch(randomNumber) {
+    case 0:
+    url1 = "assets/img/photos/Czech-Flag.svg";
+    url2 = "assets/img/photos/French-Flag.svg";
+    break;
+    case 1:
+    url1 = "assets/img/photos/Czech-Flag.svg";
+    url2 = "assets/img/photos/US-Flag.svg";
+    break;
+    case 2:
+    url1 = "assets/img/photos/US-Flag.svg";
+    url2 = "assets/img/photos/French-Flag.svg";
+    break;
+    case 3:
+    url1 = "assets/img/photos/US-Flag.svg";
+    url2 = "assets/img/photos/Czech-Flag.svg";
+    break;
+    case 4:
+    url1 = "assets/img/photos/French-Flag.svg";
+    url2 = "assets/img/photos/Czech-Flag.svg";
+    break;
+    case 5:
+    url1 = "assets/img/photos/French-Flag.svg";
+    url2 = "assets/img/photos/US-Flag.svg";
+    break;
+    default:
+      url1 = "assets/img/photos/Czech-Flag.svg";
+      url2 = "assets/img/photos/US-Flag.svg";
+  }
+  element1.src = url1;
+  element2.src = url2;
+};
+
+const flagBackground = document.getElementById('flag-background');
+setBackgroundFlag(flagBackground);
+const flagsMobile = document.getElementsByClassName('flag-img');
+setBackgroundFlagMobile(flagsMobile[0], flagsMobile[1]);
 
 tagToday(new Date().getDay());
