@@ -78,7 +78,7 @@ a:hover {
   flex-direction: column;
 }
 
-#flag-background {
+#background-image-top {
   display: block;
   position: absolute;
   top: 0;
@@ -88,24 +88,10 @@ a:hover {
   z-index: -1;
   opacity: 0.65;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  filter:saturate(20%);
-}
-
-.flag-img {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  z-index: 10;
-}
-
-.flag-img:first-child {
-  margin-bottom: 0.1rem;
-}
-
-.flag-mobile {
-  display: block;
+  background-size: auto 100%;
+  background-position: top;
+  filter:grayscale(80%);
+  background-image: url('../img/photos/students-laptop.jpg');
 }
 
 .rotator-fs {
@@ -118,7 +104,7 @@ a:hover {
 }
 
 .first-section {
-  /* min-height: 85vh; */
+  min-height: 85vh;
 }
 
 .book-a-lesson-btn {
@@ -295,6 +281,7 @@ button.collapsed:visited {
   .navbar-nav {
     margin-top: 4rem;
   }
+
   .slogan {
     letter-spacing: 3px;
     width: 80%;
@@ -319,24 +306,22 @@ button.collapsed:visited {
 }
 
 @media (min-width: 991.98px) {
-
   .flags {
     flex-direction: column;
     align-items: flex-end;
   }
 
-  .flag-mobile {
-    display: none;
-  }
-
   .flag {
     margin-bottom: 2rem;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
   }
 
-  #flag-background {
-    background-size: 100% 100%;
+  #background-image-top {
+    background-image: url('../img/photos/students-smiling.jpg');
+    filter:saturate(40%);
+    background-size: 100% auto;
+    background-position: top;
     background-repeat: no-repeat;
   }
 
