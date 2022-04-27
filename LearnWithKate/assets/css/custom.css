@@ -86,11 +86,11 @@ a:hover {
   right: 0;
   left: 0;
   z-index: -1;
-  opacity: 0.65;
+  opacity: 0.8;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: top;
-  filter:grayscale(80%);
+  background-position: center;
+  filter:grayscale(100%) blur(2px);
   background-image: url('../img/photos/students-laptop.jpg');
 }
 
@@ -99,8 +99,8 @@ a:hover {
   margin: 1rem auto;
 }
 
-.opacity-90 {
-  opacity: 0.9;
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .first-section {
@@ -319,7 +319,7 @@ button.collapsed:visited {
 
   #background-image-top {
     background-image: url('../img/photos/students-smiling.jpg');
-    filter:saturate(40%);
+    filter:saturate(40%) blur(3px);
     background-size: 100% auto;
     background-position: top;
     background-repeat: no-repeat;
