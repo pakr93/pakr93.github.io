@@ -90,8 +90,8 @@ a:hover {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
-  filter:grayscale(100%) blur(2px);
-  background-image: url('../img/photos/students-laptop.jpg');
+  filter:grayscale(75%) blur(1px);
+  background-image: url('../img/photos/smiling-student.jpg');
 }
 
 .rotator-fs {
