@@ -10,7 +10,6 @@ Author:		elemis
   content: "\e902";
 }
 .caret-simple .dropdown-toggle::after {
-  font-family: Unicons;
   display: inline-block;
   font-size: 0.85rem !important;
   margin-left: 0.05rem;
@@ -20,7 +19,6 @@ Author:		elemis
   content: "\e92d";
 }
 .caret-simple .dropup .dropdown-toggle::after {
-  font-family: Unicons;
   display: inline-block;
   font-size: 0.85rem !important;
   margin-left: 0.05rem;
@@ -30,7 +28,6 @@ Author:		elemis
   content: "\e932";
 }
 .caret-simple .dropend .dropdown-toggle::after {
-  font-family: Unicons;
   display: inline-block;
   font-size: 0.85rem !important;
   margin-left: 0.05rem;
@@ -40,7 +37,6 @@ Author:		elemis
   content: "\e931";
 }
 .caret-simple .dropstart .dropdown-toggle::after {
-  font-family: Unicons;
   display: inline-block;
   font-size: 0.85rem !important;
   margin-left: 0.05rem;
@@ -3866,7 +3862,6 @@ textarea.form-control.is-invalid {
   white-space: nowrap;
 }
 .dropdown-toggle::after {
-  font-family: Custom;
   display: inline-block;
   margin-left: 0.05rem;
   vertical-align: -2px;
@@ -4000,7 +3995,6 @@ textarea.form-control.is-invalid {
   margin-bottom: 0.75rem;
 }
 .dropup .dropdown-toggle::after {
-  font-family: Custom;
   display: inline-block;
   margin-left: 0.05rem;
   vertical-align: -2px;
@@ -4019,7 +4013,6 @@ textarea.form-control.is-invalid {
   margin-left: 0.75rem;
 }
 .dropend .dropdown-toggle::after {
-  font-family: Custom;
   display: inline-block;
   margin-left: 0.05rem;
   vertical-align: -2px;
@@ -4041,7 +4034,6 @@ textarea.form-control.is-invalid {
   margin-right: 0.75rem;
 }
 .dropstart .dropdown-toggle::after {
-  font-family: Custom;
   display: inline-block;
   margin-left: 0.05rem;
   vertical-align: -2px;
@@ -20193,7 +20185,6 @@ a.text-reset:hover {
 }
 .more:after {
   line-height: 1;
-  font-family: Custom;
   content: "\e902";
   padding-left: 0.05rem;
   font-size: 0.85rem;
@@ -23047,7 +23038,6 @@ mark.doc {
   margin-right: 0.4rem;
   text-align: center;
   color: inherit;
-  font-family: Unicons;
   font-size: 0.7rem;
   border-radius: 0.2rem;
   border-top-right-radius: 0;
@@ -23086,7 +23076,6 @@ mark.doc {
   padding-top: 0;
 }
 .external:after {
-  font-family: Custom;
   content: "\e906";
   font-size: 0.7rem;
 }
@@ -23102,7 +23091,6 @@ mark.doc {
   content: "\e952";
 }
 .terminal:before {
-  font-family: Custom;
   content: "\e905";
   font-size: 0.8rem;
 }
@@ -24657,7 +24645,6 @@ textarea {
 }
 .search-form:before {
   content: "\eca5";
-  font-family: Unicons;
   display: block;
   position: absolute;
   top: 50%;
@@ -30425,7 +30412,6 @@ button.hamburger:before {
   }
 }
 .accordion-wrapper .card-header button:before {
-  font-family: Custom;
   position: absolute;
   left: 1.3rem;
   content: url('../img/icons/arrow-up-small.png');
@@ -30447,7 +30433,6 @@ button.hamburger:before {
   color: #3f78e0;
 }
 .accordion-wrapper.caret-simple .card-header button:before {
-  font-family: Unicons;
   content: "\e932";
   font-size: 1.1rem;
 }
@@ -30481,7 +30466,6 @@ button.hamburger:before {
   color: #3f78e0;
 }
 .collapse-link:before {
-  font-family: Custom;
   content: "\e903";
   font-size: 1rem;
   font-weight: 400;
@@ -30527,7 +30511,6 @@ button.hamburger:before {
   padding-left: 0.5rem;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-  font-family: Custom;
   display: flex;
   align-items: center;
   padding-right: 0.5rem;
@@ -31301,7 +31284,6 @@ button.hamburger:before {
 }
 .progress-wrap:after {
   position: absolute;
-  font-family: Unicons;
   content: "↑";
   text-align: center;
   line-height: 2.3rem;
@@ -31355,7 +31337,6 @@ button.hamburger:before {
 }
 .btn-close:before {
   background: rgba(0, 0, 0, 0.08);
-  font-family: Unicons;
   font-size: 1.05rem;
   content: url('../img/icons/close.png');
   width: 1.8rem;
@@ -31492,7 +31473,6 @@ button.hamburger:before {
   outline: 0;
 }
 .swiper-controls .swiper-navigation .swiper-button:after {
-  font-family: Unicons;
   font-size: 1.2rem;
 }
 .swiper-controls .swiper-navigation .swiper-button.swiper-button-prev {
@@ -32137,22 +32117,7 @@ img.svg-inject {
 .ratings-wrapper span.ratings {
   vertical-align: -1px;
 }
-@font-face {
-  font-family: Unicons;
-  src: url(../fonts/unicons/Unicons.woff2) format("woff2"),
-    url(../fonts/unicons/Unicons.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
-@font-face {
-  font-family: Custom;
-  src: url(../fonts/custom/Custom.woff2) format("woff2"),
-    url(../fonts/custom/Custom.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block;
-}
+
 [class*=" icn-"],
 [class*=" uil-"],
 [class^="icn-"],
@@ -32166,14 +32131,7 @@ img.svg-inject {
   -moz-osx-font-smoothing: grayscale;
   word-spacing: normal;
 }
-[class*=" uil-"],
-[class^="uil-"] {
-  font-family: Unicons !important;
-}
-[class*=" icn-"],
-[class^="icn-"] {
-  font-family: Custom !important;
-}
+
 .icn-external:before {
   content: "\e906";
 }
@@ -36254,10 +36212,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.glightbox-clean .gnext:before,
-.glightbox-clean .gprev:before {
-  font-family: Unicons;
-}
+
 .glightbox-clean .gnext:hover,
 .glightbox-clean .gprev:hover {
   background: rgba(0, 0, 0, 0.5);
@@ -36274,7 +36229,6 @@ footer {
   background: rgba(0, 0, 0, 0.5);
 }
 .glightbox-clean .gclose:after {
-  font-family: Unicons;
   content: "\ed3b";
 }
 .glightbox-clean .gprev {
@@ -37571,7 +37525,6 @@ footer [class*="col-"] .widget + .widget {
 }
 #comments ul.children li.comment:before {
   display: block;
-  font-family: Custom;
   content: "\e904";
   font-size: calc(1.325rem + 0.9vw);
   position: absolute;
