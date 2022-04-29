@@ -3867,7 +3867,7 @@ textarea.form-control.is-invalid {
   vertical-align: -2px;
   content: "";
   border: 0;
-  content: url('../img/icons/arrow-down-small.png');
+  content: url('../img/icons/arrow-down-small.webp');
 }
 .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -30414,7 +30414,7 @@ button.hamburger:before {
 .accordion-wrapper .card-header button:before {
   position: absolute;
   left: 1.3rem;
-  content: url('../img/icons/arrow-up-small.png');
+  content: url('../img/icons/arrow-up-small.webp');
   font-size: 1rem;
   font-weight: 400;
   width: 1rem;
@@ -30427,7 +30427,7 @@ button.hamburger:before {
   color: #343f52;
 }
 .accordion-wrapper .card-header button.collapsed:before {
-  content: url('../img/icons/arrow-down-small.png');
+  content: url('../img/icons/arrow-down-small.webp');
 }
 .accordion-wrapper .card-header button:hover {
   color: #3f78e0;
@@ -31338,7 +31338,7 @@ button.hamburger:before {
 .btn-close:before {
   background: rgba(0, 0, 0, 0.08);
   font-size: 1.05rem;
-  content: url('../img/icons/close.png');
+  content: url('../img/icons/close.webp');
   width: 1.8rem;
   height: 1.8rem;
   line-height: 1.8rem;
