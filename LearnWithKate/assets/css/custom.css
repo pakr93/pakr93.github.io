@@ -91,7 +91,7 @@ a:hover {
   background-size: auto 100%;
   background-position: center;
   filter:grayscale(75%) blur(1px);
-  background-image: url('../img/photos/smiling-student.jpg');
+  background-image: url('../img/photos/smiling-student.webp');
 }
 
 .rotator-fs {
@@ -322,7 +322,7 @@ button.collapsed:visited {
   }
 
   #background-image-top {
-    background-image: url('../img/photos/students-smiling.jpg');
+    background-image: url('../img/photos/students-smiling.webp');
     filter:saturate(40%) blur(3px);
     background-size: 100% auto;
     background-position: top;
