@@ -235,7 +235,7 @@ button.collapsed:visited {
 }
 
 .uil-check:before {
-  content: url('../img/icons/check.png');
+  content: url('../img/icons/check.webp');
   padding: 0.1rem 0.08rem 0.03rem 0.05rem;
   width:5px;
 }
