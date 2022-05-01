@@ -60,12 +60,19 @@
             <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
               <ul style="margin: auto;"
                 class="navbar-nav flex-row align-items-center navbar-mini">
-                <li class="nav-item dropdown language-select text-uppercase">
+                <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">EN</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="#">CS</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">EN</a></li>
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='25px' height='20px' alt='an image of a US flag' />
+                    <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span>
+                  </a>
+                  <ul class="dropdown-menu px-0 py-1">
+                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
+                      <a class="dropdown-item px-0" style='width:10px' href="./cs/o-mne.html">
+                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='20px' height='20px' alt='an image of a Czech flag' />
+                        <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span>
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item d-none d-md-block">
@@ -129,7 +136,7 @@
         align-items-center info-buttons mt-6 " data-cues=" slideInDown "
             data-group=" page-title-buttons " data-delay=" 300 ">
             <span><a href="./index.html#faq" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Read FAQ to Learn More</a></span>
-            <span><a href=".index.html#contact-me" class=" btn btn-lg btn-outline-orange rounded-pill ">Contact Me</a></span>
+            <span><a href="./index.html#contact-me" class=" btn btn-lg btn-outline-orange rounded-pill ">Contact Me</a></span>
           </div>
         </div>
         <section class=" wrapper order-3 bg-pale-green rounded-4 py-6 ">

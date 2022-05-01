@@ -9,6 +9,10 @@ const tagToday = (day) => {
   // show today tag
   const today = todayRow.getElementsByTagName("th")[0];
   today.innerHTML = `<span class='text-green'>TODAY</span>`;
+
+  if(today.classList.contains('cs')) {
+    today.innerHTML = `<span class='text-green'>DNES</span>`;
+  }
 };
 
 const closeNavBar = () => {

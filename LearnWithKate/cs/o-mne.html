@@ -47,9 +47,9 @@
               </div>
               <div style="margin:auto;" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="#about-me">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html">DOMŮ</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash" href="#about-me">O MNĚ</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#how-it-works">JAK ZAČÍT</a></li>
                   <li class="nav-item"><a class="nav-link text-ash" href="./index.html#testimonials">TESTIMONIALS</a></li>
                   <li class="nav-item"><a class="nav-link text-ash" href="./index.html#faq">FAQ</a></li>
                 </ul>
@@ -60,16 +60,23 @@
             <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
               <ul style="margin: auto;"
                 class="navbar-nav flex-row align-items-center navbar-mini">
-                <li class="nav-item dropdown language-select text-uppercase">
+                <li class="nav-item dropdown language-select text-uppercase px-1 py-1" style='display: flex; align-items: center; justify-content: center;'>
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">EN</a>
-                  <ul class="dropdown-menu">
-                    <li class="nav-item"><a class="dropdown-item" href="#">CS</a></li>
-                    <li class="nav-item"><a class="dropdown-item" href="#">EN</a></li>
+                    aria-haspopup="true" aria-expanded="false">
+                    <img class='flag-lang mx-1' src="../assets/img/flags/Czech.svg" width='25px' height='20px' alt='an image of a Czech flag' />
+                    <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span>
+                  </a>
+                  <ul class="dropdown-menu px-0 py-1">
+                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
+                      <a class="dropdown-item px-0" style='width:10px' href="../about-me.html">
+                        <img class='flag-lang mx-1 ml-3' src="../assets/img/flags/US.svg" width='20px' height='20px' alt='an image of a US flag' />
+                        <span class='mx-0 my-0 fs-18' style='position:relative; top:3px;'>EN</span>
+                      </a>
+                    </li>
                   </ul>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href='./index.html#contact-me' class="btn btn-sm btn-outline-orange rounded-pill">Contact Me</a>
+                  <a href='./index.html#contact-me' class="btn btn-sm btn-outline-orange rounded-pill">Kontaktujte Mě</a>
                 </li>
                 <li class="nav-item d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -87,7 +94,7 @@
   </div>
   <main>
     <div class=" row gx-lg-8 gx-xl-12 gy-10 align-items-center bg-soft-green section" id='about-me'>
-      <h1 class=" display-1 mx-0 mt-0 mb-10 text-center">About Me & What I Do</h1>
+      <h1 class=" display-1 mx-0 mt-0 mb-10 text-center">O Mně & Co Dělám</h1>
       <div class=" col-lg-5 order-lg-2 order-sm-2 order-xs-2 d-flex mt-0 mb-6">
         <img class=" img-fluid ms-auto mx-auto me-lg-8 filter-grayscale" id='kate-photo' src="../assets/img/photos/Kate.webp"
            alt=" Kate Vanderpool, the teacher and owner of Learn with Kate " data-cue=" fadeIn " />
@@ -95,13 +102,13 @@
       <!--/column -->
       <div class=" col-lg-7 mt-0 order-lg-1 order-sm-2 order-xs-2 " style=" max-width: 50ch; margin: auto; ">
         <p class=" lead fs-20 mb-4 pe-xxl-2 ">
-          My name's <strong class="text-green">Kate Vanderpool</strong> and I’m a freelancer providing individual classes in English, French, and Czech for <strong>teenagers</strong> and <strong>adults</strong> of all language levels.
+          Jmenuji se <strong class="text-green">Kate Vanderpool</strong>, pracuji na volné noze, a poskytuji individuální kurzy angličtiny, francouzštiny a češtiny pro <strong>teenagery</strong> a <strong>dospělé</strong> všech jazykových úrovní.
           </p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">I create a <strong>unique communicative relationship with each of my students</strong> based on natural behavior, prompt reactions, and empathy.</p>
+          <p class=" lead fs-20 mb-4 pe-xxl-2 "><strong>S každým svým studentem si vytvářím jedinečný komunikativní vztah</strong> založený na přirozeném chování, pohotových reakcích a empatii.</p>
         <p class=" lead fs-20 mb-4 pe-xxl-2 ">
-          Using <strong>creativity and humor to remember new things</strong> is a very important aspect of my relationship with all my students.<br />
+          Používání <strong>kreativity a humoru k zapamatování nových věcí</strong> je velmi důležitým aspektem mého vztahu se všemi mými studenty.<br />
           </p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">My students build a <strong>direct emotional connection with what they learn</strong>.
+          <p class=" lead fs-20 mb-4 pe-xxl-2 ">Moji studenti si budují <strong>přímé emocionální spojení s tím, co se učí</strong>.
           </p>
           <h2 id="original-methodology" class='fs-30 mt-6 mb-3'>Original Methodology</h2>
           <p class=" lead fs-20 mb-4 pe-xxl-2 ">
@@ -136,7 +143,7 @@
         <div class=" container ">
           <div class=" row ">
             <div class=" col-lg-4 ">
-              <h3 class=" display-4 mb-8 text-center ">About Me in a Nutshell</h3>
+              <h3 class=" display-4 mb-8 text-center ">O Mně v Kostce</h3>
             </div>
             <!-- /column -->
             <div class=" col-lg-8 ">
@@ -144,19 +151,19 @@
                 <div class=" col-md-4 ">
                   <img src="../assets/img/icons/lineal/chat.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of languages Kate teaches" />
                   <h3 class=" counter ">3</h3>
-                  <p class=" mb-0 mx-auto  fs-20">Languages</p>
+                  <p class=" mb-0 mx-auto  fs-20">Jazyky</p>
                 </div>
                 <!--/column -->
                 <div class=" col-md-4 ">
                   <img src="../assets/img/icons/lineal/clock.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of years Kate has been teaching" />
                   <h3 class=" counter ">7+</h3>
-                  <p class=" mb-0 mx-auto fs-20">Years</p>
+                  <p class=" mb-0 mx-auto fs-20">Roků</p>
                 </div>
                 <!--/column -->
                 <div class=" col-md-4 ">
                   <img src="../assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of students Kate has had over the years" />
                   <h3 class=" counter ">90+</h3>
-                  <p class=" mb-0 mx-auto fs-20">Happy Students</p>
+                  <p class=" mb-0 mx-auto fs-20">Spokojených Studentů</p>
                 </div>
                 <!--/column -->
               </div>
@@ -187,11 +194,11 @@
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2 ">
           <div class="widget ">
-            <h4 class="widget-title mb-3 ">Learn More</h4>
+            <h4 class="widget-title mb-3 ">Zjistit Více</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html">HOME</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="#about-me">ABOUT ME</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#how-it-works">HOW IT WORKS</a></li>
+              <li class="nav-item "><a class="nav-link-footer " href="./index.html#">DOMŮ</a></li>
+              <li class="nav-item "><a class="nav-link-footer " href="./o-mne.html">O MNĚ</a></li>
+              <li class="nav-item "><a class="nav-link-footer " href="./index.html#how-it-works">JAK ZAČÍT</a></li>
               <li class="nav-item "><a class="nav-link-footer " href="./index.html#testimonials">TESTIMONIALS</a></li>
               <li class="nav-item "><a class="nav-link-footer " href="./index.html#faq">FAQ</a></li>
             </ul>
@@ -200,10 +207,10 @@
         </div>
         <div class="col-md-4 col-lg-2 ">
           <div class="widget align-text-right ">
-            <h4 class="widget-title mb-3 ">Useful Information</h4>
+            <h4 class="widget-title mb-3 ">Užitečné Informace</h4>
             <ul class="list-unstyled text-reset mb-0 ">
               <li class="nav-item "><a class="nav-link-footer " target="_blank "
-                  href="assets/docs/Concept-Conditions_LearnwKate.pdf ">Concept & Conditions</a></li>
+                  href="../assets/docs/Koncept-Podminky_LearnwKate.pdf">Koncept & Podmínky</a></li>
               <!-- <li class="nav-item "><a class="nav-link-footer " href="# ">Get Started</a></li> -->
               <!-- <li class="nav-item "><a class="nav-link-footer " href="# ">Terms of Use</a></li>
               <li class="nav-item "><a class="nav-link-footer " href="# ">Privacy Policy</a></li> -->
@@ -214,42 +221,42 @@
         <div class="col-md-4 col-sm-6 col-lg-3 ">
           <div class="widget ">
             <div class="table-responsive ">
-              <h4 class="widget-title mb-3 ">Opening Hours</h4>
+              <h4 class="widget-title mb-3 ">Otevírací Hodiny</h4>
               <table class="table table-bordered " id='opening-hours'>
                 <tbody>
                   <tr class="opening-hours-row ">
-                    <th>Mon</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <th class='cs'>Po</th>
+                    <td>8:00</td>
+                    <td>19:00</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Tue</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <th class='cs'>Út</th>
+                    <td>8:00</td>
+                    <td>19:00</td>
                   </tr>
                   <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Wed</th>
-                    <td>Closed</td>
+                    <th class='cs'>St</th>
+                    <td>Zavřeno</td>
                     <td></td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Thu</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <th class='cs'>Čt</th>
+                    <td>8:00</td>
+                    <td>19:00</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Fri</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <th class='cs'>Pá</th>
+                    <td>8:00</td>
+                    <td>19:00</td>
                   </tr>
                   <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sat</th>
-                    <td>Closed</td>
+                    <th class='cs'>So</th>
+                    <td>Zavřeno</td>
                     <td></td>
                   </tr>
                   <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sun</th>
-                    <td>Closed</td>
+                    <th class='cs'>Ne</th>
+                    <td>Zavřeno</td>
                     <td></td>
                   </tr>
                 </tbody>
