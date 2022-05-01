@@ -110,7 +110,7 @@ a:hover {
 .book-a-lesson-btn {
   position: absolute;
   right: -57px;
-  top: 47px;
+  top: 40px;
   transform: rotate(45deg);
   z-index: 10;
   -webkit-box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
