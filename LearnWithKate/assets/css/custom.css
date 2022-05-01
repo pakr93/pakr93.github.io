@@ -78,6 +78,11 @@ a:hover {
   flex-direction: column;
 }
 
+#kate-photo:hover {
+  filter: grayscale(0);
+  transition: filter 500ms linear;
+}
+
 #background-image-top {
   display: block;
   position: absolute;
