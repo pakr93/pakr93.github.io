@@ -41,11 +41,12 @@ p {
 }
 
 .navbar-nav .nav-item>.nav-link {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .nav-item .nav-link-footer {
   color: black !important;
+  
 }
 
 /* navbar link hover color */
@@ -311,7 +312,7 @@ button.collapsed:visited {
     margin: auto;
   }
 
-  .navbar-nav .nav-item>.nav-link {
+  .navbar-nav .nav-item > .nav-link {
     font-size: 1.1rem;
     color: #aab0bc !important;
   }
@@ -389,6 +390,7 @@ button.collapsed:visited {
   .nav-link {
     padding: 0;
     font-size: 0.75rem;
+    margin: 0;
   }
 
   .navbar-links {
@@ -398,6 +400,12 @@ button.collapsed:visited {
   .swiper-slide:hover {
     transform: scale(1.05);
     transition: transform 250ms linear;
+  }
+}
+
+@media (min-width: 1120px) {
+  .nav-link {
+    font-size: 1rem !important;
   }
 }
 
