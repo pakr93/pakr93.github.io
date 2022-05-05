@@ -22,6 +22,7 @@ a:hover {
 p {
   max-width: 50ch;
   margin-right: auto;
+  margin-bottom: 0.75rem;
 }
 
 .section {
@@ -46,7 +47,7 @@ p {
 
 .nav-item .nav-link-footer {
   color: black !important;
-  
+
 }
 
 /* navbar link hover color */
@@ -96,6 +97,7 @@ p {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
+  background-attachment: fixed;
   filter: grayscale(75%) blur(1px);
   background-image: url('../img/photos/smiling-student.webp');
 }
