@@ -32,7 +32,6 @@ var theme = {
     theme.iTooltip();
     theme.forms();
     theme.passVisibility();
-    theme.pricingSwitcher();
     theme.textRotator();
     theme.codeSnippet();
   },
@@ -860,27 +859,6 @@ var theme = {
     }
   },
   /**
-   * Pricing Switcher
-   * Enables monthly/yearly switcher seen on pricing tables
-   */
-  pricingSwitcher: function () {
-    const wrapper = document.querySelectorAll(".pricing-wrapper");
-    wrapper.forEach((wrap) => {
-      const switchers = wrap.querySelector(".pricing-switchers");
-      const switcher = wrap.querySelectorAll(".pricing-switcher");
-      const price = wrap.querySelectorAll(".price");
-      switchers.addEventListener("click", (e) => {
-        switcher.forEach((s) => {
-          s.classList.toggle("pricing-switcher-active");
-        });
-        price.forEach((p) => {
-          p.classList.remove("price-hidden");
-          p.classList.toggle("price-show");
-          p.classList.toggle("price-hide");
-        });
-      });
-    });
-  },
   /**
    * ReplaceMe.js
    * Enables text rotator
