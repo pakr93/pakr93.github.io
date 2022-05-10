@@ -1,6 +1,7 @@
 :root {
   --custom-color-primary: #45c4a0;
   --custom-color-secondary: #f78b77;
+  --custom-color-dark: #006b4c;
 }
 
 html {
@@ -47,7 +48,6 @@ p {
 
 .nav-item .nav-link-footer {
   color: black !important;
-
 }
 
 /* navbar link hover color */
@@ -97,6 +97,7 @@ p {
 
 .time-switcher,
 .student-switcher {
+  cursor: pointer;
   position: relative;
   width: 50px;
   height: 25px;
@@ -109,7 +110,7 @@ p {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
 }
 
 .switcher p,
@@ -157,11 +158,20 @@ p {
 .pricing-card {
   max-width: 350px;
   border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.pricing-card:nth-child(even) {
+  border: 2px solid var(--custom-color-primary);
+}
+
+.pricing-card:nth-child(odd) {
+  border: 2px solid var(--custom-color-secondary);
 }
 
 .pricing-card:hover {
   transform: scale(1.05);
-  z-index:10;
+  z-index: 10;
   transition: all 0.3s linear;
 }
 
@@ -317,7 +327,7 @@ p {
 }
 
 .bg-dark {
-  background-color: #006b4c !important;
+  background-color: var(--custom-color-dark) !important;
 }
 
 button.collapsed:hover,
@@ -402,7 +412,7 @@ button.collapsed:visited {
     margin: auto;
   }
 
-  .navbar-nav .nav-item > .nav-link {
+  .navbar-nav .nav-item>.nav-link {
     font-size: 1.1rem;
     color: #aab0bc !important;
   }
