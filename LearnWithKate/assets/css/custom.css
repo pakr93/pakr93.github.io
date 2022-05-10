@@ -105,6 +105,10 @@ p {
   border-radius: 15px;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .switcher {
   display: flex;
   flex-flow: column nowrap;
