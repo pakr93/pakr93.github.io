@@ -94,7 +94,6 @@ const changePricingTable = () => {
   hideUndesiredPlans(plans);
 
   changeDesiredPlans(isTimeButtonActive,isStudentButtonActive);
-
 };
 
 changePricingTable();

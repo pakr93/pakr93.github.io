@@ -104,6 +104,20 @@ p {
   border-radius: 15px;
 }
 
+.switcher {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.switcher p,
+.switcher p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .time-switcher-button,
 .student-switcher-button {
   position: absolute;
@@ -137,8 +151,18 @@ p {
 
 .switches {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+}
+
+.pricing-card {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+  z-index:10;
+  transition: all 0.3s linear;
 }
 
 .plan-hidden {
@@ -335,6 +359,10 @@ button.collapsed:visited {
   .logo-link .learn-logo {
     max-width: 100px;
   }
+
+  .switcher {
+    flex-flow: row nowrap;
+  }
 }
 
 @media (max-width: 576px) {
@@ -390,6 +418,12 @@ button.collapsed:visited {
     margin-bottom: 2rem;
     width: 100px;
     height: 100px;
+  }
+
+  .switches {
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
 
   #background-image-top {
