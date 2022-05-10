@@ -15,6 +15,8 @@ const tagToday = (day) => {
   }
 };
 
+tagToday(new Date().getDay());
+
 const closeNavBar = () => {
   const navbar = document.getElementById("navbar-mobile");
   const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
@@ -97,5 +99,3 @@ const changePricingTable = () => {
 };
 
 changePricingTable();
-
-tagToday(new Date().getDay());
