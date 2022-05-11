@@ -1,13 +1,21 @@
-
 // round down to the nearest 10
 const roundDown = (price) => {
-  return Math.floor(price / 10) * 10;
+  return Math.floor(price / 100) * 100;
 }
 
-// change price according to the Kate's pricing table
+// change a price of a single bundle item
 const changePrice = (prices, index, newPrice) => {
-  prices[index].children[0].innerHTML = `<span>
-  <span class='display-4'>${newPrice}</span> CZK</span>`;
+  prices[index].children[0].innerHTML = `<span><span class='display-4'>${newPrice}</span> CZK</span>`;
+};
+
+// change the prices of the whole bundle
+const changeBundlePrices = (prices, indexStart, indexEnd, bundleNr, initialPrices, discount) => {
+  const numberOfBundlePrices = 4;
+  let counter = 0;
+
+  for(let index = indexStart; index <= indexEnd || counter < numberOfBundlePrices; index++, counter++) {
+    changePrice(prices, index, roundDown(bundleNr * initialPrices[counter] * ((100 - discount) / 100)));
+  }
 };
 
 const updateBundlePrices = () => {
@@ -16,18 +24,9 @@ const updateBundlePrices = () => {
   const discount = [3, 5, 7];
   const prices = document.getElementsByClassName('price-bundle-section');
 
-  changePrice(prices, 4, 3 * roundDown(initialPrices[0] * ((100 - discount[0]) / 100)));
-  changePrice(prices, 5, 3 * roundDown(initialPrices[1] * ((100 - discount[0]) / 100)));
-  changePrice(prices, 6, 3 * roundDown(initialPrices[2] * ((100 - discount[0]) / 100)));
-  changePrice(prices, 7, 3 * roundDown(initialPrices[3] * ((100 - discount[0]) / 100)));
-  changePrice(prices, 8, 5 * roundDown(initialPrices[0] * ((100 - discount[1]) / 100)));
-  changePrice(prices, 9, 5 * roundDown(initialPrices[1] * ((100 - discount[1]) / 100)));
-  changePrice(prices, 10, 5 * roundDown(initialPrices[2] * ((100 - discount[1]) / 100)));
-  changePrice(prices, 11, 5 * roundDown(initialPrices[3] * ((100 - discount[1]) / 100)));
-  changePrice(prices, 12, 8 * roundDown(initialPrices[0] * ((100 - discount[2]) / 100)));
-  changePrice(prices, 13, 8 * roundDown(initialPrices[1] * ((100 - discount[2]) / 100)));
-  changePrice(prices, 14, 8 * roundDown(initialPrices[2] * ((100 - discount[2]) / 100)));
-  changePrice(prices, 15, 8 * roundDown(initialPrices[3] * ((100 - discount[2]) / 100)));
+  changeBundlePrices(prices, 4, 7, 3, initialPrices, discount[0]);
+  changeBundlePrices(prices, 8, 11, 5, initialPrices, discount[1]);
+  changeBundlePrices(prices, 12, 15, 8, initialPrices, discount[2]);
 };
 
 updateBundlePrices();
