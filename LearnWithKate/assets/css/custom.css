@@ -26,6 +26,10 @@ p {
   margin-bottom: 0.75rem;
 }
 
+.bg-pale-orange {
+   background-color: #ffdab9 !important;
+}
+
 .section {
   border-radius: 20px;
   padding: 2rem;
