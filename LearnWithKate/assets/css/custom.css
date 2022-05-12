@@ -27,7 +27,7 @@ p {
 }
 
 .bg-pale-orange {
-   background-color: #ffcba4 !important;
+  background-color: #ffcba4 !important;
 }
 
 .section {
@@ -65,7 +65,6 @@ p {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  /* margin-left:1rem; */
 }
 
 .logo-link .learn-logo {
@@ -219,23 +218,53 @@ p {
 }
 
 .book-a-lesson-btn {
-  position: absolute;
-  right: -57px;
-  top: 40px;
-  transform: rotate(45deg);
-  z-index: 10;
-  -webkit-box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
-  box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  transform: none;
+  opacity: 0.8;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  animation: flash 7s linear infinite;
+}
+
+@@keyframes flash {
+
+  0% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 0.75;
+  }
+
+  40% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.75;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .book-a-lesson-btn:hover {
-  transform: rotate(45deg) scale(1.09);
+  transform: scale(1.09);
   transition: transform 0.3s ease-in-out;
 }
 
-.book-a-lesson-link {
-  transform: translate(20px);
-  transition: transform 2s linear;
+.book-a-lesson-btn a {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .direction-arrow {
@@ -428,6 +457,31 @@ button.collapsed:visited {
 }
 
 @media (min-width: 991.98px) {
+
+  .book-a-lesson-btn {
+    align-items: flex-end;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    right: -300px;
+    top: -300px;
+    transform: rotate(45deg);
+    z-index: 10;
+    opacity: 1;
+    -webkit-box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
+    box-shadow: 0px 4px 30px -3px rgba(0, 0, 0, 0.76);
+  }
+
+  .book-a-lesson-btn:hover {
+    transform: rotate(45deg) scale(1.09);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .book-a-lesson-btn a {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
   .flags {
     flex-direction: column;
     align-items: flex-end;
