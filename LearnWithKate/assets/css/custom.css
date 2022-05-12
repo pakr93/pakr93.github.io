@@ -47,7 +47,7 @@ p {
 }
 
 .navbar-nav .nav-item>.nav-link {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 .nav-item .nav-link-footer {
@@ -422,7 +422,7 @@ button.collapsed:visited {
   }
 
   .navbar-nav .nav-item>.nav-link {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #aab0bc !important;
   }
 }
@@ -504,7 +504,7 @@ button.collapsed:visited {
 
   .nav-link {
     padding: 0;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin: 0;
   }
 
@@ -518,9 +518,9 @@ button.collapsed:visited {
   }
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1300px) {
   .nav-link {
-    font-size: 1rem !important;
+    font-size: 1.05rem !important;
   }
 }
 
