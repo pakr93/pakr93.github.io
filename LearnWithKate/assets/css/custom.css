@@ -27,7 +27,7 @@ p {
 }
 
 .bg-pale-orange {
-  background-color: #ffcba4 !important;
+  background-color: #f6c8a9 !important;
 }
 
 .section {
@@ -227,7 +227,7 @@ p {
   width: 100%;
   height: 50px;
   border-radius: 10px;
-  animation: flash 3s linear infinite;
+  animation: flash 3s ease infinite;
 }
 
 @keyframes flash {
