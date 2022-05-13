@@ -436,8 +436,8 @@ button.collapsed:visited {
     height: 500px;
     width: 500px;
     position: absolute;
-    right: -300px;
-    top: -300px;
+    right: -270px;
+    top: -270px;
     transform: rotate(45deg);
     z-index: 10;
     opacity: 1;
@@ -468,7 +468,7 @@ button.collapsed:visited {
 
   .book-a-lesson-btn {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
   }
 
   .flags {
