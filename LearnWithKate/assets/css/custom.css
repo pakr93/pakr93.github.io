@@ -217,7 +217,7 @@ p {
   min-height: 85vh;
 }
 
-.book-a-lesson-btn {
+.book-a-lesson-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,18 +226,18 @@ p {
   opacity: 0.8;
   width: 100%;
   margin: auto;
-  height: 75px;
+  height: 55px;
   border-radius: 10px;
 }
 
-.book-a-lesson-btn:hover {
+.book-a-lesson-link:hover {
   transform: scale(1.09);
   transition: transform 0.3s ease-in-out;
 }
 
-.book-a-lesson-btn a {
+.book-a-lesson-btn {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .direction-arrow {
@@ -431,7 +431,7 @@ button.collapsed:visited {
 
 @media (min-width: 991.98px) {
 
-  .book-a-lesson-btn {
+  .book-a-lesson-link {
     align-items: flex-end;
     height: 500px;
     width: 500px;
@@ -461,12 +461,12 @@ button.collapsed:visited {
   }
 }
 
-  .book-a-lesson-btn:hover {
+  .book-a-lesson-link:hover {
     transform: rotate(45deg) scale(1.09);
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.8s ease-in-out;
   }
 
-  .book-a-lesson-btn a {
+  .book-a-lesson-btn {
     font-weight: bold;
     font-size: 1.5rem;
   }
