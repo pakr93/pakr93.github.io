@@ -21,8 +21,8 @@ a:hover {
 }
 
 p {
-  max-width: 50ch;
-  margin-right: auto;
+  /* max-width: 50ch; */
+  /* margin-right: auto; */
   margin-bottom: 0.75rem;
 }
 
@@ -513,6 +513,9 @@ button.collapsed:visited {
     bottom: 20px;
     left: 50%;
     z-index: 2;
+    background-color: white;
+    padding: 0.15rem;
+    border-radius: 50%;
     animation: jump-up-and-down 3s linear infinite;
   }
 
