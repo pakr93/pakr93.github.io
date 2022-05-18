@@ -46,7 +46,7 @@ p {
   font-weight: 700;
 }
 
-.navbar-nav .nav-item>.nav-link {
+.navbar-nav .nav-item > .nav-link {
   font-size: 0.75rem;
 }
 
@@ -58,6 +58,9 @@ p {
 .nav-item .nav-link:hover,
 .nav-item .nav-link-footer:hover {
   color: var(--custom-color-primary) !important;
+  border-bottom: 4px solid var(--custom-color-primary);
+  /* font-size: 150% !important; */
+  transition: border-bottom 600ms linear;
 }
 
 .logo-link {
@@ -554,6 +557,7 @@ button.collapsed:visited {
     padding: 0;
     font-size: 0.8rem;
     margin: 0;
+    border-bottom: 4px solid transparent;
   }
 
   .navbar-links {
