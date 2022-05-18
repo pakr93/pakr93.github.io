@@ -1,7 +1,7 @@
 :root {
-  --custom-color-primary: #45c4a0;
-  --custom-color-secondary: #f78b77;
-  --custom-color-dark: #006b4c;
+  --custom-color-primary: #f78b77;
+  --custom-color-secondary: #45c4a0;
+  --custom-color-dark: #E29578;
 }
 
 html {
@@ -24,10 +24,6 @@ p {
   /* max-width: 50ch; */
   /* margin-right: auto; */
   margin-bottom: 0.75rem;
-}
-
-.bg-pale-orange {
-  background-color: #f6c8a9 !important;
 }
 
 .section {
@@ -72,7 +68,7 @@ p {
   align-items: center;
 }
 
-.logo-link .learn-logo {
+.logo-link .teach-logo {
   width: 100%;
   height: 100%;
 }
@@ -174,11 +170,11 @@ p {
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.pricing-card:nth-child(even) {
+.pricing-card:nth-child(odd) {
   border: 2px solid var(--custom-color-primary);
 }
 
-.pricing-card:nth-child(odd) {
+.pricing-card:nth-child(even) {
   border: 2px solid var(--custom-color-secondary);
 }
 
@@ -346,6 +342,10 @@ p {
   background-color: var(--custom-color-dark) !important;
 }
 
+.bg-pale-green {
+  /* background-color: #00b300 !important; */
+}
+
 button.collapsed:hover,
 button.collapsed:active,
 button.collapsed:visited {
@@ -370,7 +370,7 @@ button.collapsed:visited {
 }
 
 @media (min-width: 300px) {
-  .logo-link .learn-logo {
+  .logo-link .teach-logo {
     max-width: 100px;
   }
 }
@@ -382,7 +382,7 @@ button.collapsed:visited {
 }
 
 @media (min-width: 500px) {
-  .logo-link .learn-logo {
+  .logo-link .teach-logo {
     max-width: 100px;
   }
 
