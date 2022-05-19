@@ -498,7 +498,7 @@ button.collapsed:visited {
   #background-image-top {
     background-image: url('../img/photos/students-smiling.webp');
     filter: saturate(40%) blur(3px);
-    background-size: 100% auto;
+    background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
   }
