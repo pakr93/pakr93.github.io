@@ -42,7 +42,7 @@ p {
   font-weight: 700;
 }
 
-.navbar-nav .nav-item > .nav-link {
+.navbar-nav .nav-item>.nav-link {
   font-size: 0.75rem;
 }
 
@@ -435,7 +435,6 @@ button.collapsed:visited {
 }
 
 @media (min-width: 991.98px) {
-
   .book-a-lesson-link {
     align-items: flex-end;
     height: 500px;
@@ -451,20 +450,19 @@ button.collapsed:visited {
     animation: flash 3s ease infinite;
   }
 
-@keyframes flash {
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
 
-  0% {
-    opacity: 1;
-  }
+    50% {
+      opacity: 0.5;
+    }
 
-  50% {
-    opacity: 0.5;
+    100% {
+      opacity: 1;
+    }
   }
-
-  100% {
-    opacity: 1;
-  }
-}
 
   .book-a-lesson-link:hover {
     transform: rotate(45deg) scale(1.09);
@@ -496,7 +494,7 @@ button.collapsed:visited {
   }
 
   #background-image-top {
-    background-image: url('../img/photos/students-smiling.webp');
+    background-image: url('../img/photos/teacher-teaching.webp');
     filter: saturate(40%) blur(3px);
     background-size: 100% auto;
     background-position: top;
