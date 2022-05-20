@@ -1,17 +1,16 @@
-@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1);
 
 @font-face {
-  font-family: "Raleway Regular";
-  src: url('../../fonts/Raleway-Regular.otf');
+  font-family: "Poppins Regular";
+  src: url('../../fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Raleway Bold";
-  src: url('../../fonts/Raleway-Bold.otf');
+  font-family: "Poppins Bold";
+  src: url('../../fonts/Poppins-Bold.ttf');
 }
 
 html {
-  font-family: "Raleway Regular" !important;
+  font-family: "Poppins Regular" !important;
 }
 
 .counter-wrapper .counter,
@@ -22,7 +21,7 @@ html {
 .display-5,
 .display-6,
 .post-title {
-  font-family: "Raleway Bold";
+  font-family: "Poppins Bold";
   font-weight: 700 !important;
   word-spacing: normal !important;
   letter-spacing: normal !important
