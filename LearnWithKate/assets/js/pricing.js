@@ -11,10 +11,12 @@ const changePrice = (prices, index, newPrice) => {
 // change the prices of the whole bundle
 const changeBundlePrices = (prices, indexStart, indexEnd, bundleNr, initialPrices, discount) => {
   const numberOfBundlePrices = 4;
-  let counter = 0;
+  let counter = 0, index = indexStart;
 
-  for(let index = indexStart; index <= indexEnd || counter < numberOfBundlePrices; index++, counter++) {
+  while(index <= indexEnd || counter < numberOfBundlePrices) {
     changePrice(prices, index, roundDown(bundleNr * initialPrices[counter] * ((100 - discount) / 100)));
+    index++;
+    counter++;
   }
 };
 
@@ -50,7 +52,7 @@ const changeNumberOfStudents = () => {
   switchButton('student-switcher-button');
 };
 
-togglePlans = (plans, isActive) => {
+const togglePlans = (plans, isActive) => {
   if (isActive) {
     for (const plan of plans) {
       plan.classList.remove('plan-hidden');
