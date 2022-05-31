@@ -9,8 +9,26 @@
   src: url('../../fonts/Poppins-Bold.ttf');
 }
 
+ @font-face {
+   font-family: "Josefin Regular";
+   src: url('../../fonts/JosefinSans-Regular.ttf');
+ }
+
+ @font-face {
+   font-family: "Josefin Bold";
+   src: url('../../fonts/JosefinSans-Bold.ttf');
+ }
+
 html {
   font-family: "Poppins Regular" !important;
+}
+
+.ff-jos-bold {
+  font-family: "Josefin Bold" !important;
+}
+
+.ff-jos-reg {
+  font-family: "Josefin Regular" !important;
 }
 
 .counter-wrapper .counter,

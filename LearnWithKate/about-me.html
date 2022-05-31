@@ -18,7 +18,7 @@
   <script src="./assets/js/custom.js" defer></script>
 </head>
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper" id='navbar'>
     <header class="wrapper bg-light pt-1">
       <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
@@ -39,35 +39,35 @@
               </div>
               <div style="margin:auto;" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./index.html#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#faq">FAQ</a></li>
                 </ul>
               </div>
-              <!-- /.offcanvas-body -->
             </div>
-            <!-- /.navbar-collapse -->
+
             <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
               <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
                 <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
+
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='25px' height='20px' alt='an image of a US flag' />
-                    <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span>
+                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
+                    <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span> -->
                   </a>
-                  <ul class="dropdown-menu px-0 py-1">
+                  <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
                     <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
-                      <a class="dropdown-item px-0" style='width:10px' href="./cs/o-mne.html">
-                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='20px' height='20px' alt='an image of a Czech flag' />
-                        <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span>
+                      <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
+                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
+                        <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span> -->
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item d-none d-md-block">
-                  <a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill">Contact me</a>
+                <li class="nav-link d-none d-md-block">
+                  <a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a>
                 </li>
                 <li class="nav-item d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -83,57 +83,57 @@
       </nav>
       <!-- /.offcanvas-footer -->
   </div>
-  <main>
+  <main class='mt-16'>
     <div class=" row gx-lg-8 gx-xl-12 gy-10 align-items-center bg-soft-green section" id='about-me'>
-      <h1 class=" display-1 mx-0 mt-0 mb-10 text-center">About me & What I do</h1>
+      <h1 class=" display-1 mx-0 mt-0 mb-10 text-center ff-jos-bold">ABOUT ME & WHAT I DO</h1>
       <div class="col-lg-6 order-lg-2 order-sm-2 order-xs-2 d-flex mt-0 mb-6">
         <img class=" img-fluid ms-auto mx-auto filter-grayscale" id='kate-photo' src="./assets/img/photos/Kate.webp" alt=" Kate Vanderpool, the teacher and owner of Learn with Kate " data-cue=" fadeIn " />
       </div>
       <!--/column -->
       <div class="col-lg-6 order-lg-1 order-sm-2 order-xs-2 mt-0">
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           My name's <strong class="text-green">Kate Vanderpool</strong> and I’m a freelancer providing individual classes in English, French, and Czech for <strong>teenagers</strong> and <strong>adults</strong> of all language levels.
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">I create a <strong>unique communicative relationship with each of my students</strong> based on natural behavior, prompt reactions, and empathy.</p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">I create a <strong>unique communicative relationship with each of my students</strong> based on natural behavior, prompt reactions, and empathy.</p>
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           Using <strong>creativity and humor to remember new things</strong> is a very important aspect of my relationship with all my students.<br />
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">My students build a <strong>direct emotional connection with what they learn</strong>.
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">My students build a <strong>direct emotional connection with what they learn</strong>.
         </p>
-        <h2 id="original-methodology" class='fs-30 mt-6 mb-3'>Original Methodology</h2>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <h2 id="original-methodology" class='fs-30 mt-6 mb-3 ff-jos-bold'>ORIGINAL METHODOLOGY</h2>
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           The teaching content and structure are <strong>tailored to fit the student's goals,
             needs and passions</strong> with the goal being <strong>maximum progress</strong> in naturally mastering the chosen language.
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           I reevaluate student's progress and immediate areas to focus on before each lesson.
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           <strong>I take into consideration their state of mind and energy on the given day and adjust the lesson content literally on the go.</strong>
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 "><strong>My teaching is as custom as it gets</strong> :)</p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">On top of that, <strong>my students always get to immerse in the world that the new language opens up to them.</strong></p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">Together, we soak up the <strong>culture of the country</strong>, along with the <strong>nature of its people</strong>,
+        <p class=" lead fs-18 mb-4 pe-xxl-2 "><strong>My teaching is as custom as it gets</strong> :)</p>
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">On top of that, <strong>my students always get to immerse in the world that the new language opens up to them.</strong></p>
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">Together, we soak up the <strong>culture of the country</strong>, along with the <strong>nature of its people</strong>,
           <strong>the way they communicate</strong>, <strong>their mannerisms</strong> and <strong>traditions they cherish</strong>.
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 "><strong>The exposure doesn't stop there!</strong> - <strong>the food</strong>, <strong>the music</strong>,
+        <p class=" lead fs-18 mb-4 pe-xxl-2 "><strong>The exposure doesn't stop there!</strong> - <strong>the food</strong>, <strong>the music</strong>,
           <strong>the movies</strong>, <strong>the visual arts</strong> -
           <strong>ALL the areas that make the natives who they are!</strong>
         </p>
-        <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+        <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           This way, my students can truly become a part of the community when speaking the language.
         </p>
         <div style=" flex-direction: column; " class=" d-flex justify-content-center justify-content-center
         align-items-center info-buttons mt-6 " data-cues=" slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
-          <span><a href="./index.html#faq" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Read FAQ to learn more</a></span>
-          <span><a href="./index.html#contact-me" class=" btn btn-orange btn-lg rounded-pill ">Contact me</a></span>
+          <span><a href="./index.html#faq" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ff-jos-bold">READ FAQ TO LEARN MORE</a></span>
+          <span><a href="./index.html#contact-me" class=" btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a></span>
         </div>
       </div>
       <section class=" wrapper order-3 bg-pale-green rounded-4 py-6 ">
         <div class=" container ">
           <div class=" row ">
             <div class=" col-lg-4 ">
-              <h3 class=" display-4 mb-8 text-center ">About me in a nutshell</h3>
+              <h3 class=" display-4 mb-8 text-center ff-jos-bold">ABOUT ME IN A NUTSHELL</h3>
             </div>
             <!-- /column -->
             <div class=" col-lg-8 ">
@@ -141,19 +141,19 @@
                 <div class=" col-md-4 ">
                   <img src="./assets/img/icons/lineal/chat.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of languages Kate teaches" />
                   <h3 class=" counter ">3</h3>
-                  <p class=" mb-0 mx-auto  fs-20">Languages</p>
+                  <p class=" mb-0 mx-auto  fs-20">LANGUAGES</p>
                 </div>
                 <!--/column -->
                 <div class=" col-md-4 ">
                   <img src="./assets/img/icons/lineal/clock.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of years Kate has been teaching" />
                   <h3 class=" counter ">7+</h3>
-                  <p class=" mb-0 mx-auto fs-20">Years</p>
+                  <p class=" mb-0 mx-auto fs-20">YEARS</p>
                 </div>
                 <!--/column -->
                 <div class=" col-md-4 ">
                   <img src="./assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of students Kate has had over the years" />
                   <h3 class=" counter ">90+</h3>
-                  <p class=" mb-0 mx-auto fs-20">Happy students</p>
+                  <p class=" mb-0 mx-auto fs-20">HAPPY STUDENTS</p>
                 </div>
                 <!--/column -->
               </div>
@@ -165,7 +165,6 @@
         </div>
         <!-- /.container -->
       </section>
-    </div>
     </div>
   </main>
   <!-- /.offcanvas-body -->
@@ -184,24 +183,24 @@
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2 ">
           <div class="widget ">
-            <h4 class="widget-title mb-3 ">Learn more</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold">LEARN MORE</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#">HOME</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./about-me.html">ABOUT ME</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#how-it-works">HOW IT WORKS</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#testimonials">TESTIMONIALS</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#pricing">PRICING</a></li>
-              <li class="nav-item "><a class="nav-link-footer " href="./index.html#faq">FAQ</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./index.html">HOME</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#">ABOUT ME</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./index.html#testimonials">TESTIMONIALS</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./index.html#pricing">PRICING</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./index.html#faq">FAQ</a></li>
             </ul>
           </div>
           <!-- /.widget -->
         </div>
         <div class="col-md-4 col-lg-2 ">
           <div class="widget align-text-right ">
-            <h4 class="widget-title mb-3 ">Useful information</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold">USEFUL INFORMATION</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li class="nav-item "><a class="nav-link-footer " target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">Terms & Conditions</a></li>
-              <li class="nav-item "><a class="nav-link-footer " target="_blank " href="./privacy-policy.html">Privacy Policy</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">TERMS & CONDITIONS</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="./privacy-policy.html">PRIVACY POLICY</a></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -209,42 +208,42 @@
         <div class="col-md-4 col-sm-6 col-lg-3 ">
           <div class="widget ">
             <div class="table-responsive ">
-              <h4 class="widget-title mb-3 ">Opening hours</h4>
-              <table class="table table-bordered " id='opening-hours'>
+              <h4 class="widget-title mb-3 ff-jos-bold">OPENING HOURS</h4>
+              <table class="table table-bordered ff-jos-regular" id='opening-hours'>
                 <tbody>
                   <tr class="opening-hours-row ">
-                    <th>Mon</th>
+                    <th>MON</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Tue</th>
+                    <th>TUE</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Wed</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>WED</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Thu</th>
+                    <th>THU</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Fri</th>
+                    <th>FRI</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sat</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>SAT</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sun</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>SUN</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
                 </tbody>

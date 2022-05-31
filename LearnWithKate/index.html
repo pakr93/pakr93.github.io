@@ -19,15 +19,15 @@
   <script src="./assets/js/pricing.js" defer></script>
 </head>
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper" id='navbar'>
     <header class="wrapper bg-light pt-1">
       <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
           <div style="margin: auto;" class="navbar-collapse-wrapper px-4 bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand">
               <a class="logo-link" href="./index.html">
-                <img class="learn-logo" src="./assets/img/learn-logo.webp" alt="Learn with Kate logo" />
-                <h3 class="logo-text">Learn with Kate</h3>
+                <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
+                <!-- <h3 class="logo-text">Learn with Kate</h3> -->
               </a>
             </div>
             <div style="background-color: white;" class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
@@ -40,12 +40,12 @@
               </div>
               <div style="margin:auto;" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-ash" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash" href="#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#faq">FAQ</a></li>
                 </ul>
               </div>
             </div>
@@ -53,21 +53,22 @@
             <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
               <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
                 <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
+
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='25px' height='20px' alt='an image of a US flag' />
-                    <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span>
+                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
+                    <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span> -->
                   </a>
-                  <ul class="dropdown-menu px-0 py-1">
+                  <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
                     <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
                       <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
-                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='20px' height='20px' alt='an image of a Czech flag' />
-                        <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span>
+                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
+                        <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span> -->
                       </a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href='#contact-me' class="btn btn-orange btn-lg rounded-pill">Contact me</a>
+                  <a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a>
                 </li>
                 <li class="nav-item d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -92,14 +93,14 @@
   <!--/.modal -->
   </header>
   <!-- /header -->
-  <section class=" wrapper bg-light ">
+  <section class=" wrapper bg-light mt-15">
     <div class=" container ">
       <div style=" position:relative; z-index: 1; overflow: hidden; " class=" card bg-soft-green mt-2 ">
-        <a class="bg-green book-a-lesson-link" target="_blank" href=" https://learnwithkate.setmore.com/ "><span class="book-a-lesson-btn text-white">Book a lesson</span></a>
+        <a class="bg-green book-a-lesson-link" target="_blank" href=" https://learnwithkate.setmore.com/ "><span class="book-a-lesson-btn text-white fs-32 ff-jos-bold">BOOK A LESSON</span></a>
         <div id="background-image-top">
         </div>
         <a href='#problem'><img class="direction-arrow" src="./assets/img/icons/Arrow-Down-icon.webp" alt="Arrow icon pointing down" /></a>
-        <div class=" card-body p-md-10 py-xl-10 px-xl-15 first-section">
+        <div class=" card-body p-md-10 py-xl-10 px-xl-15 first-section" id='home'>
           <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center">
             <div class=" col-lg-4 position-relative order-2 ">
               <div class=" row gx-md-5 gy-5 position-relative ">
@@ -114,9 +115,9 @@
               <!-- /.row -->
             </div>
             <div class=" col-lg-8 text-center text-lg-start order-1 px-8 pt-4 pb-8 bg-pale-green rounded-4 opacity-90" data-cues=" slideInDown " data-group=" page-title " data-delay=" 500 ">
-              <h4 style=" margin-top: 2rem; " class=" text-ash slogan ">Catch your dream language</h4>
+              <h4 style="margin-top: 2rem;" class=" text-ash slogan ff-jos-bold">CATCH YOUR DREAM LANGUAGE</h4>
               <h2 class=" text-black mt-5 ">Learn how to</h2>
-              <h1 class="rotator-fade rotator-fs display-1 text-green text-wrap w-100">communicate with confidence,overcome fear of speaking,master any conversation</h1>
+              <h1 class="rotator-fade rotator-fs display-1 text-green text-wrap w-100 ff-jos-bold">COMMUNICATE WITH CONFIDENCE,OVERCOME FEAR OF SPEAKING,MASTER ANY CONVERSATION</h1>
               <h3 class=" text-black mb-6 ">in your language of choice.</h3>
               <p id="brief-info" class=" lead fs-20 mb-10 pe-xxl-2 text-black">In the last <span style=" font-weight:700; ">7+ years</span>, I have taught
                 <span style=" font-weight: 700; ">90+ students</span> to communicate in
@@ -125,8 +126,8 @@
               </p>
               <div class=" d-flex justify-content-center justify-content-lg-start info-buttons " data-cues="
     slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
-                <span><a href='#problem' class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Learn more</a></span>
-                <span><a href='#contact-me' class="btn btn-orange btn-lg rounded-pill">Contact me</a></span>
+                <span><a href='#problem' class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ff-jos-bold">LEARN MORE</a></span>
+                <span><a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a></span>
               </div>
             </div>
             <!--/column -->
@@ -144,19 +145,19 @@
         </div>
         <!--/column -->
         <div class=" col-lg-6 order-sm-2 order-xs-2 mt-0 bg-pale-orange py-6 px-6 rounded-4 ">
-          <h3 class=" display-4 mb-4 ">You don't have to struggle with languages!</h3>
-          <p class=" lead fs-20  mb-4 pe-xxl-2 ">Learning any language can be a BIG challenge!</p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">You need to learn so many little things to become a skilled communicator in your chosen language.</p>
+          <h3 class=" display-4 mb-4 ff-jos-bold">YOU DON'T HAVE TO STRUGGLE WITH LANGUAGES!</h3>
+          <p class=" lead fs-18  mb-4 pe-xxl-2 ">Learning any language can be a BIG challenge!</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">You need to learn so many little things to become a skilled communicator in your chosen language.</p>
 
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">Having a teacher, a guide, a helping hand who knows which direction to push you in, can be a huge advantage!</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">Having a teacher, a guide, a helping hand who knows which direction to push you in, can be a huge advantage!</p>
 
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">For this reason, many of my students come to me for help.</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">For this reason, many of my students come to me for help.</p>
 
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">Stop spending long hours learning everything on your own!</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">Stop spending long hours learning everything on your own!</p>
 
-          <p class=" lead fs-20 mb-8 pe-xxl-2 "><strong>I can help you achieve your language goals fast and with ease!</strong>.</p>
+          <p class=" lead fs-18 mb-8 pe-xxl-2 "><strong>I can help you achieve your language goals fast and with ease!</strong>.</p>
 
-          <h4 class=" mb-3 ">Does this sound like you?</h4>
+          <h4 class=" mb-3 ff-jos-bold">DOES THIS SOUND LIKE YOU?</h4>
           </p>
           <div class=" row gy-3 fs-18">
             <div class=" col-xl-6 ">
@@ -177,7 +178,7 @@
             <!--/column -->
           </div>
           <!--/.row -->
-          <a href=" #contact-me" class="btn btn-orange btn-lg rounded-pill mt-6">Contact me</a>
+          <a href=" #contact-me" class="btn btn-orange btn-lg rounded-pill mt-6 ff-jos-bold">CONTACT ME</a>
         </div>
         <!--/column -->
       </div>
@@ -188,29 +189,29 @@
         </div>
         <!--/column -->
         <div class=" col-lg-6 mt-0 order-lg-1 order-sm-2 order-xs-2 bg-soft-green">
-          <h2 class=" display-4 mb-4 ">About me & What I do</h2>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+          <h2 class=" display-4 mb-4 ff-jos-bold">ABOUT ME & WHAT I DO</h2>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">
             My name's <strong class="text-green">Kate Vanderpool</strong> and I’m a freelancer providing individual classes in English, French, and Czech for <strong>teenagers</strong> and <strong>adults</strong> of all language levels.
           </p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">I create a <strong>unique communicative relationship with each of my students</strong> based on natural behavior, prompt reactions, and empathy.</p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">I create a <strong>unique communicative relationship with each of my students</strong> based on natural behavior, prompt reactions, and empathy.</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">
             Using <strong>creativity and humor to remember new things</strong> is a very important aspect of my relationship with all my students.<br />
           </p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">My students build a <strong>direct emotional connection with what they learn</strong>.
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">My students build a <strong>direct emotional connection with what they learn</strong>.
           </p>
-          <p class=" lead fs-20 mb-4 pe-xxl-2 ">Moreover, I design my classes based on my <a href="./about-me.html#original-methodology" class=" hover text-green ">Original Methodology</a>.</p>
+          <p class=" lead fs-18 mb-4 pe-xxl-2 ">Moreover, I design my classes based on my <a href="./about-me.html#original-methodology" class=" hover text-green ">Original Methodology</a>.</p>
           <em><strong>To learn more about the teaching process and information about how I do what I do in detail, see <a href=" #faq " class=" hover text-green ">FAQ</a>.</strong></em>
           <div style=" flex-direction: column; " class=" d-flex justify-content-center justify-content-center
         align-items-center info-buttons mt-6 " data-cues=" slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
-            <span><a href="./about-me.html" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Learn more about me</a></span>
-            <span><a href="#contact-me" class="btn btn-orange btn-lg rounded-pill">Contact me</a></span>
+            <span><a href="./about-me.html" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ff-jos-bold">LEARN MORE ABOUT ME</a></span>
+            <span><a href="#contact-me" class="btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a></span>
           </div>
         </div>
         <section class=" wrapper order-3 bg-pale-green rounded-4 py-6">
           <div class=" container ">
             <div class=" row ">
               <div class=" col-lg-4 ">
-                <h3 class=" display-4 mb-8 text-center ">About me in a nutshell</h3>
+                <h3 class=" display-4 mb-8 text-center ff-jos-bold">ABOUT ME IN A NUTSHELL</h3>
               </div>
               <!-- /column -->
               <div class=" col-lg-8 ">
@@ -218,19 +219,19 @@
                   <div class=" col-md-4 ">
                     <img src="./assets/img/icons/lineal/chat.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of languages Kate teaches" />
                     <h3 class=" counter ">3</h3>
-                    <p class=" mb-0 mx-auto  fs-20">Languages</p>
+                    <p class=" mb-0 mx-auto  fs-20">LANGUAGES</p>
                   </div>
                   <!--/column -->
                   <div class=" col-md-4 ">
                     <img src="./assets/img/icons/lineal/clock.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of years Kate has been teaching" />
                     <h3 class=" counter ">7+</h3>
-                    <p class=" mb-0 mx-auto fs-20">Years</p>
+                    <p class=" mb-0 mx-auto fs-20">YEARS</p>
                   </div>
                   <!--/column -->
                   <div class=" col-md-4 ">
                     <img src="./assets/img/icons/lineal/user.svg" class="svg-inject icon-svg icon-svg-sm text-green mb-2" alt="icon for number of students Kate has had over the years" />
                     <h3 class=" counter ">90+</h3>
-                    <p class=" mb-0 mx-auto fs-20">Happy students</p>
+                    <p class=" mb-0 mx-auto fs-20">HAPPY STUDENTS</p>
                   </div>
                   <!--/column -->
                 </div>
@@ -251,18 +252,16 @@
           <div class=" row gy-sm-13 gx-lg-3 align-items-center ">
             <!--/column -->
             <div class=" col-sm-8 col-lg-6 col-xl-4 offset-lg-1 order-sm-1 order-lg-2 mx-auto bg-pale-orange py-6 px-6 rounded-4 ">
-              <h2 class=" display-4 mb-4 text-center">How it works</h2>
-              <p class=" lead fs-20 mb-8 pe-xxl-2 text-center">Starting to work with me is <span style=" text-decoration:
-    underline; text-decoration-color: var(--custom-color-primary); ">very easy</span>.
-                <br />Follow these <span style=" text-decoration: underline; text-decoration-color:
-    var(--custom-color-primary); ">simple</span> steps.
+              <h2 class=" display-4 mb-4 text-center ff-jos-bold">HOW IT WORKS</h2>
+              <p class=" lead fs-18 mb-8 pe-xxl-2 text-center">Starting to work with me is <span style=" text-decoration:underline; text-decoration-color: var(--custom-color-primary); ">very easy</span>.
+                <br />Follow these <span style=" text-decoration: underline; text-decoration-color:var(--custom-color-primary); ">simple</span> steps.
               </p>
               <div class=" d-flex flex-row mb-6 ">
                 <div>
                   <span class=" icon btn btn-circle btn-green disabled me-5 "><span class=" number fs-18 ">1</span></span>
                 </div>
                 <div>
-                  <h4 class=" mb-1 fs-20">Read the information</h4>
+                  <h4 class=" mb-1 fs-20 ff-jos-bold">READ THE INFORMATION</h4>
                   <p class=" mb-0 fs-18">Read all the information on this website, including
                     the <a href=" #faq " class=" hover text-green ">FAQ</a> and <a href="assets/docs/Concept-Conditions_LearnwKate.pdf" target="_blank " class="hover text-green ">Terms & Conditions</a>.
                   </p>
@@ -273,7 +272,7 @@
                   <span class=" icon btn btn-circle btn-green disabled me-5 "><span class=" number fs-18 ">2</span></span>
                 </div>
                 <div>
-                  <h4 class=" mb-1 fs-20">First contact</h4>
+                  <h4 class=" mb-1 fs-20 ff-jos-bold">FIRST CONTACT</h4>
                   <p class=" mb-0 fs-18">Use any of the available <a href=" #contact-me " class=" hover text-green ">Contact</a> methods to schedule our first call.</p>
                 </div>
               </div>
@@ -282,7 +281,7 @@
                   <span class=" icon btn btn-circle btn-green disabled me-5 "><span class=" number fs-18 ">3</span></span>
                 </div>
                 <div>
-                  <h4 class=" mb-1 fs-20">First call</h4>
+                  <h4 class=" mb-1 fs-20 ff-jos-bold">FIRST CALL</h4>
                   <p class=" mb-0 fs-18">We'll discuss your situation, and talk about your needs, desires, and how specifically I can help you.</p>
                 </div>
               </div>
@@ -291,7 +290,7 @@
                   <span class=" icon btn btn-circle btn-green disabled me-5 "><span class=" number fs-18 ">4</span></span>
                 </div>
                 <div>
-                  <h4 class=" mb-1 fs-20">First lesson</h4>
+                  <h4 class=" mb-1 fs-20 ff-jos-bold">FIRST LESSON</h4>
                   <p class=" mb-0 fs-18">Finally, you can use the <a href=" https://learnwithkate.setmore.com/ " target="
     _blank " class=" hover text-green ">Scheduling System</a> to book your very first lesson!</p>
                 </div>
@@ -308,8 +307,8 @@
       <!--/.row -->
       <section class=" wrapper bg-soft-green rounded-4 py-10 " id='testimonials'>
         <div class=" container ">
-          <h2 class=" display-4 mb-4 text-center ">Testimonials</h2>
-          <p class="lead fs-20 mb-8 pe-xxl-2 text-center px-6 mx-auto">Success of my students is truly important to me.<br>See what
+          <h2 class=" display-4 mb-4 text-center ff-jos-bold">TESTIMONIALS</h2>
+          <p class="lead fs-18 mb-8 pe-xxl-2 text-center px-6 mx-auto">Success of my students is truly important to me.<br>See what
             my students say about me.</p>
           <div class=" position-relative ">
             <div class=" swiper-container dots-closer mb-6 " data-margin=" 0 " data-dots=" true " data-items-xl=" 3 " data-items-md=" 2 " data-items-xs=" 1 ">
@@ -328,7 +327,7 @@
                             <div class=" blockquote-details ">
                               <img class=" rounded-circle w-12 filter-grayscale " src=" ./assets/img/avatars/en/st2.webp" srcset=" ./assets/img/avatars/en/st2.webp 2x " alt="Andrew, Kate's happy student" />
                               <div class=" info ">
-                                <h5 class=" mb-1 ">Andrew Yule</h5>
+                                <h5 class=" mb-1 ff-jos-bold">ANDREW YULE</h5>
                               </div>
                             </div>
                           </blockquote>
@@ -350,7 +349,7 @@
                             <div class=" blockquote-details ">
                               <img class=" rounded-circle w-12 filter-grayscale " src=" ./assets/img/avatars/en/st1.webp" srcset=" ./assets/img/avatars/en/st1.webp 2x " alt="Leah, Kate's happy student " />
                               <div class=" info ">
-                                <h5 class=" mb-1 ">Leah Miller</h5>
+                                <h5 class=" mb-1 ff-jos-bold">LEAH MILLER</h5>
                               </div>
                             </div>
                           </blockquote>
@@ -374,7 +373,7 @@
                             <div class=" blockquote-details ">
                               <img class=" rounded-circle w-12 filter-grayscale " src=" ./assets/img/avatars/en/st3.webp" srcset=" ./assets/img/avatars/en/st3.webp 2x " alt="Amanda, Kate's happy student" />
                               <div class=" info ">
-                                <h5 class=" mb-1 ">Amanda Meyer</h5>
+                                <h5 class=" mb-1 ff-jos-bold">AMANDA MEYER</h5>
                               </div>
                             </div>
                           </blockquote>
@@ -403,15 +402,15 @@
         </div>
         <div style=" flex-direction: column; " class=" d-flex justify-content-center justify-content-center
     align-items-center info-buttons mt-6 " data-cues=" slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
-          <span><a href=" https://www.facebook.com/learnandteachwkate/reviews/?ref=page_internal " target="_blank " class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ">Read more testimonials</a></span>
-          <span><a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill">Contact me</a></span>
+          <span><a href=" https://www.facebook.com/learnandteachwkate/reviews/?ref=page_internal " target="_blank " class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ff-jos-bold">READ MORE TESTIMONIALS</a></span>
+          <span><a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill ff-jos-bold">CONTACT ME</a></span>
         </div>
         <!-- /.container -->
       </section>
       <section class="wrapper bg-light" id='pricing'>
         <div class="container py-10">
-          <h2 class="display-4 mb-4 text-center ">Pricing</h2>
-          <p class="lead fs-20 mb-8 pe-xxl-2 text-center px-6 mx-auto">Before you look at the pricing, please select the <span class='text-green'>length</span> of the lessons and a <span class='text-green'>number of students</span> in the lesson.</p>
+          <h2 class="display-4 mb-4 text-center ff-jos-bold">PRICING</h2>
+          <p class="lead fs-18 mb-8 pe-xxl-2 text-center px-6 mx-auto">Before you look at the pricing, please select the <span class='text-green'>length</span> of the lessons and a <span class='text-green'>number of students</span> in the lesson.</p>
           <div class="pricing-wrapper">
             <div class='switches' onclick="changePricingTable()">
               <div class="pricing-switcher-wrapper switcher text-right mx-6">
@@ -436,25 +435,25 @@
                 <div class="pricing card shadow-none bg-pale-orange" style='min-height: 450px;'>
                   <div class="card-body" style='display: flex; flex-flow: column nowrap; justify-content: space-evenly;'>
                     <div class="icon btn btn-circle btn-lg btn-primary disabled w-40 pb-1 mx-auto bg-green"> <span class='fs-40'>1</span> </div>
-                    <h4 class='display-5'>1 Bundle</h4>
+                    <h4 class='display-5 ff-jos-bold'>1 BUNDLE</h4>
                     <h4 class='fs-20 text-center'>5 lessons</h5>
                     <div class="prices text-dark">
                       <div class="price price-show">
                         <div class='price-section'>
                           <div class='price-bundle-section one-student 60-minutes'>
-                            <span><span class='display-4 pricing-1-60'>3500</span> CZK</span>
+                            <span><span class='display-4 pricing-1-60 ff-jos-bold'>3500</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section more-students 60-minutes'>
-                            <span><span class='display-4 pricing-more-60'>3200</span> CZK</span>
+                            <span><span class='display-4 pricing-more-60 ff-jos-bold'>3200</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section one-student 90-minutes'>
-                            <span><span class='display-4 pricing-1-90'>5250</span> CZK</span>
+                            <span><span class='display-4 pricing-1-90 ff-jos-bold'>5250</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section more-students 90-minutes'>
-                            <span><span class='display-4 pricing-more-90'>4950</span> CZK</span>
+                            <span><span class='display-4 pricing-more-90 ff-jos-bold'>4950</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                         </div>
@@ -462,14 +461,14 @@
                     </div>
                   </div>
                 </div>
-                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class="btn btn-orange btn-lg rounded-pill mt-6o my-8">Contact me</a></span>
+                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class="btn btn-orange btn-lg rounded-pill mt-6o my-8 ff-jos-bold">CONTACT ME</a></span>
               </div>
               <div class="col-md-6 col-lg-3 pricing-card bg-soft-green mx-4">
                 <div class="pricing card shadow-none bg-pale-green" style='min-height: 450px;'>
-                  <p class='position-absolute text-center text-white py-1 w-100 fs-26 font-bold bg-green rounded-top'>Save 3%</p>
+                  <p class='position-absolute text-center text-white py-1 w-100 fs-26 font-bold bg-green rounded-top ff-jos-bold'>SAVE 3%</p>
                   <div class="card-body" style='display: flex; flex-flow: column nowrap; justify-content: space-evenly;'>
                     <div class="icon btn btn-circle btn-lg btn-primary disabled w-40 pb-1 mx-auto bg-green"> <span class='fs-40'>3</span> </div>
-                    <h4 class='display-5'>3 Bundles</h4>
+                    <h4 class='display-5 ff-jos-bold'>3 BUNDLES</h4>
                     <h5 class='fs-20 text-center'>15 lessons</h5>
                     <div class="prices text-dark">
                       <div class="price price-show">
@@ -497,14 +496,14 @@
                   <!--/.card-body -->
                 </div>
                 <!--/.pricing -->
-                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8">Contact me</a></span>
+                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8 ff-jos-bold">CONTACT ME</a></span>
               </div>
               <div class="col-md-6 col-lg-3 pricing-card bg-soft-orange mx-4">
                 <div class="pricing card shadow-none bg-pale-orange" style='min-height: 450px;'>
-                  <p class='position-absolute text-center text-black py-1 w-100 fs-26 font-bold bg-orange rounded-top'>Save 5%</p>
+                  <p class='position-absolute text-center text-black py-1 w-100 fs-26 font-bold bg-orange rounded-top ff-jos-bold'>SAVE 5%</p>
                   <div class="card-body" style='display: flex; flex-flow: column nowrap; justify-content: space-evenly;'>
                     <div class="icon btn btn-circle btn-lg btn-primary disabled w-40 pb-1 mx-auto bg-green"> <span class='fs-40'>5</span> </div>
-                    <h4 class='display-5'>5 Bundles</h4>
+                    <h4 class='display-5 ff-jos-bold'>5 BUNDLES</h4>
                     <h5 class='fs-20 text-center'>25 lessons</h5>
                     <div class="prices text-dark">
                       <div class="price price-show">
@@ -532,33 +531,33 @@
                   <!--/.card-body -->
                 </div>
                 <!--/.pricing -->
-                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8">Contact me</a></span>
+                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8 ff-jos-bold">CONTACT ME</a></span>
               </div>
               <!--/column -->
               <div class="col-md-6 col-lg-3 pricing-card bg-soft-green mx-4">
                 <div class="pricing card shadow-none bg-pale-green" style='min-height: 450px;'>
-                  <p class='position-absolute text-center text-white py-1 w-100 fs-26 font-bold bg-green rounded-top'>Save 7%</p>
+                  <p class='position-absolute text-center text-white py-1 w-100 fs-26 font-bold bg-green rounded-top ff-jos-bold'>SAVE 7%</p>
                   <div class="card-body" style='display: flex; flex-flow: column nowrap; justify-content: space-evenly;'>
                     <div class="icon btn btn-circle btn-lg btn-primary disabled w-40 pb-1 mx-auto bg-green"> <span class='fs-40'>8</span></div>
-                    <h4 class='display-5'>8 Bundles</h4>
+                    <h4 class='display-5 ff-jos-bold'>8 BUNDLES</h4>
                     <h5 class='fs-20 text-center'>40 lessons</h5>
                     <div class="prices text-dark">
                       <div class="price price-show">
                         <div class='price-section'>
                           <div class='price-bundle-section one-student 60-minutes'>
-                            <span><span class='display-4'>26040</span> CZK</span>
+                            <span><span class='display-4 ff-jos-bold'>26040</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section more-students 60-minutes'>
-                            <span><span class='display-4'>23800</span> CZK</span>
+                            <span><span class='display-4 ff-jos-bold'>23800</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section one-student 90-minutes'>
-                            <span><span class='display-4'>39060</span> CZK</span>
+                            <span><span class='display-4 ff-jos-bold'>39060</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                           <div class='price-bundle-section more-students 90-minutes'>
-                            <span><span class='display-4'>36820</span> CZK</span>
+                            <span><span class='display-4 ff-jos-bold'>36820</span> CZK</span>
                             <p class='text-left mt-1 fs-12'>per student</p>
                           </div>
                         </div>
@@ -568,9 +567,9 @@
                   <!--/.card-body -->
                 </div>
                 <!--/.pricing -->
-                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8">Contact me</a></span>
+                <span style='display: flex; justify-content: center;'><a href=" #contact-me" class=" btn btn-orange btn-lg rounded-pill mt-6o my-8 ff-jos-bold">CONTACT ME</a></span>
               </div>
-              <p class='mt-12 text-left px-6 text-ash fs-20 w-100'>* It's possible to purchase any combination of the products.</p>
+              <p class='mt-12 text-left px-6 text-ash fs-18 w-100'>* It's possible to purchase any combination of the products.</p>
             </div>
             <!--/.row -->
           </div>
@@ -587,14 +586,14 @@
             </div>
             <!--/column -->
             <div class=" col-lg-6 order-sm-2 order-xs-2 mt-0 bg-pale-orange py-6 px-6 rounded-4 ">
-              <h3 class=" display-4 mb-4 ">Don't let the fear win!</h3>
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">Language is an important part of every social interaction.</p>
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">Choosing to learn a new language without proper guidance, could be a giant mistake!</p>
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">If you never master your chosen language, you will fall short in many aspects of your life - and you don't want that!</p>
+              <h3 class=" display-4 mb-4 ff-jos-bold">DON'T LET THE FEAR WIN!</h3>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">Language is an important part of every social interaction.</p>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">Choosing to learn a new language without proper guidance, could be a giant mistake!</p>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">If you never master your chosen language, you will fall short in many aspects of your life - and you don't want that!</p>
               <!-- <p class=" lead fs-20 mb-4 pe-xxl-2 ">And you don't want that!</p> -->
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">Don't let the fear stop you from advancing your life!</p>
-              <p class=" lead fs-20 mb-8 pe-xxl-2 ">Do yourself a favor and start learning your chosen language today!</p>
-              <h4 class=" mb-3 ">If you don't handle your language issues, you will</h4>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">Don't let the fear stop you from advancing your life!</p>
+              <p class=" lead fs-18 mb-8 pe-xxl-2 ">Do yourself a favor and start learning your chosen language today!</p>
+              <h4 class=" mb-3 ff-jos-bold">IF YOU DON'T HANDLE YOU LANGUAGE ISSUES, YOU WILL</h4>
               <div class=" row gy-3 fs-18">
                 <div class=" col-xl-6 ">
                   <ul class=" icon-list bullet-bg bullet-orange mb-0 ">
@@ -612,7 +611,7 @@
                 <!--/column -->
               </div>
               <!--/.row -->
-              <a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill mt-6 ">Contact me</a>
+              <a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill mt-6 ">CONTACT ME</a>
             </div>
             <!--/column -->
           </div>
@@ -622,11 +621,11 @@
             </div>
             <!--/column -->
             <div class=" col-lg-6 order-lg-1 order-sm-2 order-xs-2 mt-0 bg-pale-orange py-6 px-6 rounded-4 ">
-              <h3 class=" display-4 mb-4 ">Learn to speak with confidence!</h3>
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">Become somebody who can effortlessly talk to anyone about anything.
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">You will use your newfound confidence in yourself and your language ability to become a social butterfly.</p>
-              <p class=" lead fs-20 mb-4 pe-xxl-2 ">You'll be excited to talk to anyone without fear, anxiety, or doubt.</p>
-              <p class=" lead fs-20 mb-8 pe-xxl-2 ">Use your new language skills in your everyday life - whether for a regular chat with a friend or to get a job promotion - the sky's the limit.</p>
+              <h3 class=" display-4 mb-4 ff-jos-bold">LEARN TO SPEAK WITH CONFIDENCE!</h3>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">Become somebody who can effortlessly talk to anyone about anything.
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">You will use your newfound confidence in yourself and your language ability to become a social butterfly.</p>
+              <p class=" lead fs-18 mb-4 pe-xxl-2 ">You'll be excited to talk to anyone without fear, anxiety, or doubt.</p>
+              <p class=" lead fs-18 mb-8 pe-xxl-2 ">Use your new language skills in your everyday life - whether for a regular chat with a friend or to get a job promotion - the sky's the limit.</p>
               <div class=" row gy-3 fs-18">
                 <div class=" col-xl-6 ">
                   <ul class=" icon-list bullet-bg bullet-orange mb-0 ">
@@ -646,7 +645,7 @@
                 <!--/column -->
               </div>
               <!--/.row -->
-              <a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill mt-6 ">Contact Me</a>
+              <a href=" #contact-me " class="btn btn-orange btn-lg rounded-pill mt-6 ff-jos-bold">CONTACT ME</a>
             </div>
             <!--/column -->
           </div>
@@ -667,9 +666,9 @@
   </div>
   <section class="wrapper bg-soft-green section" id="faq">
     <div class="container">
-      <h2 class="display-4 mb-4 text-center">Frequently Asked Questions</h2>
+      <h2 class="display-4 mb-4 text-center ff-jos-bold">FREQUENTLY ASKED QUESTIONS</h2>
 
-      <p class="lead fs-20 mb-8 pe-xxl-2 text-center px-6 mx-auto">Of course, If you don't see an answer to your question, don't hesitate to <a href="#contact-me" class="hover text-green">contact me</a>.</p>
+      <p class="lead fs-18 mb-8 pe-xxl-2 text-center px-6 mx-auto">Of course, If you don't see an answer to your question, don't hesitate to <a href="#contact-me" class="hover text-green">contact me</a>.</p>
       <div class="row">
         <div class="col-lg-6 mb-0">
           <div id="accordion-1" class="accordion-wrapper">
@@ -1049,8 +1048,8 @@
   <!-- /.content-wrapper -->
   <section class=" wrapper bg-light bg-dark section py-12 " id='contact-me'>
     <div class=" container bg-pale-orange py-6 px-4 px-lg-12 rounded-4 ">
-      <h2 class=" display-4 mb-4 text-center ">Contact me</h2>
-      <p class="lead fs-20 mb-8 px-6 pe-xxl-2 text-center mx-auto">Feel free to use any contact method available.<br />I will reply
+      <h2 class=" display-4 mb-4 text-center ff-jos-bold">CONTACT ME</h2>
+      <p class="lead fs-18 mb-8 px-6 pe-xxl-2 text-center mx-auto">Feel free to use any contact method available.<br />I will reply
         as soon as I can.</p>
       <div class=" row ">
         <div class=" col-xl-10 mx-auto ">
@@ -1126,7 +1125,7 @@
                   </div>
                   <!-- /column -->
                   <div class=" col-12 ">
-                    <input type="submit" class="btn btn-green rounded-pill btn-send mb-3" value="Send message">
+                    <input type="submit ff-jos-bold" class="btn btn-green rounded-pill btn-send mb-3" value="SEND MESSAGE">
                     <p class="text-muted "><strong>*</strong> These fields are required.</p>
                   </div>
                   <!-- /column -->
@@ -1142,7 +1141,7 @@
                   <div class="icon text-primary fs-28 me-3 mt-1 "> <i class="uil uil-phone-volume "></i> </div>
                 </div>
                 <div>
-                  <h5 class="mb-0 ">Phone</h5>
+                  <h5 class="mb-0 ff-jos-bold">PHONE</h5>
                   <p><a class="text-body " href="tel:+420733395686 ">+420 733 395 686</a></p>
                 </div>
               </div>
@@ -1151,7 +1150,7 @@
                   <div class="icon text-primary fs-28 me-3"> <i class="uil uil-envelope "></i> </div>
                 </div>
                 <div>
-                  <h5 class="mb-0 ">E-mail</h5>
+                  <h5 class="mb-0 ff-jos-bold">E-MAIL</h5>
                   <p><a href="mailto:katerina.vanderpool@gmail.com " class="text-body ">katerina.vanderpool@gmail.com</a></p>
                 </div>
               </div>
@@ -1160,7 +1159,7 @@
                   <div class="icon text-primary fs-28 me-3 mt-n1 "> <i class="uil uil-location-pin-alt "></i> </div>
                 </div>
                 <div>
-                  <h5 class="mb-1 ">Social Media</h5>
+                  <h5 class="mb-1 ff-jos-bold">SOCIAL MEDIA</h5>
                   <div id="social-media__contact-form ">
                     <a class="social-media-link__contact-form bg-muted " target="_blank " href="https://www.facebook.com/learnandteachwkate/ "><img src="./assets/img/icons/facebook-icon.webp" /></a>
                     <a class="social-media-link__contact-form " target="_blank " href="https://www.linkedin.com/in/katka-vanderpool-887ab6ab?trk=people_directory "><img src="./assets/img/icons/linkedin-icon.webp" /></a>
@@ -1184,24 +1183,24 @@
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2 ">
           <div class="widget ">
-            <h4 class="widget-title mb-3 ">Learn more</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold">LEARN MORE</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li class="nav-item "><a class="nav-link-footer" href="#">HOME</a></li>
-              <li class="nav-item "><a class="nav-link-footer" href="./about-me.html">ABOUT ME</a></li>
-              <li class="nav-item "><a class="nav-link-footer" href="#how-it-works">HOW IT WORKS</a></li>
-              <li class="nav-item "><a class="nav-link-footer" href="#testimonials">TESTIMONIALS</a></li>
-              <li class="nav-item "><a class="nav-link-footer" href="#pricing">PRICING</a></li>
-              <li class="nav-item "><a class="nav-link-footer" href="#faq">FAQ</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#">HOME</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./about-me.html">ABOUT ME</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#how-it-works">HOW IT WORKS</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#testimonials">TESTIMONIALS</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#pricing">PRICING</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#faq">FAQ</a></li>
             </ul>
           </div>
           <!-- /.widget -->
         </div>
         <div class="col-md-4 col-lg-2 ">
           <div class="widget align-text-right ">
-            <h4 class="widget-title mb-3 ">Useful information</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold">USEFUL INFORMATION</h4>
             <ul class="list-unstyled text-reset mb-0 ">
-              <li class="nav-item "><a class="nav-link-footer " target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">Terms & Conditions</a></li>
-              <li class="nav-item "><a class="nav-link-footer " target="_blank " href="./privacy-policy.html">Privacy Policy</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">TERMS & CONDITIONS</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="./privacy-policy.html">PRIVACY POLICY</a></li>
             </ul>
           </div>
           <!-- /.widget -->
@@ -1209,42 +1208,42 @@
         <div class="col-md-4 col-sm-6 col-lg-3 ">
           <div class="widget ">
             <div class="table-responsive ">
-              <h4 class="widget-title mb-3 ">Opening hours</h4>
-              <table class="table table-bordered " id='opening-hours'>
+              <h4 class="widget-title mb-3 ff-jos-bold">OPENING HOURS</h4>
+              <table class="table table-bordered ff-jos-regular" id='opening-hours'>
                 <tbody>
                   <tr class="opening-hours-row ">
-                    <th>Mon</th>
+                    <th>MON</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Tue</th>
+                    <th>TUE</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Wed</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>WED</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Thu</th>
+                    <th>THU</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
-                    <th>Fri</th>
+                    <th>FRI</th>
                     <td>8:00 AM</td>
                     <td>7:00 PM</td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sat</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>SAT</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
-                  <tr class="closed-opening-hours opening-hours-row ">
-                    <th>Sun</th>
-                    <td>Closed</td>
+                  <tr class="CLOSED-opening-hours opening-hours-row ">
+                    <th>SUN</th>
+                    <td>CLOSED</td>
                     <td></td>
                   </tr>
                 </tbody>
