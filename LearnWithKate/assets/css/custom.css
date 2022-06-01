@@ -51,6 +51,11 @@ p {
   margin: 0 auto !important;
 }
 
+.show {
+  display: block !important;
+  overflow: hidden;
+}
+
 .navbar-nav .nav-item {
   font-weight: 700;
 }

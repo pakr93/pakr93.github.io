@@ -1,5 +1,3 @@
-const navbarMobile = document.getElementById("navbar-mobile");
-const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
 const navbar = document.getElementById('navbar');
 
 const home = document.getElementById('home');
@@ -31,6 +29,9 @@ const tagToday = (day) => {
 tagToday(new Date().getDay());
 
 const closeNavBar = () => {
+  const navbarMobile = document.getElementById("navbar-mobile");
+  const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
+  
   navbarMobile.classList.remove("show");
   backdrop.classList.remove("show");
 };
