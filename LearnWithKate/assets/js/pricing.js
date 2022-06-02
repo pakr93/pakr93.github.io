@@ -5,7 +5,7 @@ const roundDown = (price) => {
 
 // change a price of a single bundle item
 const changePrice = (prices, index, newPrice) => {
-  prices[index].children[0].innerHTML = `<span><span class='display-4 ff-jos-bold'>${newPrice}</span> CZK</span>`;
+  prices[index].children[0].innerHTML = `<span><span class='display-2 ff-jos-bold'>${newPrice}</span> CZK</span>`;
 };
 
 // change the prices of the whole bundle
@@ -23,12 +23,12 @@ const changeBundlePrices = (prices, indexStart, indexEnd, bundleNr, initialPrice
 const updateBundlePrices = () => {
   // prices for 1 bundle -> 1 student 60 minutes, 2-3 students 60 minutes, 1 student 90 minutes, 2-3 students 90 minutes
   const initialPrices = [3500, 3200, 5250, 4950];
-  const discount = [0, 3, 5, 7];
+  const discount = [0, 3, 7];
   const prices = document.getElementsByClassName('price-bundle-section');
 
   changeBundlePrices(prices, 4, 7, 3, initialPrices, discount[1]);
-  changeBundlePrices(prices, 8, 11, 5, initialPrices, discount[2]);
-  changeBundlePrices(prices, 12, 15, 8, initialPrices, discount[3]);
+  // changeBundlePrices(prices, 8, 11, 5, initialPrices, discount[2]);
+  changeBundlePrices(prices, 8, 11, 8, initialPrices, discount[2]);
 };
 
 updateBundlePrices();
