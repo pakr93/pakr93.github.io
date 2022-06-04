@@ -254,7 +254,8 @@ p {
   width: 100%;
   margin: auto;
   height: 55px;
-  border-radius: 10px;
+  margin-top: 0.35rem;
+  border-radius: 0;
 }
 
 .book-a-lesson-link:hover {
@@ -279,8 +280,14 @@ p {
   margin: 0.2rem;
 }
 
+.contact-icon {
+  width: 25px;
+  height: 25px;
+}
+
 .social-media-link__contact-form img {
-  width: 15px;
+  width: 25px;
+  height: 25px;
 }
 
 .social-media-link__contact-form:hover {

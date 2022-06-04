@@ -31,13 +31,13 @@ tagToday(new Date().getDay());
 const closeNavBar = () => {
   const navbarMobile = document.getElementById("navbar-mobile");
   const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
-  
+
   navbarMobile.classList.remove("show");
   backdrop.classList.remove("show");
 };
 
 const changeOpacity = (element, newOpacity) => {
-  element.style.opacity = newOpacity;
+  element.style.opacity = newOpacity.toString();
 };
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
@@ -61,4 +61,12 @@ window.addEventListener('scroll', () => {
   showPositionInNavbar(testimonials, 3);
   showPositionInNavbar(pricing, 4);
   showPositionInNavbar(faq, 5);
+});
+
+window.addEventListener('scroll', () => {
+  if(window.scrollY > 200) {
+    changeOpacity(navbar, 0.8);
+  } else {
+    changeOpacity(navbar, 1.0);
+  }
 });

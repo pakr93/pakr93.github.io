@@ -33285,11 +33285,9 @@ img.svg-inject {
   content: "\eac7";
 }
 .uil-envelope:before {
-  content: "✉";
   color: var(--custom-color-primary);
 }
 .uil-envelopes:before {
-  content: "\eac9";
 }
 .uil-equal-circle:before {
   content: "\eaca";
@@ -34102,7 +34100,6 @@ img.svg-inject {
   content: "\ebd7";
 }
 .uil-location-pin-alt:before {
-  content: "⌨";
   color: var(--custom-color-primary);
 }
 .uil-location-arrow:before {
