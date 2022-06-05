@@ -64,9 +64,13 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 200) {
+  if(window.scrollY > 200 && window.innerWidth >= 991.98) {
     changeOpacity(navbar, 0.8);
   } else {
     changeOpacity(navbar, 1.0);
+  }
+
+  if(window.innerWidth < 991.98 && window.scrollY > 200) {
+    changeOpacity(navbar, 0);
   }
 });
