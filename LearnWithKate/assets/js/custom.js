@@ -79,10 +79,15 @@ window.addEventListener('scroll', () => {
 
 const animateFlags = () => {
   const flagNames = ['Czech', 'French', 'US'];
+  let counter = 0;
+
   setInterval(() => {
-    const currentFlag = flagNames[Math.floor(Math.random() * 10 % 3)]; // make it random
-    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.png`;
-  }, 2 * 1000);
+    if(counter > flagNames.length - 1) {
+      counter = 0;
+    }
+    const currentFlag = flagNames[counter++];
+    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
+  }, 1.5 * 1000); // change the flags in an interval
 };
 
 animateFlags();
