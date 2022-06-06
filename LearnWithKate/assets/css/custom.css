@@ -322,16 +322,16 @@ p {
 
 .table tr:hover,
 .table tr:active {
-  background-color: var(--custom-color-secondary);
+  background-color: var(--custom-color-primary);
 }
 
 .closed-opening-hours:hover {
-  background-color: red !important;
+  background-color: var(--custom-color-secondary) !important;
 }
 
 .today-opening-hours {
-  border-top: 3px solid var(--custom-color-primary) !important;
-  border-bottom: 3px solid var(--custom-color-primary) !important;
+  border-top: 3px solid black !important;
+  border-bottom: 3px solid black !important;
 }
 
 .opening-hours-row:hover {

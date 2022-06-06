@@ -7,10 +7,12 @@ const testimonials = document.getElementById('testimonials');
 const pricing = document.getElementById('pricing');
 const faq = document.getElementById('faq');
 
+const flagInANutshell = document.getElementById('language-flag-nutshell');
+
 const navItems = document.getElementsByClassName('nav-item');
 
 // mark today with a red border-top & red border-bottom to let the user know what day it is
-const tagToday = (day) => {
+const tagTodayInOpeningHours = (day) => {
   // list of all days in the week
   const todayRow = document.getElementsByClassName("opening-hours-row")[day === 0 ? 6 : (day - 1)];
 
@@ -19,14 +21,14 @@ const tagToday = (day) => {
 
   // show today tag
   const today = todayRow.getElementsByTagName("th")[0];
-  today.innerHTML = `<span class='text-green'>TODAY</span>`;
+  today.innerHTML = `<span class='text-black'>TODAY</span>`;
 
   if (today.classList.contains('cs')) {
-    today.innerHTML = `<span class='text-green'>DNES</span>`;
+    today.innerHTML = `<span class='text-black'>DNES</span>`;
   }
 };
 
-tagToday(new Date().getDay());
+tagTodayInOpeningHours(new Date().getDay());
 
 const closeNavBar = () => {
   const navbarMobile = document.getElementById("navbar-mobile");
@@ -74,3 +76,13 @@ window.addEventListener('scroll', () => {
     changeOpacity(navbar, 0);
   }
 });
+
+const animateFlags = () => {
+  const flagNames = ['Czech', 'French', 'US'];
+  setInterval(() => {
+    const currentFlag = flagNames[Math.floor(Math.random() * 10 % 3)]; // make it random
+    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.png`;
+  }, 2 * 1000);
+};
+
+animateFlags();
