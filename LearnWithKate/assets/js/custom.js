@@ -38,8 +38,8 @@ const closeNavBar = () => {
   backdrop.classList.remove("show");
 };
 
-const changeOpacity = (element, newOpacity) => {
-  element.style.opacity = newOpacity.toString();
+const changeBGColor = (element, newColor) => {
+  element.style.backgroundColor = newColor;
 };
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
@@ -66,14 +66,14 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  if(window.scrollY > 200 && window.innerWidth >= 991.98) {
-    changeOpacity(navbar, 0.8);
+  if(window.innerWidth >= 991.98 && window.scrollY > 50) {
+    changeBGColor(navbar, 'white');
   } else {
-    changeOpacity(navbar, 1.0);
+    changeBGColor(navbar, 'transparent');
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 200) {
-    changeOpacity(navbar, 0);
+    changeBGColor(navbar, 'white');
   }
 });
 

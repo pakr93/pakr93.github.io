@@ -21,55 +21,53 @@
 
 <body>
   <div class="content-wrapper" id='navbar'>
-    <header class="wrapper bg-light pt-1">
+    <header class="wrapper">
       <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
-          <div style="margin: auto;" class="navbar-collapse-wrapper px-4 bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
-            <div class="navbar-brand">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-2 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+            <div class="navbar-brand bg-light">
               <a class="logo-link" href="./index.html">
                 <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
               </a>
             </div>
-            <div style="background-color: white;" class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
               <div style="background-color: var(--bs-body-bg);" class="offcanvas-header d-lg-none">
                 <a class="logo-link" href="./index.html">
                   <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
                 </a>
                 <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div style="margin:auto;" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <div style="margin:auto; opacity: 1.0" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./index.html#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#about-me">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./index.html#faq">FAQ</a></li>
+                  <li class="nav-item"><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn btn-green btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></li>
+                  <li class="nav-item"><a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
                 </ul>
               </div>
             </div>
-
-            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
+            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto me-10 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto">
               <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
                 <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
-
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
-                    <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span> -->
                   </a>
                   <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
                     <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
                       <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
                         <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
-                        <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span> -->
                       </a>
                     </li>
                   </ul>
                 </li>
-                <li class="nav-link d-none d-md-block">
-                  <a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP!</a>
+                <li class="nav-item d-none d-md-block">
+                  <a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP !</a>
                 </li>
-                <li class="nav-item d-lg-none">
+                <li class="nav-item d-xs-flex d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
                 </li>
               </ul>
@@ -82,6 +80,7 @@
         <!-- /.container -->
       </nav>
       <!-- /.offcanvas-footer -->
+      </header>
   </div>
   <main class='mt-16'>
     <div class=" row gx-lg-8 gx-xl-12 gy-10 align-items-center bg-soft-green section" id='about-me'>

@@ -22,46 +22,45 @@
 
 <body>
   <div class="content-wrapper" id='navbar'>
-    <header class="wrapper bg-light pt-1">
+    <header class="wrapper">
       <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
-          <div style="margin: auto;" class="navbar-collapse-wrapper px-4 bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
-            <div class="navbar-brand">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-2 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+            <div class="navbar-brand bg-light">
               <a class="logo-link" href="./index.html">
                 <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
               </a>
             </div>
-            <div style="background-color: white;" class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
               <div style="background-color: var(--bs-body-bg);" class="offcanvas-header d-lg-none">
                 <a class="logo-link" href="./index.html">
                   <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
                 </a>
                 <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div style="margin:auto;" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <div style="margin:auto; opacity: 1.0" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-ash ff-jos-bold" href="#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link ff-jos-bold" href="#faq">FAQ</a></li>
+                  <li class="nav-item"><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn btn-green btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></li>
+                  <li class="nav-item"><a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
                 </ul>
               </div>
             </div>
-            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto">
+            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto me-10 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto">
               <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
                 <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
-
                   <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
-                    <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>EN</span> -->
                   </a>
                   <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
                     <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
                       <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
                         <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
-                        <!-- <span class="mx-0 my-0 fs-18" style='position: relative; top: 3px;'>CS</span> -->
                       </a>
                     </li>
                   </ul>
@@ -69,7 +68,7 @@
                 <li class="nav-item d-none d-md-block">
                   <a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP !</a>
                 </li>
-                <li class="nav-item d-lg-none">
+                <li class="nav-item d-xs-flex d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
                 </li>
               </ul>
@@ -82,29 +81,20 @@
         <!-- /.container -->
       </nav>
       <!-- /.offcanvas-footer -->
+      </header>
   </div>
-  <!-- /.offcanvas-body -->
-  </div>
-  <!-- /.navbar-collapse -->
-  </div>
-  <!-- /.container -->
-  </nav>
-  <!--/.modal -->
-  </header>
   <!-- /header -->
-  <section class=" wrapper bg-light mt-15">
+  <section class=" wrapper bg-light">
     <div class=" container ">
-      <div style=" position:relative; z-index: 1; overflow: hidden; " class=" card bg-soft-green mt-2 ">
-        <a class="bg-green book-a-lesson-link" target="_blank" href=" https://learnwithkate.setmore.com/ "><span class="book-a-lesson-btn text-white fs-32 ff-jos-bold">BOOK A LESSON</span></a>
+      <div style=" z-index: 1; overflow: hidden; " class="card bg-soft-green rounded-0">
         <div id="background-image-top">
         </div>
-        <a href='#problem'><img class="direction-arrow" src="./assets/img/icons/Arrow-Down-icon.webp" alt="Arrow icon pointing down" /></a>
-        <div class=" card-body p-md-10 py-xl-10 px-xl-15 first-section" id='home'>
-          <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center">
+        <div class=" card-body p-md-10 py-xl-10 px-xl-15 pe-lg-0 pe-xl-0 first-section" id='home'>
+          <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center mt-6">
             <div class=" col-lg-4 position-relative order-2 ">
               <div class=" row gx-md-5 gy-5 position-relative ">
                 <!-- /column -->
-                <div class="col-6 flags">
+                <div class="col-12 flags">
                   <img class="img-fluid shadow flag" src="./assets/img/flags/Czech.svg" alt=" an image of a Czech flag " />
                   <img class="img-fluid shadow flag" src="./assets/img/flags/US.svg" alt=" an image of an US flag " />
                   <img class="img-fluid shadow flag" src="./assets/img/flags/French.svg" alt=" an image of a French flag " />
@@ -113,10 +103,13 @@
               </div>
               <!-- /.row -->
             </div>
-            <div class=" col-lg-8 text-center text-lg-start order-1 px-8 pt-4 pb-8 bg-pale-green rounded-4 opacity-90" data-cues=" slideInDown " data-group=" page-title " data-delay=" 500 ">
-              <h4 style="margin-top: 2rem;" class=" text-ash slogan ff-jos-bold">CATCH YOUR DREAM LANGUAGE</h4>
+            <div style='overflow: hidden;' class="col-lg-8 text-center text-lg-start order-1 px-8 pt-4 mt-12 pb-8 bg-pale-green rounded-4 opacity-90" data-cues=" slideInDown " data-group=" page-title " data-delay=" 500 ">
+              <div class='position-relative'>
+              <a class="bg-green book-a-lesson-link desktop" target="_blank" href="https://learnwithkate.setmore.com/"><span class="book-a-lesson-btn text-white ff-jos-bold">BOOK A LESSON</span></a>
+            <h4 style="margin-top: 2rem;" class="text-ash slogan ff-jos-bold">CATCH YOUR DREAM LANGUAGE</h4>
+              </div>
               <h2 class=" text-black mt-5 ">Learn how to</h2>
-              <h1 class="rotator-fade rotator-fs display-1 text-green text-wrap w-100 ff-jos-bold">COMMUNICATE WITH CONFIDENCE,OVERCOME FEAR OF SPEAKING,MASTER ANY CONVERSATION</h1>
+              <h1 id='rotator' class="rotator-fade rotator-fs display-1 text-green text-wrap w-100 ff-jos-bold">COMMUNICATE WITH CONFIDENCE,OVERCOME FEAR OF SPEAKING,MASTER ANY CONVERSATION</h1>
               <h3 class=" text-black mb-6 ">in your language of choice.</h3>
               <p id="brief-info" class=" lead fs-20 mb-10 pe-xxl-2 text-black">In the last <span style=" font-weight:700; ">7+ years</span>, I have taught
                 <span style=" font-weight: 700; ">90+ students</span> to communicate in
@@ -130,7 +123,6 @@
               </div>
             </div>
             <!--/column -->
-          </div>
           <!--/.row -->
         </div>
         <!--/.card-body -->
@@ -431,7 +423,9 @@
                 <p class="mb-0 mx-4">2-3 students</p>
               </div>
             </div>
-            <p class='fs-14 mt-6 mb-0 pe-xxl-2 text-center text-ash px-6 mx-auto'>The <strong>2 or 3-student</strong> option is a great way to reduce your rate even further and have a blast learning the language with your friends or family members.
+            <p class='fs-16 mt-6 mb-0 pe-xxl-2 text-center text-ash px-6 mx-auto'>The <strong>2 or 3-student</strong> option is a great way to reduce your rate even further and have a blast learning the language with your friends or family members.
+            </p>
+            <p class='fs-16 mt-2 mb-6 pe-xxl-2 text-center text-ash px-6 mx-auto'>You can start with a sample lesson. You will pay the price of one lesson and afterwards, you can decide whether you’re in for the ride and choose from the options below.
             </p>
             <div class="row gx-0 gy-6 mt-2 pt-0 w-100" style='display:flex; justify-content:center; align-items: center; flex-flow: row wrap;'>
               <div class="col-md-6 col-lg-3 pricing-card bg-soft-green mx-4" style='max-width:350px;'>
