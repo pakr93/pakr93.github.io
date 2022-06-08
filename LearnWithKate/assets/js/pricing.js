@@ -11,9 +11,10 @@ const changePrice = (prices, index, newPrice) => {
 // change the prices of the whole bundle
 const changeBundlePrices = (prices, indexStart, indexEnd, bundleNr, initialPrices, discount) => {
   const numberOfBundlePrices = 4;
-  let counter = 0, index = indexStart;
+  let counter = 0,
+    index = indexStart;
 
-  while(index <= indexEnd || counter < numberOfBundlePrices) {
+  while (index <= indexEnd || counter < numberOfBundlePrices) {
     changePrice(prices, index, roundDown(bundleNr * initialPrices[counter] * ((100 - discount) / 100)));
     index++;
     counter++;
@@ -27,7 +28,6 @@ const updateBundlePrices = () => {
   const prices = document.getElementsByClassName('price-bundle-section');
 
   changeBundlePrices(prices, 4, 7, 3, initialPrices, discount[1]);
-  // changeBundlePrices(prices, 8, 11, 5, initialPrices, discount[2]);
   changeBundlePrices(prices, 8, 11, 8, initialPrices, discount[2]);
 };
 
@@ -64,11 +64,11 @@ const togglePlans = (plans, isActive) => {
   }
 };
 
-const hideUndesiredPlans = plans => {
+const hidePlans = plans => {
   togglePlans(plans, false);
 };
 
-const showDesiredPlans = plans => {
+const showPlans = plans => {
   togglePlans(plans, true);
 };
 
@@ -79,19 +79,19 @@ const showDesiredPlans = plans => {
   studentButton false = 1 student
   studentButton true = 2-3 students
  */
-const changeDesiredPlans = (timeButton, studentButton) => {
+const changePlans = (timeButton, studentButton) => {
   if (timeButton && studentButton) {
     const plans = document.getElementsByClassName('more-students 90-minutes');
-    showDesiredPlans(plans, true);
+    showPlans(plans, true);
   } else if (!timeButton && studentButton) {
     const plans = document.getElementsByClassName('more-students 60-minutes');
-    showDesiredPlans(plans, true);
+    showPlans(plans, true);
   } else if (timeButton && !studentButton) {
     const plans = document.getElementsByClassName('one-student 90-minutes');
-    showDesiredPlans(plans, true);
+    showPlans(plans, true);
   } else if (!timeButton && !studentButton) {
     const plans = document.getElementsByClassName('one-student 60-minutes');
-    showDesiredPlans(plans, true);
+    showPlans(plans, true);
   }
 };
 
@@ -101,9 +101,9 @@ const changePricingTable = () => {
   const isStudentButtonActive = document.getElementsByClassName('student-switcher-button')[0].classList.contains('student-switcher-button-active');
 
   const plans = document.getElementsByClassName('price-bundle-section');
-  hideUndesiredPlans(plans);
+  hidePlans(plans);
 
-  changeDesiredPlans(isTimeButtonActive, isStudentButtonActive);
+  changePlans(isTimeButtonActive, isStudentButtonActive);
 };
 
 changePricingTable();

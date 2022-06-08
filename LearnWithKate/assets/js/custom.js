@@ -39,7 +39,11 @@ const closeNavBar = () => {
 };
 
 const changeBGColor = (element, newColor) => {
-  element.style.backgroundColor = newColor;
+   if(element.style.backgroundColor !== newColor) {
+     element.style.backgroundColor = newColor;
+  } else {
+    return;
+  }
 };
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
@@ -72,7 +76,7 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'transparent');
   }
 
-  if(window.innerWidth < 991.98 && window.scrollY > 200) {
+  if(window.innerWidth < 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
   }
 });
