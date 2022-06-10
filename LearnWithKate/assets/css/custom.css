@@ -508,7 +508,7 @@ button.collapsed:visited {
 
   .book-a-lesson-btn {
     font-weight: bold;
-    font-size: 1.3rem;
+    /* font-size: 1.3rem; */
   }
 
   .flags {
