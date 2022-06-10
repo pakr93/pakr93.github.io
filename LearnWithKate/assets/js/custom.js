@@ -78,10 +78,12 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'white');
   } else {
     changeBGColor(navbar, 'transparent');
+    changeOpacity(navbar, 1.0);
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
+    changeOpacity(navbar, 0.0);
   }
 });
 
