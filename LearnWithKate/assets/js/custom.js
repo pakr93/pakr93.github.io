@@ -41,8 +41,12 @@ const closeNavBar = () => {
 const changeBGColor = (element, newColor) => {
    if(element.style.backgroundColor !== newColor) {
      element.style.backgroundColor = newColor;
-  } else {
-    return;
+  }
+};
+
+const changeOpacity = (element, newOpacity) => {
+  if(element.style.opacity !== newOpacity) {
+    element.style.opacity = newOpacity;
   }
 };
 
