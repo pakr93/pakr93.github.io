@@ -427,7 +427,6 @@ button.collapsed:visited {
     letter-spacing: 3px;
     width: 80%;
     margin: auto;
-    margin-top: 3rem;
   }
 
   .mobile {
@@ -456,16 +455,17 @@ button.collapsed:visited {
 
 @media (min-width: 991.98px) {
   .book-a-lesson-link {
+    position: fixed;
     align-items: flex-end;
-    height: 40px;
-    width: 400px;
-    position: absolute;
-    right: -167px;
-    top: -7px;
-    transform: rotate(45deg);
+    height: 60px;
+    width: 257px;
+    right: -105px;
+    top: 25%;
+    transform: rotate(90deg);
     z-index: 10;
     opacity: 1;
     animation: flash 3s ease infinite;
+    border-radius: 0 0 15px 15px;
   }
 
   .mobile {
@@ -502,20 +502,19 @@ button.collapsed:visited {
 }
 
   .book-a-lesson-link:hover {
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     transition: all 0.8s ease-in-out;
   }
 
   .book-a-lesson-btn {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .flags {
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: flex-end;
-    padding-right: 3rem;
+    align-items: center;
     height: 100%;
   }
 

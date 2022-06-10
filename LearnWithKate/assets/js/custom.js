@@ -10,6 +10,7 @@ const faq = document.getElementById('faq');
 const flagInANutshell = document.getElementById('language-flag-nutshell');
 
 const navItems = document.getElementsByClassName('nav-item');
+const navbarMobileFixed = document.getElementById('navbar-mobile-fixed');
 
 // mark today with a red border-top & red border-bottom to let the user know what day it is
 const tagTodayInOpeningHours = (day) => {
@@ -46,7 +47,7 @@ const changeBGColor = (element, newColor) => {
 
 const changeOpacity = (element, newOpacity) => {
   if(element.style.opacity !== newOpacity) {
-    element.style.opacity = newOpacity;
+    element.style.opacity = newOpacity.toString();
   }
 };
 
