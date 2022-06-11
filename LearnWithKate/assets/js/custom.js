@@ -10,7 +10,9 @@ const faq = document.getElementById('faq');
 const flagInANutshell = document.getElementById('language-flag-nutshell');
 
 const navItems = document.getElementsByClassName('nav-item');
-const navbarMobileFixed = document.getElementById('navbar-mobile-fixed');
+
+// represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
+let lastScrollY = 0;
 
 // mark today with a red border-top & red border-bottom to let the user know what day it is
 const tagTodayInOpeningHours = (day) => {
@@ -83,8 +85,14 @@ window.addEventListener('scroll', () => {
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 50) {
-    changeBGColor(navbar, 'white');
-    // changeOpacity(navbar, 0.0);
+    // if the user scrolls up, show the navbar, else hide the navbar
+    if(lastScrollY > window.scrollY) {
+      changeBGColor(navbar, 'white');
+      changeOpacity(navbar, 1.0);
+    } else {
+      changeOpacity(navbar, 0.0);
+    }
+    lastScrollY = window.scrollY;
   }
 });
 
