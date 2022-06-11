@@ -84,7 +84,7 @@ window.addEventListener('scroll', () => {
 
   if(window.innerWidth < 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
-    changeOpacity(navbar, 0.0);
+    // changeOpacity(navbar, 0.0);
   }
 });
 

@@ -519,9 +519,9 @@ button.collapsed:visited {
   }
 
   .flag {
-    margin-bottom: 2rem;
-    width: 100px;
-    height: 100px;
+    margin: 1rem auto;
+    width: 125px;
+    height: 125px;
   }
 
   .switches {
@@ -534,10 +534,6 @@ button.collapsed:visited {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
-  .flag:first-child {
-    margin-top: 2rem;
   }
 
   .rotator-fs {
