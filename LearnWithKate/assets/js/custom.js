@@ -8,6 +8,7 @@ const pricing = document.getElementById('pricing');
 const faq = document.getElementById('faq');
 
 const flagInANutshell = document.getElementById('language-flag-nutshell');
+const bookALesson = document.getElementById('book-a-lesson');
 
 const navItems = document.getElementsByClassName('nav-item');
 
@@ -84,7 +85,7 @@ window.addEventListener('scroll', () => {
     changeOpacity(navbar, 1.0);
   }
 
-  if(window.innerWidth < 991.98 && window.scrollY > 50) {
+  if(window.innerWidth < 991.98 && window.scrollY > 200) {
     // if the user scrolls up, show the navbar, else hide the navbar
     if(lastScrollY > window.scrollY) {
       changeBGColor(navbar, 'white');

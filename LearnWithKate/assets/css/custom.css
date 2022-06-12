@@ -174,7 +174,7 @@ p {
   left: 45%;
 }
 
-.time-switcher-butto-inactive,
+.time-switcher-button-inactive,
 .student-switcher-button-inactive {
   right: 45%;
 }
@@ -184,7 +184,12 @@ p {
   flex-flow: column nowrap;
 }
 
+.pricing-cards {
+  flex-flow: row nowrap;
+}
+
 .pricing-card {
+  width: 33%;
   max-width: 350px;
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -207,12 +212,12 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   opacity: 0.8;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-image: url('../img/photos/Dreamcatcher2.webp');
@@ -423,6 +428,10 @@ button.collapsed:visited {
     margin-top: 4rem;
   }
 
+  #book-a-lesson {
+    display: none;
+  }
+
   .slogan {
     letter-spacing: 3px;
     width: 80%;
@@ -462,10 +471,17 @@ button.collapsed:visited {
     right: -105px;
     top: 25%;
     transform: rotate(90deg);
-    z-index: 10;
+    z-index: 99;
     opacity: 1;
     animation: flash 3s ease infinite;
     border-radius: 0 0 15px 15px;
+  }
+
+  .pricing-cards {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
   .mobile {

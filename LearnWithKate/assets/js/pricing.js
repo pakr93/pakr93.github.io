@@ -1,37 +1,3 @@
-// round down to the nearest 10
-const roundDown = (price) => {
-  return Math.floor(price / 100) * 100;
-}
-
-// change a price of a single bundle item
-const changePrice = (prices, index, newPrice) => {
-  prices[index].children[0].innerHTML = `<span><span class='display-2 ff-jos-bold'>${newPrice}</span> CZK</span>`;
-};
-
-// change the prices of the whole bundle
-const changeBundlePrices = (prices, indexStart, indexEnd, bundleNr, initialPrices, discount) => {
-  const numberOfBundlePrices = 4;
-  let counter = 0,
-    index = indexStart;
-
-  while (index <= indexEnd || counter < numberOfBundlePrices) {
-    changePrice(prices, index, roundDown(bundleNr * initialPrices[counter] * ((100 - discount) / 100)));
-    index++;
-    counter++;
-  }
-};
-
-const updateBundlePrices = () => {
-  // prices for 1 bundle -> 1 student 60 minutes, 2-3 students 60 minutes, 1 student 90 minutes, 2-3 students 90 minutes
-  const initialPrices = [3500, 3200, 5250, 4950];
-  const discount = [0, 3, 7];
-  const prices = document.getElementsByClassName('price-bundle-section');
-
-  changeBundlePrices(prices, 4, 7, 3, initialPrices, discount[1]);
-  changeBundlePrices(prices, 8, 11, 8, initialPrices, discount[2]);
-};
-
-updateBundlePrices();
 
 const switchButton = buttonClassName => {
   const button = document.getElementsByClassName(buttonClassName);
