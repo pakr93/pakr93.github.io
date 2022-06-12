@@ -142,6 +142,10 @@ p {
   margin-bottom: 1rem;
 }
 
+.pricing-wrapper .card-body {
+  margin: 0;
+}
+
 .switcher p,
 .switcher p {
   font-size: 1rem;
@@ -185,11 +189,13 @@ p {
 }
 
 .pricing-cards {
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .pricing-card {
-  width: 33%;
+  width: 100%;
   max-width: 350px;
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -402,6 +408,7 @@ button.collapsed:visited {
 @media (min-width: 500px) {
   .logo-link .learn-logo {
   }
+
 
   .switcher {
     flex-flow: row nowrap;
