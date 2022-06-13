@@ -54,6 +54,15 @@ const changeOpacity = (element, newOpacity) => {
   }
 };
 
+const hideElement = (element, isHidden) => {
+    if(isHidden) {
+      element.style.display = 'none';
+    } else {
+      element.style.display = 'flex';
+    }
+};
+
+
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
 const showPositionInNavbar = (element, navItemIndex) => {
   const {
@@ -80,6 +89,12 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   if(window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
+
+    if(window.scrollY > home.getBoundingClientRect().bottom + 250) {
+      hideElement(bookALesson, true);
+    } else {
+      hideElement(bookALesson, false);
+    }
   } else {
     changeBGColor(navbar, 'transparent');
     changeOpacity(navbar, 1.0);
@@ -93,6 +108,7 @@ window.addEventListener('scroll', () => {
     } else {
       changeOpacity(navbar, 0.0);
     }
+
     lastScrollY = window.scrollY;
   }
 });

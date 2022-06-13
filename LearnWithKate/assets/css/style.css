@@ -6193,7 +6193,7 @@ textarea.form-control.is-invalid {
   max-width: 100%;
   color: #fff;
   visibility: hidden;
-  background-color: #1e2228;
+  background-color: white;
   background-clip: padding-box;
   outline: 0;
   box-shadow: none;

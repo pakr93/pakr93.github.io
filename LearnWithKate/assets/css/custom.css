@@ -450,7 +450,7 @@ button.collapsed:visited {
   }
 
   .desktop {
-    display: none;
+    display: none !important;
   }
 
   .section {
