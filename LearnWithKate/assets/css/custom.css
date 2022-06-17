@@ -227,7 +227,10 @@ p {
   background-position: center;
   background-attachment: fixed;
   background-image: url('../img/photos/Dreamcatcher2.webp');
-  filter:brightness(35%);
+}
+
+.background-filter {
+  filter: brightness(35%);
 }
 
 .rotator-fs {
