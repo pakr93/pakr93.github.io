@@ -15,6 +15,19 @@ const navItems = document.getElementsByClassName('nav-item');
 // represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
 let lastScrollY = 0;
 
+const animateFlags = () => {
+  const flagNames = ['Czech', 'French', 'US'];
+  let counter = 0;
+
+  setInterval(() => {
+    if(counter > flagNames.length - 1) {
+      counter = 0;
+    }
+    const currentFlag = flagNames[counter++];
+    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
+  }, 1.5 * 1000); // change the flags in an interval
+};
+
 // mark today with a red border-top & red border-bottom to let the user know what day it is
 const tagTodayInOpeningHours = (day) => {
   // list of all days in the week
@@ -61,7 +74,6 @@ const hideElement = (element, isHidden) => {
       element.style.display = 'flex';
     }
 };
-
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
 const showPositionInNavbar = (element, navItemIndex) => {
@@ -112,18 +124,5 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
   }
 });
-
-const animateFlags = () => {
-  const flagNames = ['Czech', 'French', 'US'];
-  let counter = 0;
-
-  setInterval(() => {
-    if(counter > flagNames.length - 1) {
-      counter = 0;
-    }
-    const currentFlag = flagNames[counter++];
-    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
-  }, 1.5 * 1000); // change the flags in an interval
-};
 
 animateFlags();

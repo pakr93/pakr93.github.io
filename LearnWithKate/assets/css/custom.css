@@ -304,6 +304,14 @@ p {
   /* max-width: 50ch; */
 }
 
+.basic-info {
+  border-left: 5px solid var(--custom-color-primary);
+  background-color: #e1f6f0;
+  padding: 0.5rem;
+  color: var(--bs-body-color) !important;
+  max-width: 80%;
+}
+
 .table tr:nth-child(odd) {
   background-color: #fef6f5;
 }
@@ -485,6 +493,10 @@ button.collapsed:visited {
     opacity: 1;
     animation: flash 3s ease infinite;
     border-radius: 0 0 15px 15px;
+  }
+
+  .basic-info {
+    max-width: 50%;
   }
 
   .pricing-cards {
