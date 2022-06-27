@@ -138,8 +138,6 @@ p {
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
 }
 
 .pricing-wrapper .card-body {
@@ -417,9 +415,6 @@ button.collapsed:visited {
 }
 
 @media (min-width: 500px) {
-  .logo-link .learn-logo {
-  }
-
 
   .switcher {
     flex-flow: row nowrap;
@@ -456,6 +451,10 @@ button.collapsed:visited {
     margin: auto;
   }
 
+  .switcher:first-child {
+    margin-bottom: 1rem;
+  }
+
   .mobile {
     display: block;
   }
@@ -477,6 +476,10 @@ button.collapsed:visited {
   .navbar-nav .nav-item > .nav-link {
     font-size: 1rem;
     color: #aab0bc !important;
+  }
+
+  .scale {
+    transform: scale(1.0);
   }
 }
 
