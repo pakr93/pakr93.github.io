@@ -6,6 +6,7 @@ const howItWorks = document.getElementById('how-it-works');
 const testimonials = document.getElementById('testimonials');
 const pricing = document.getElementById('pricing');
 const faq = document.getElementById('faq');
+const loadingBar = document.getElementById('loading-bar');
 
 const flagInANutshell = document.getElementById('language-flag-nutshell');
 const bookALesson = document.getElementById('book-a-lesson');
@@ -77,6 +78,10 @@ const hideElement = (element, isHidden) => {
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
 const showPositionInNavbar = (element, navItemIndex) => {
+  if(!element) {
+    return;
+  }
+
   const {
     top,
     bottom
@@ -89,6 +94,16 @@ const showPositionInNavbar = (element, navItemIndex) => {
   }
 };
 
+const changeLoadingBarWidth = () => {
+  const scrollY = window.scrollY; // current scroll position in Y axis
+  const totalHeight = document.body.scrollHeight; // total scroll height of the page in Y axis
+  const windowWidth = window.innerWidth; // total window width
+
+  const loadingBarWidth = (((scrollY / (totalHeight - 1000)) * windowWidth)); // - 1000 is for a bug fix when at the end of the page, the loading bar was not 100% width of the total window width
+  // set loading bar width based on Y-axis scroll position
+  loadingBar.style.width = loadingBarWidth.toString() + 'px';
+};
+
 window.addEventListener('scroll', () => {
   showPositionInNavbar(home, 0);
   showPositionInNavbar(aboutMe, 1);
@@ -96,11 +111,13 @@ window.addEventListener('scroll', () => {
   showPositionInNavbar(testimonials, 3);
   showPositionInNavbar(pricing, 4);
   showPositionInNavbar(faq, 5);
+  changeLoadingBarWidth();
 });
 
 window.addEventListener('scroll', () => {
   if(window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
+    hideElement(loadingBar, false);
 
     if(window.scrollY > home.getBoundingClientRect().bottom + 250) {
       hideElement(bookALesson, true);
@@ -110,10 +127,11 @@ window.addEventListener('scroll', () => {
   } else {
     changeBGColor(navbar, 'transparent');
     changeOpacity(navbar, 1.0);
+    hideElement(loadingBar, true);
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 200) {
-    // if the user scrolls up, show the navbar, else hide the navbar
+    // if the user scrolls up, show the navbar, else hide it
     if(lastScrollY > window.scrollY) {
       changeBGColor(navbar, 'white');
       changeOpacity(navbar, 1.0);
@@ -126,3 +144,4 @@ window.addEventListener('scroll', () => {
 });
 
 animateFlags();
+changeLoadingBarWidth();

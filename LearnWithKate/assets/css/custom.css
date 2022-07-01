@@ -29,10 +29,19 @@ p {
 
 #navbar {
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   z-index: 99;
   width: 100%;
+}
+
+#loading-bar {
+  position:fixed;
+  width: 0px;
+  top: 97px;
+  left: 0;
+  height: 6px;
+  z-index:999;
 }
 
 .bg-pale-orange {
@@ -91,6 +100,8 @@ p {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .logo-link .learn-logo {
