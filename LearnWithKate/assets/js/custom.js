@@ -117,7 +117,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   if(window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
-    hideElement(loadingBar, false);
+    // hideElement(loadingBar, false);
 
     if(window.scrollY > home.getBoundingClientRect().bottom + 250) {
       hideElement(bookALesson, true);
@@ -127,7 +127,7 @@ window.addEventListener('scroll', () => {
   } else {
     changeBGColor(navbar, 'transparent');
     changeOpacity(navbar, 1.0);
-    hideElement(loadingBar, true);
+    // hideElement(loadingBar, true);
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 200) {
@@ -135,8 +135,10 @@ window.addEventListener('scroll', () => {
     if(lastScrollY > window.scrollY) {
       changeBGColor(navbar, 'white');
       changeOpacity(navbar, 1.0);
+      loadingBar.style.top = '97px'; // move the loading bar 97 down
     } else {
       changeOpacity(navbar, 0.0);
+      loadingBar.style.top = '0px'; // put the loading bar to the top
     }
 
     lastScrollY = window.scrollY;
