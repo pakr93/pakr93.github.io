@@ -117,7 +117,6 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   if(window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
-    // hideElement(loadingBar, false);
 
     if(window.scrollY > home.getBoundingClientRect().bottom + 250) {
       hideElement(bookALesson, true);
