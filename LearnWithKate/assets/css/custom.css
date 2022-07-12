@@ -108,7 +108,7 @@ p {
 }
 
 .border-bottom-green {
-  border-bottom: 4px solid var(--custom-color-primary);
+  border-bottom: 4px  var(--custom-color-primary);
 }
 
 .logo-link {

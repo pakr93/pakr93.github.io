@@ -142,7 +142,6 @@ window.addEventListener('scroll', () => {
       changeOpacity(navbar, 0.0);
       loadingBar.style.top = '0px'; // put the loading bar to the top
     }
-
     lastScrollY = window.scrollY;
   }
 });
