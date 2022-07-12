@@ -14,18 +14,18 @@ html {
 
 /* custom scrollbar */
 html::-webkit-scrollbar {
-      width: 18px;
+  width: 16px;
 }
 
 /* background of the scroll bar track */
 html::-webkit-scrollbar-track {
-    background-color: var(--custom-color-dark);
+  background-color: var(--custom-color-dark);
 }
 
 /* background of the scrolling thumb */
 html::-webkit-scrollbar-thumb {
-    background: var(--custom-color-secondary);
-    border-radius: 20px;
+  background: var(--custom-color-secondary);
+  border-radius: 25px;
 }
 
 body {
@@ -52,12 +52,12 @@ p {
 }
 
 #loading-bar {
-  position:fixed;
+  position: fixed;
   width: 0px;
   top: 97px;
   left: 0;
   height: 6px;
-  z-index:999;
+  z-index: 999;
 }
 
 .bg-pale-orange {
@@ -84,7 +84,7 @@ p {
   font-weight: 700;
 }
 
-.navbar-nav .nav-item > .nav-link {
+.navbar-nav .nav-item>.nav-link {
   font-size: 0.75rem;
 }
 
@@ -442,7 +442,6 @@ button.collapsed:visited {
 }
 
 @media (min-width: 500px) {
-
   .switcher {
     flex-flow: row nowrap;
   }
@@ -500,7 +499,7 @@ button.collapsed:visited {
     margin: auto;
   }
 
-  .navbar-nav .nav-item > .nav-link {
+  .navbar-nav .nav-item>.nav-link {
     font-size: 1rem;
     color: #aab0bc !important;
   }
@@ -534,8 +533,8 @@ button.collapsed:visited {
   }
 
   .pricing-cards {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-flow: row wrap;
   }
@@ -558,20 +557,19 @@ button.collapsed:visited {
     transition: all 0.3s linear;
   }
 
-@keyframes flash {
+  @keyframes flash {
+    0% {
+      opacity: 1;
+    }
 
-  0% {
-    opacity: 1;
-  }
+    50% {
+      opacity: 0.7;
+    }
 
-  50% {
-    opacity: 0.7;
+    100% {
+      opacity: 1;
+    }
   }
-
-  100% {
-    opacity: 1;
-  }
-}
 
   .book-a-lesson-link:hover {
     transform: rotate(90deg);
