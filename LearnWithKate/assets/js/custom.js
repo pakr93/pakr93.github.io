@@ -13,6 +13,10 @@ const bookALesson = document.getElementById('book-a-lesson');
 
 const navItems = document.getElementsByClassName('nav-item');
 
+// represent the faq items - accordion1 is the left side, accordion2 is the right side
+const accordion1 = document.getElementById('accordion-1');
+const accordion2 = document.getElementById('accordion-2');
+
 // represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
 let lastScrollY = 0;
 
@@ -126,7 +130,6 @@ window.addEventListener('scroll', () => {
   } else {
     changeBGColor(navbar, 'transparent');
     changeOpacity(navbar, 1.0);
-    // hideElement(loadingBar, true);
   }
 
   if(window.innerWidth < 991.98 && window.scrollY > 200) {
@@ -143,6 +146,20 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
   }
 });
+
+ /**
+  Hides all inactive FAQ items so that only the lastly activated item is visible
+ */
+const hideInactiveItems = (list) => {
+  // hide all unused accordion items in the faq
+  for(const parent of list.children) {
+    parent.children[0].children[0].classList.add('collapsed');
+    parent.children[1].classList.remove('show');
+  }
+};
+
+accordion1.addEventListener('click', () => hideInactiveItems(accordion1));
+accordion2.addEventListener('click', () => hideInactiveItems(accordion2));
 
 animateFlags();
 changeLoadingBarWidth();
