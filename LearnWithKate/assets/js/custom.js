@@ -25,7 +25,7 @@ const animateFlags = () => {
   let counter = 0;
 
   setInterval(() => {
-    if(counter > flagNames.length - 1) {
+    if (counter > flagNames.length - 1) {
       counter = 0;
     }
     const currentFlag = flagNames[counter++];
@@ -56,33 +56,38 @@ const closeNavBar = () => {
   const navbarMobile = document.getElementById("navbar-mobile");
   const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
 
-  navbarMobile.classList.remove("show");
-  backdrop.classList.remove("show");
+  if (navbarMobile) {
+    navbarMobile.classList.remove("show");
+  }
+
+  if (backdrop) {
+    backdrop.classList.remove("show");
+  }
 };
 
 const changeBGColor = (element, newColor) => {
-   if(element.style.backgroundColor !== newColor) {
-     element.style.backgroundColor = newColor;
+  if (element.style.backgroundColor !== newColor) {
+    element.style.backgroundColor = newColor;
   }
 };
 
 const changeOpacity = (element, newOpacity) => {
-  if(element.style.opacity !== newOpacity) {
+  if (element.style.opacity !== newOpacity) {
     element.style.opacity = newOpacity.toString();
   }
 };
 
 const hideElement = (element, isHidden) => {
-    if(isHidden) {
-      element.style.display = 'none';
-    } else {
-      element.style.display = 'flex';
-    }
+  if (isHidden) {
+    element.style.display = 'none';
+  } else {
+    element.style.display = 'flex';
+  }
 };
 
 // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
 const showPositionInNavbar = (element, navItemIndex) => {
-  if(!element) {
+  if (!element) {
     return;
   }
 
@@ -119,10 +124,10 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  if(window.innerWidth >= 991.98 && window.scrollY > 50) {
+  if (window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
 
-    if(window.scrollY > home.getBoundingClientRect().bottom + 250) {
+    if (window.scrollY > home.getBoundingClientRect().bottom + 250) {
       hideElement(bookALesson, true);
     } else {
       hideElement(bookALesson, false);
@@ -132,9 +137,9 @@ window.addEventListener('scroll', () => {
     changeOpacity(navbar, 1.0);
   }
 
-  if(window.innerWidth < 991.98 && window.scrollY > 200) {
+  if (window.innerWidth < 991.98 && window.scrollY > 200) {
     // if the user scrolls up, show the navbar, else hide it
-    if(lastScrollY > window.scrollY) {
+    if (lastScrollY > window.scrollY) {
       changeBGColor(navbar, 'white');
       changeOpacity(navbar, 1.0);
       loadingBar.style.top = '97px'; // move the loading bar 97 down
@@ -146,12 +151,12 @@ window.addEventListener('scroll', () => {
   }
 });
 
- /**
-  Hides all inactive FAQ items so that only the lastly activated item is visible
- */
+/**
+ Hides all inactive FAQ items so that only the lastly activated item is visible
+*/
 const hideInactiveItems = (list) => {
   // hide all unused accordion items in the faq
-  for(const parent of list.children) {
+  for (const parent of list.children) {
     parent.children[0].children[0].classList.add('collapsed');
     parent.children[1].classList.remove('show');
   }
