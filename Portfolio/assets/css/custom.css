@@ -1,0 +1,9 @@
+
+.navbar-nav .nav-link a {
+  font-size: 1rem;
+}
+
+
+.navbar-nav .nav-link a:hover {
+  color: var(--bs-gray-400);
+}
