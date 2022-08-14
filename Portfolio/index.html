@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
+  <meta name="description"
+    content="An impressive and flawless site template that includes various UI elements and countless features, attractive ready-made blocks and rich pages, basically everything you need to create a unique and professional website.">
   <meta name="keywords" content="bootstrap 5, business, corporate, creative, gulp, marketing, minimal, modern, multipurpose, one page, responsive, saas, sass, seo, startup, html5 template, site template">
   <meta name="author" content="elemis">
   <title>Sandbox - Modern & Multipurpose Bootstrap 5 Template</title>
@@ -12,60 +14,31 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/colors/aqua.css">
   <link rel="stylesheet" href="./assets/css/custom.css">
+  <script src="./assets/js/plugins.js" defer></script>
+  <script src="./assets/js/theme.js" defer></script>
 </head>
+
 <body>
   <div class="content-wrapper">
     <header class="wrapper bg-gray">
       <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
-        <div class="container">
-          <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center">
+        <div class="container" id='header-container'>
+          <div class="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center mt-0">
             <div class="navbar-brand w-100">
               <a href="./index.html">
                 <img src="./assets/img/logo-dark.png" srcset="./assets/img/logo-dark@2x.png 2x" alt="Kraus Web Design Logo" />
               </a>
             </div>
-            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
-              <div class="offcanvas-header d-lg-none">
-                <h3 class="text-white fs-30 mb-0">Sandbox</h3>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
-                <ul class="navbar-nav">
-                  <li class="nav-link"><a href="./index.html">Home</a></li>
-                  <li class="nav-link"><a href="#">Projects</a></li>
-                  <li class="nav-link"><a href="#">Blog</a></li>
-                  <li class="nav-link"><a href="#">Blocks</a></li>
-                  <li class="nav-link"><a href="#">Documentation</a></li>
-                </ul>
-                <!-- /.navbar-nav -->
-                <div class="offcanvas-footer d-lg-none">
-                  <div>
-                    <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
-                    <br /> 00 (123) 456 78 90 <br />
-                    <!-- Social Media Icons mobile devices-->
-                    <nav class="nav social social-white mt-4">
-                      <a href="#"><i class="uil uil-twitter"></i></a>
-                      <a href="#"><i class="uil uil-facebook-f"></i></a>
-                      <a href="#"><i class="uil uil-dribbble"></i></a>
-                      <a href="#"><i class="uil uil-instagram"></i></a>
-                      <a href="#"><i class="uil uil-youtube"></i></a>
-                    </nav>
-                    <!-- /.social -->
-                  </div>
-                </div>
-                <!-- /.offcanvas-footer -->
-              </div>
-              <!-- /.offcanvas-body -->
-            </div>
             <!-- /.navbar-collapse -->
             <div class="navbar-other w-100 d-flex ms-auto">
               <ul class="navbar-nav flex-row align-items-center ms-auto">
                 <li class="nav-item">
-                  <nav class="nav social social-muted justify-content-end text-end">
+                  <nav id='contact-header' class="nav social social-muted align-items-center justify-content-center text-end">
                     <a href="#"><i class="uil uil-twitter"></i></a>
                     <a href="#"><i class="uil uil-facebook-f"></i></a>
                     <a href="#"><i class="uil uil-dribbble"></i></a>
                     <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill my-2 contact-me-btn-desktop">CONTACT US</a>
                   </nav>
                   <!-- /.social -->
                 </li>
@@ -78,21 +51,56 @@
             <!-- /.navbar-other -->
           </div>
           <!-- /.navbar-collapse-wrapper -->
+          <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+            <div class="offcanvas-header d-lg-none">
+              <h3 class="text-white fs-30 mb-0">Sandbox</h3>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100 mx-auto">
+              <ul class="navbar-nav">
+                <li class="nav-link"><a href="./index.html">Home</a></li>
+                <li class="nav-link"><a href="#">What We Do</a></li>
+                <li class="nav-link"><a href="#">Projects</a></li>
+                <li class="nav-link"><a href="#">How It Works</a></li>
+                <li class="nav-link"><a href="#">Testimonials</a></li>
+                <li class="nav-link"><a href="#">Pricing</a></li>
+                <li class="nav-link"><a href="#">FAQ</a></li>
+              </ul>
+              <!-- /.navbar-nav -->
+              <div class="offcanvas-footer d-lg-none">
+                <div>
+                  <a href="mailto:first.last@email.com" class="link-inverse">info@email.com</a>
+                  <br /> 00 (123) 456 78 90 <br />
+                  <!-- Social Media Icons mobile devices-->
+                  <nav class="nav social social-white mt-4">
+                    <a href="#"><i class="uil uil-twitter"></i></a>
+                    <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    <a href="#"><i class="uil uil-dribbble"></i></a>
+                    <a href="#"><i class="uil uil-instagram"></i></a>
+                    <a href="#"><i class="uil uil-youtube"></i></a>
+                    <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill my-2 contact-me-btn-mobile">CONTACT US</a>
+                  </nav>
+                  <!-- /.social -->
+                </div>
+              </div>
+              <!-- /.offcanvas-footer -->
+            </div>
+            <!-- /.offcanvas-body -->
+          </div>
         </div>
         <!-- /.container -->
       </nav>
       <!-- /.navbar -->
     </header>
     <!-- /header -->
-    <section class="wrapper bg-gray">
-      <div class="container pt-12 pt-md-16 text-center">
+    <section class="wrapper image-wrapper bg-cover bg-image bg-xs-none bg-gray" data-image-src="./assets/img/photos/bg37.jpg">
+      <div class="container pt-17 pb-15 py-sm-17 py-xxl-20">
         <div class="row">
-          <div class="col-lg-8 col-xxl-7 mx-auto text-center" data-cues="slideInDown" data-group="page-title" data-delay="600">
-            <h2 class="fs-16 text-uppercase ls-xl text-dark mb-4">Hello! This is Sandbox</h2>
-            <h1 class="display-1 fs-58 mb-7">We bring rapid solutions for your business.</h1>
-            <div class="d-flex justify-content-center mb-5 mb-md-0" data-cues="slideInDown" data-group="page-title-buttons" data-delay="900">
-              <span><a href="#" class="btn btn-lg btn-primary rounded-pill me-2">Explore Now</a></span>
-              <span><a href="#" class="btn btn-lg btn-outline-primary rounded-pill">Contact Us</a></span>
+          <div class="col-sm-6 col-xxl-5 text-center text-sm-start" data-cues="slideInDown" data-group="page-title" data-interval="-200" data-delay="500">
+            <h2 class="display-1 fs-56 mb-4 mt-0 mt-lg-5 ls-xs pe-xl-5 pe-xxl-0">We create websites that bring more success to your business!</span></h2>
+            <p class="lead fs-23 lh-sm mb-7 pe-lg-5 pe-xl-5 pe-xxl-0">Our mission is to make your business more successful.</p>
+            <div class='main-buttons'><a href="#what-we-do" class="btn btn-lg btn-primary rounded">LEARN MORE</a>
+              <a href="#" class="btn btn-lg btn-outline-secondary rounded-pill">CONTACT US</a>
             </div>
           </div>
           <!--/column -->
@@ -100,48 +108,103 @@
         <!-- /.row -->
       </div>
       <!-- /.container -->
-      <figure class="position-absoute" style="bottom: 0; left: 0; z-index: 2;"><img src="./assets/img/photos/upper-background.jpg" alt="" /></figure>
+    </section>
+    <section class="wrapper bg-light">
+      <div class="container py-15 py-md-17">
+        <div class="row text-center">
+          <div class="col-md-10 col-lg-9 col-xxl-8 mx-auto">
+            <h2 id='what-we-do' class="display-6 text-uppercase text-muted mb-3">What We Do?</h2>
+            <h3 class="display-3 ls-sm mb-9 px-xl-11">The service we offer is specifically designed to meet your needs.</h3>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+        <div class="row gx-lg-8 gx-xl-12 gy-8">
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/telephone-3.svg" class="svg-inject icon-svg icon-svg-md text-blue me-5 mt-1" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">24/7 Support</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/shield.svg" class="svg-inject icon-svg icon-svg-md text-yellow me-5 mt-1" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">Secure Payments</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/cloud-computing-2.svg" class="svg-inject icon-svg icon-svg-md text-orange me-5" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">Daily Updates</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/analytics.svg" class="svg-inject icon-svg icon-svg-md text-pink me-5" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">Market Research</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/chat-2.svg" class="svg-inject icon-svg icon-svg-md text-green me-5 mt-1" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">Social Engagement</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+          <div class="col-md-6 col-lg-4">
+            <div class="d-flex flex-row">
+              <div>
+                <img src="./assets/img/icons/lineal/megaphone.svg" class="svg-inject icon-svg icon-svg-md text-purple me-5 mt-1" alt="" />
+              </div>
+              <div>
+                <h4 class="fs-20 ls-sm">Content Marketing</h4>
+                <p class="mb-0">Duis mollis gravida commodo id luctus erat porttitor ligula, eget lacinia odio sem aget elit nullam quis risus eget.</p>
+              </div>
+            </div>
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
     </section>
     <!-- /section -->
     <section class="wrapper bg-gray">
       <div class="container">
         <div class="card shadow-none my-n13 my-md-n15 my-lg-n17">
           <div class="card-body py-12 py-lg-14 px-lg-11 py-xl-16 px-xl-13">
-            <div class="row text-center">
-              <div class="col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">What We Do?</h2>
-                <h3 class="display-4 mb-9">The service we offer is specifically designed to meet your needs.</h3>
-              </div>
-              <!-- /column -->
-            </div>
-            <!-- /.row -->
-            <div class="row gx-md-8 gx-xl-12 gy-8 mb-14 mb-md-16 text-center">
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-purple disabled mb-5"> <i class="uil uil-phone-volume"></i> </div>
-                <h4>24/7 Support</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-purple">Learn More</a>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-green disabled mb-5"> <i class="uil uil-shield-exclamation"></i> </div>
-                <h4>Secure Payments</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-green">Learn More</a>
-              </div>
-              <!--/column -->
-              <div class="col-md-4">
-                <div class="icon btn btn-block btn-lg btn-soft-orange disabled mb-5"> <i class="uil uil-laptop-cloud"></i> </div>
-                <h4>Daily Updates</h4>
-                <p class="mb-3">Fusce dapibus tellus cursus porta tortor condimentum euismod massa justo vehicula sit amet et risus cras.</p>
-                <a href="#" class="more hover link-orange">Learn More</a>
-              </div>
-              <!--/column -->
-            </div>
-            <!--/.row -->
             <div class="row gx-md-8 gx-xl-12 gy-10 align-items-center">
+              <h2 class="display-6 text-uppercase text-muted mb-3 text-center">Our Strategy</h2>
               <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Our Strategy</h2>
                 <h3 class="display-4 mb-5">3 working steps to organize our business projects.</h3>
                 <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod eget. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus.</p>
                 <p class="mb-6">Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta felis euismod semper. Aenean lacinia bibendum consectetur.</p>
@@ -182,8 +245,8 @@
             <!--/.row -->
             <hr class="my-14 my-md-16" />
             <div class="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0 mb-11 align-items-end">
+              <h2 class="display-6 text-uppercase text-muted mb-3 text-center">Company Facts</h2>
               <div class="col-lg-4">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Company Facts</h2>
                 <h3 class="display-4 mb-0">We are proud of our works</h3>
               </div>
               <!-- /column -->
@@ -272,7 +335,7 @@
             <!-- /.card -->
             <div class="row text-center">
               <div class="col-lg-10 col-xl-10 col-xxl-8 mx-auto">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Case Studies</h2>
+                <h2 class="display-6 text-uppercase text-muted mb-3">Case Studies</h2>
                 <h3 class="display-4 mb-9">Check out some of our awesome projects with creative ideas and great design.</h3>
               </div>
               <!-- /column -->
@@ -385,7 +448,7 @@
               </div>
               <!--/column -->
               <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Our Team</h2>
+                <h2 class="display-6 text-uppercase text-muted mb-3">Our Team</h2>
                 <h3 class="display-4 mb-5">Save your time by choosing our professional team.</h3>
                 <p class="mb-6">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
                 <div class="row gy-3 gx-xl-8">
@@ -415,7 +478,7 @@
               </div>
               <!--/column -->
               <div class="col-lg-6">
-                <h2 class="fs-15 text-uppercase text-muted mb-3">Why Choose Us?</h2>
+                <h2 class="display-6 text-uppercase text-muted mb-3">Why Choose Us?</h2>
                 <h3 class="display-4 mb-7">A few reasons why our valued customers choose us.</h3>
                 <div class="accordion accordion-wrapper" id="accordionExample">
                   <div class="card plain accordion-item">
@@ -563,8 +626,6 @@
       <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
     </svg>
   </div>
-  <script src="./assets/js/plugins.js"></script>
-  <script src="./assets/js/theme.js"></script>
 </body>
 
 </html>

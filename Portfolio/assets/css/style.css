@@ -26431,13 +26431,14 @@ button:focus {
   border-color: #aab0bc;
 }
 .btn-outline-secondary {
-  color: #aab0bc;
-  border-color: #aab0bc;
+  color: #e2626b;
+  border-color: #e2626b;
+  font-weight:bold;
 }
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #aab0bc;
-  border-color: #aab0bc;
+  background-color: #e2626b;
+  border-color: #e2626b;
 }
 .btn-check:focus+.btn-outline-secondary,
 .btn-outline-secondary:focus {
@@ -27318,7 +27319,7 @@ button:focus {
 }
 .social a:not(.btn-circle) {
   font-size: 1rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.35s ease-in-out;
   transform: translateY(0);
 }
 @media (prefers-reduced-motion: reduce) {

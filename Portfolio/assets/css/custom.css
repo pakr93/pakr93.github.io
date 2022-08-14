@@ -1,9 +1,80 @@
-
-.navbar-nav .nav-link a {
-  font-size: 1rem;
+html {
+  scroll-behavior: smooth;
 }
 
+.navbar-nav .nav-link {
+  padding: 0.3rem !important;
+}
+
+.navbar-nav .nav-link a {
+  color: var(--bs-aqua);
+  font-size: 1.25rem;
+  transition: color 300ms linear;
+}
 
 .navbar-nav .nav-link a:hover {
-  color: var(--bs-gray-400);
+  color: grey !important;
+}
+
+.main-buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.main-buttons>a:first-child {
+  margin-bottom: 0.5rem;
+}
+
+.contact-me-btn-desktop {
+  display: none;
+}
+
+.contact-me-btn-mobile {
+  display: block;
+}
+
+.navbar-nav .nav-link a:hover {
+  color: var(--bs-aqua);
+}
+
+@media (max-width: 576px) {
+  .main-buttons {
+    align-items: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .main-buttons {
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 991.98px) {
+  #header-container {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0 0.65rem !important;
+    margin: 1.5rem auto;
+  }
+
+  .main-buttons {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .contact-me-btn-desktop {
+    display: block;
+  }
+
+  .contact-me-btn-mobile {
+    display: none;
+  }
+
+  .main-buttons>a:first-child {
+    margin-right: 0.5rem;
+  }
 }
