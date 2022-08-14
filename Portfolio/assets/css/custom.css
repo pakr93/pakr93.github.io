@@ -30,10 +30,6 @@ html {
   display: none;
 }
 
-.contact-me-btn-mobile {
-  display: block;
-}
-
 .navbar-nav .nav-link a:hover {
   color: var(--bs-aqua);
 }
@@ -68,10 +64,6 @@ html {
 
   .contact-me-btn-desktop {
     display: block;
-  }
-
-  .contact-me-btn-mobile {
-    display: none;
   }
 
   .main-buttons>a:first-child {
