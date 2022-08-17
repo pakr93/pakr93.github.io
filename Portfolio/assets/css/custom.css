@@ -28,6 +28,7 @@ html {
 
 .main-buttons {
   display: flex;
+  margin-top: 1rem;
   flex-flow: column nowrap;
   align-items: center;
 }
