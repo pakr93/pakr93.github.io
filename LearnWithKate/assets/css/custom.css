@@ -2,6 +2,8 @@
   --custom-color-primary: #45c4a0;
   --custom-color-secondary: #f78b77;
   --custom-color-dark: #006b4c;
+  --custom-color-gold: #e9b52d;
+  --custom-color-turquoise: #54dedc;
 }
 
 html {
@@ -26,6 +28,19 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
   background: var(--custom-color-secondary);
   border-radius: 25px;
+}
+
+/*  Colors */
+.text-turquoise {
+  color: var(--custom-color-turquoise) !important;
+}
+
+.text-gold {
+  color: var(--custom-color-gold) !important;
+}
+
+.text-black {
+  color: black !important;
 }
 
 body {
@@ -85,7 +100,7 @@ p {
 }
 
 .navbar-nav .nav-item>.nav-link {
-  font-size: 0.75rem;
+  font-size: 0.95rem;
 }
 
 .nav-item .nav-link-footer,
@@ -100,15 +115,15 @@ p {
 /* navbar link hover color */
 .nav-item .nav-link:hover,
 .nav-item .nav-link-footer:hover {
-  color: var(--custom-color-primary) !important;
+  color: var(--custom-color-gold) !important;
 }
 
 .nav-item {
   border-bottom: 4px solid transparent;
 }
 
-.border-bottom-green {
-  border-bottom: 4px solid var(--custom-color-primary);
+.border-bottom-gold {
+  border-bottom: 4px solid var(--custom-color-gold) !important;
 }
 
 .logo-link {
@@ -130,6 +145,18 @@ p {
   color: var(--custom-color-primary);
   padding: 0;
   margin: 0;
+}
+
+#language-dropdown {
+
+}
+
+#language-dropdown a {
+  color: var(--custom-color-turquoise) !important;
+}
+
+#language-dropdown a:hover {
+  color: var(--custom-color-gold) !important;
 }
 
 .info-buttons {
@@ -238,7 +265,7 @@ p {
   display: none;
 }
 
-#background-image-top {
+.background-image {
   display: block;
   position: absolute;
   top: 0;
@@ -251,6 +278,10 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-image: url('../img/photos/Dreamcatcher1.webp');
+}
+
+.bg-image-bottom {
   background-image: url('../img/photos/Dreamcatcher2.webp');
 }
 
@@ -601,7 +632,7 @@ button.collapsed:visited {
     align-items: center;
   }
 
-  #background-image-top {
+  .background-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -632,7 +663,6 @@ button.collapsed:visited {
   .nav-link {
     /* padding: 0 0.5rem !important; */
     font-size: 0.8rem;
-    margin: 0 !important;
     border-bottom: 4px solid transparent;
   }
 

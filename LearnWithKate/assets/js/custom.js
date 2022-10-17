@@ -1,4 +1,5 @@
 const navbar = document.getElementById('navbar');
+const navbarNavLinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
 
 const home = document.getElementById('home');
 const aboutMe = document.getElementById('about-me');
@@ -71,6 +72,18 @@ const changeBGColor = (element, newColor) => {
   }
 };
 
+/** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
+const changeTextColor = (elements, prevColor, newColor) => {
+  for(const child of elements) {
+    // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
+    if(child.classList.contains(newColor)) {
+      return;
+    }
+    child.classList.remove(prevColor); // remove the old color class
+    child.classList.add(newColor); // add a new color class
+  }
+};
+
 const changeOpacity = (element, newOpacity) => {
   if (element.style.opacity !== newOpacity) {
     element.style.opacity = newOpacity.toString();
@@ -97,9 +110,9 @@ const showPositionInNavbar = (element, navItemIndex) => {
   } = element.getBoundingClientRect();
 
   if (top <= 250 && bottom >= 250) {
-    navItems[navItemIndex].classList.add('border-bottom-green');
+    navItems[navItemIndex].classList.add('border-bottom-gold');
   } else {
-    navItems[navItemIndex].classList.remove('border-bottom-green');
+    navItems[navItemIndex].classList.remove('border-bottom-gold');
   }
 };
 
@@ -126,6 +139,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('scroll', () => {
   if (window.innerWidth >= 991.98 && window.scrollY > 50) {
     changeBGColor(navbar, 'white');
+    changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
     if (window.scrollY > home.getBoundingClientRect().bottom + 250) {
       hideElement(bookALesson, true);
@@ -134,6 +148,7 @@ window.addEventListener('scroll', () => {
     }
   } else {
     changeBGColor(navbar, 'transparent');
+    changeTextColor(navbarNavLinks, 'text-black', 'text-white');
     changeOpacity(navbar, 1.0);
   }
 
@@ -141,6 +156,7 @@ window.addEventListener('scroll', () => {
     // if the user scrolls up, show the navbar, else hide it
     if (lastScrollY > window.scrollY) {
       changeBGColor(navbar, 'white');
+      changeTextColor(navbarNavLinks, 'text-black', 'text-white');
       changeOpacity(navbar, 1.0);
       loadingBar.style.top = '97px'; // move the loading bar 97 down
     } else {

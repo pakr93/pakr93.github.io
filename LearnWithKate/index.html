@@ -40,28 +40,26 @@
               </div>
               <div style="margin:auto; opacity: 1.0" class="offcanvas-body ms-lg-auto d-flex flex-column">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./about-me.html">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#faq">FAQ</a></li>
                   <li class="nav-item"><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn btn-green btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></li>
-                  <li class="nav-item"><a href='#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
+                  <li class="nav-item"><a href='#contact-me' class="contact-me-btn btn btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
                 </ul>
               </div>
             </div>
             <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto">
-              <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
-                <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
-                  <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
+              <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini mb-1">
+                <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
+                  <a class="nav-link dropdown-item dropdown-toggle m-0" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EN
                   </a>
-                  <ul class="dropdown-menu px-2 py-1 bg-ash rounded-0">
-                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
-                      <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
-                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
-                      </a>
+                  <ul class="dropdown-menu text-center p-0 bg-ash rounded-0">
+                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: center;'>
+                      <a class="nav-link dropdown-item px-0" style='width:10px' href="./cs/index.html">CS</a>
                     </li>
                   </ul>
                 </li>
@@ -88,32 +86,20 @@
     <div class=" container ">
       <div style=" z-index: 1; overflow: hidden; " class=" card bg-soft-green rounded-0">
         <div class="position-relative card-body p-md-10 py-xl-10 px-xl-15 pe-lg-0 pe-xl-0 first-section" id='home'>
-          <div class='background-filter' id="background-image-top"></div>
+          <div class='background-filter background-image'></div>
           <div class=" row gx-lg-8 gx-xl-0 gy-10 align-items-center mt-6 position-relative">
-            <a id='book-a-lesson' class="bg-green book-a-lesson-link desktop" target="_blank" href="https://learnwithkate.setmore.com/"><span class="book-a-lesson-btn text-white ff-jos-bold">BOOK A LESSON</span></a>
-            <div class=" col-lg-5 position-relative order-2 ">
-              <div class=" row gx-md-5 gy-5 position-relative ">
-                <!-- /column -->
-                <div class="col-12 flags">
-                  <img class="img-fluid shadow flag" src="./assets/img/flags/Czech.svg" alt="an image of a Czech flag " />
-                  <img class="img-fluid shadow flag" src="./assets/img/flags/US.svg" alt="an image of an US flag " />
-                  <img class="img-fluid shadow flag" src="./assets/img/flags/French.svg" alt="an image of a French flag" />
-                </div>
-                <!-- /column -->
-              </div>
-              <!-- /.row -->
-            </div>
+            <a id='book-a-lesson' style='border: 3px solid var(--custom-color-gold);' class="bg-white book-a-lesson-link desktop" target="_blank" href="https://learnwithkate.setmore.com/"><span class="book-a-lesson-btn text-turquoise ff-jos-bold">BOOK A LESSON</span></a>
             <div style='overflow: hidden;' class="col-lg-7 text-center text-lg-start order-1 mt-12 opacity-90" data-cues=" slideInDown " data-group=" page-title " data-delay=" 500 ">
               <div class='position-relative'>
                 <h4 class="text-white slogan ff-jos-bold">CATCH YOUR DREAM LANGUAGE</h4>
               </div>
               <h2 class=" text-white mt-8 ">Learn how to</h2>
-              <h1 id='rotator' class="rotator-fade rotator-fs display-1 text-green text-wrap w-100 ff-jos-bold">COMMUNICATE WITH CONFIDENCE,OVERCOME FEAR OF SPEAKING,MASTER ANY CONVERSATION</h1>
+              <h1 id='rotator' class="rotator-fade rotator-fs display-1 text-turquoise text-wrap w-100 ff-jos-bold">COMMUNICATE WITH CONFIDENCE,OVERCOME FEAR OF SPEAKING,MASTER ANY CONVERSATION</h1>
               <h3 class=" text-white mb-8 ">in your language of choice.</h3>
               <p id="brief-info" class=" lead fs-20 mb-12 px-4 ps-md-0 ps-lg-0 pe-md-4 pe-lg-4 pe-xxl-2 text-white">In the last <span style=" font-weight:700; ">7+ years</span>, I have taught
                 <span style=" font-weight: 700; ">90+ students</span> to communicate in
                 <span style=" font-weight: 700; ">Czech</span>, <span style=" font-weight:
-    700; ">English</span>, or <span style=" font-weight: 700; ">French</span> language.
+    700; ">English</span>, or <span style=" font-weight: 700; ">French</span>.
               </p>
               <div class=" d-flex justify-content-center justify-content-lg-start justify-content-center info-buttons " data-cues="
     slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
@@ -1134,7 +1120,7 @@
   <!-- /section -->
   <footer class="bg-soft-green">
     <section class="position-relative wrapper image-wrapper no-overlay bg-auto bg-image text-center bg-map bg-soft-green section py-16" data-image-src="assets/img/photos/map.webp">
-      <div class='background-filter' id="background-image-top"></div>
+      <div class='background-filter background-image bg-image-bottom' ></div>
       <div class="container py-0">
         <div class="row">
           <div class="col-lg-10 col-xl-10 mx-auto" style='text-transform: uppercase;'>
