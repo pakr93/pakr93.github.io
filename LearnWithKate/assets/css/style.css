@@ -29703,9 +29703,9 @@ button:focus {
   transform: translateX(-50%) !important;
   top: 100% !important;
   margin-top: 0.5rem !important;
-  padding: 0.65rem 0;
+  /* padding: 0.65rem 0; */
   position: absolute;
-  min-width: 4rem;
+  min-width: 2.5rem;
 }
 .share-dropdown .dropdown-menu {
   min-width: 6.25rem;
