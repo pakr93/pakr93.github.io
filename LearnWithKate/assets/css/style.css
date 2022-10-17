@@ -22332,7 +22332,7 @@ blockquote.text-center.icon-top:before {
   color: #f78b77;
 }
 .icon-list.bullet-orange.bullet-bg i {
-  background-color: #f78b77;
+  background-color:var(--custom-color-gold);
   color: #fff;
 }
 .icon-list.bullet-bg i[class*="bullet-orange"] {
