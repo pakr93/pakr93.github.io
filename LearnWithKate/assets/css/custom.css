@@ -4,6 +4,7 @@
   --custom-color-dark: #006b4c;
   --custom-color-gold: #e9b52d;
   --custom-color-turquoise: #54dedc;
+  --custom-color-black: #191d21;
 }
 
 html {
@@ -88,6 +89,18 @@ p {
 
 #contact-me {
   margin: 0 auto !important;
+}
+
+.contact-me-btn {
+  color: #fff !important;
+  background-color: var(--custom-color-black) !important;
+  border: 2px solid var(--custom-color-gold) !important;
+}
+
+.secondary-btn {
+  background-color: #fff !important;
+  color: var(--custom-color-black) !important;
+  border: 2px solid var(--custom-color-gold) !important;
 }
 
 .show {
