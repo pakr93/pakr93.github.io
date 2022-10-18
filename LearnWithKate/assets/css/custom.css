@@ -51,7 +51,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .bg-white {
-  background-color: : var(--custom-color-white) !important;
+  background-color: var(--custom-color-white) !important;
 }
 
 .border-gold {
@@ -68,13 +68,7 @@ body {
   padding: 0;
 }
 
-a:hover {
-  color: var(--custom-color-primary);
-}
-
 p {
-  /* max-width: 50ch; */
-  /* margin-right: auto; */
   margin-bottom: 0.75rem;
 }
 
@@ -111,13 +105,13 @@ p {
 }
 
 .contact-me-btn {
-  color: #fff !important;
+  color: var(--custom-color-white) !important;
   background-color: var(--custom-color-black) !important;
   border: 2px solid var(--custom-color-gold) !important;
 }
 
 .secondary-btn {
-  background-color: #fff !important;
+  background-color: var(--custom-color-white) !important;
   color: var(--custom-color-black) !important;
   border: 2px solid var(--custom-color-gold) !important;
 }
@@ -136,7 +130,7 @@ p {
 }
 
 .nav-item .nav-link-footer,
-.nav-item .nav-item-footer {
+.nav-item-footer .nav-link-footer {
   color: black !important;
 }
 
@@ -146,7 +140,11 @@ p {
 
 /* navbar link hover color */
 .nav-item .nav-link:hover,
-.nav-item .nav-link-footer:hover {
+.nav-item .nav-link:active,
+.nav-item .nav-link:focus,
+.nav-item-footer .nav-link-footer:hover,
+.nav-item-footer .nav-link-footer:active,
+.nav-item-footer .nav-link-footer:focus {
   color: var(--custom-color-gold) !important;
 }
 
@@ -527,9 +525,6 @@ button.collapsed:visited {
 
 /* mobile to desktop breakpoint */
 @media (max-width: 991.98px) {
-  .navbar-nav {
-    margin-top: 4rem;
-  }
 
   #book-a-lesson {
     display: none;
@@ -565,8 +560,14 @@ button.collapsed:visited {
 
   .navbar-nav .nav-item>.nav-link {
     font-size: 1rem;
-    color: #aab0bc !important;
+    color: var(--custom-color-black) !important;
   }
+
+  .navbar-nav .nav-item > .nav-link:hover,
+  .navbar-nav .nav-item > .nav-link:active,
+  .navbar-nav .nav-item > .nav-link:focus {
+     color: var(--custom-color-gold) !important;
+   }
 
   .scale {
     transform: scale(1.0);

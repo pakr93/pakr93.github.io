@@ -29804,10 +29804,6 @@ button:focus {
   .nav-tabs.d-flex:not(.nav-pills) {
     justify-content: flex-start !important;
   }
-  /* mobile to desktop breakpoint */
-  .navbar-nav {
-    margin-top: 4rem;
-  }
 }
 @media (max-width: 767px) {
   .nav-tabs.nav-pills,
