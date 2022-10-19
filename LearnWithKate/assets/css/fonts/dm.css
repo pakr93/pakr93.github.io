@@ -1,23 +1,34 @@
 
 @font-face {
   font-family: "Poppins Regular";
-  src: url('../../fonts/Poppins-Regular.ttf');
+  src: url('../../fonts/Poppins/Poppins-Regular.ttf');
 }
 
 @font-face {
   font-family: "Poppins Bold";
-  src: url('../../fonts/Poppins-Bold.ttf');
+  src: url('../../fonts/Poppins/Poppins-Bold.ttf');
 }
 
  @font-face {
    font-family: "Josefin Regular";
-   src: url('../../fonts/JosefinSans-Regular.ttf');
+   src: url('../../fonts/JosefinSans/JosefinSans-Regular.ttf');
  }
 
  @font-face {
    font-family: "Josefin Bold";
-   src: url('../../fonts/JosefinSans-Bold.ttf');
+   src: url('../../fonts/JosefinSans/JosefinSans-Bold.ttf');
  }
+
+ @font-face {
+   font-family: "Merriweather Regular";
+   src: url('../../fonts/Merriweather/Merriweather-Regular.ttf');
+ }
+
+ @font-face {
+   font-family: "Merriweather Bold";
+   src: url('../../fonts/Merriweather/Merriweather-Bold.ttf');
+ }
+
 
 html {
   font-family: "Poppins Regular" !important;
@@ -29,6 +40,14 @@ html {
 
 .ff-jos-reg {
   font-family: "Josefin Regular" !important;
+}
+
+.ff-merriweather-reg {
+  font-family: "Merriweather Regular" !important;
+}
+
+.ff-merriweather-bold {
+  font-family: "Merriweather Bold" !important;
 }
 
 .counter-wrapper .counter,
