@@ -43,7 +43,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .text-black {
-  color: black !important;
+  color: var(--custom-color-black) !important;
 }
 
 .text-white {
@@ -86,7 +86,12 @@ p {
   top: 97px;
   left: 0;
   height: 6px;
-  z-index: 999;
+  z-index: 10;
+}
+
+#how-it-works-steps {
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .bg-pale-orange {
@@ -530,6 +535,15 @@ button.collapsed:visited {
     display: none;
   }
 
+  #how-it-works-steps {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #how-it-works-steps .step-info {
+    max-width: 50ch;
+  }
+
   .slogan {
     letter-spacing: 3px;
     width: 80%;
@@ -556,6 +570,7 @@ button.collapsed:visited {
 
   #brief-info {
     margin: auto;
+    font-size: 0.9rem;
   }
 
   .navbar-nav .nav-item>.nav-link {
@@ -591,6 +606,10 @@ button.collapsed:visited {
 
   #loading-bar {
     display: none;
+  }
+
+  #how-it-works-steps {
+    flex-direction: row;
   }
 
   .simple-note {
