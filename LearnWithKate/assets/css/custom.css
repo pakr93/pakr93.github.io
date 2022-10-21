@@ -1,5 +1,5 @@
 :root {
-  --custom-color-primary: #45c4a0;
+  --custom-color-primary: #e9b52d;
   --custom-color-secondary: #f78b77;
   --custom-color-dark: #006b4c;
   --custom-color-gold: #e9b52d;
@@ -96,6 +96,12 @@ p {
 #how-it-works-steps {
   display: flex;
   flex-flow: row nowrap;
+}
+
+.how-it-works-step-num {
+  color: var(--custom-color-black);
+  background: var(--custom-color-white);
+  border: 3.5px solid var(--custom-color-gold);
 }
 
 .bg-pale-orange {
@@ -402,9 +408,15 @@ p {
   /* max-width: 50ch; */
 }
 
+.text-highlight {
+  color: var(--custom-color-turquoise) !important;
+  font-weight: bold;
+}
+
 .simple-note {
-  border-left: 5px solid var(--custom-color-primary);
-  background-color: #e1f6f0;
+  /* border: 2px solid var(--custom-color-gold); */
+  border-left: 5px solid var(--custom-color-gold);
+  background-color: #f7f7f7;
   padding: 0.75rem;
   color: var(--bs-body-color) !important;
   max-width: 80%;
