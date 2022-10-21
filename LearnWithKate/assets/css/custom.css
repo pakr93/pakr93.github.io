@@ -1,7 +1,6 @@
 :root {
   --custom-color-primary: #e9b52d;
   --custom-color-secondary: #f78b77;
-  --custom-color-dark: #006b4c;
   --custom-color-gold: #e9b52d;
   --custom-color-turquoise: #54dedc;
   --custom-color-black: #191d21;
@@ -24,18 +23,22 @@ html::-webkit-scrollbar {
 
 /* background of the scroll bar track */
 html::-webkit-scrollbar-track {
-  background-color: var(--custom-color-dark);
+  background-color: var(--custom-color-black);
 }
 
 /* background of the scrolling thumb */
 html::-webkit-scrollbar-thumb {
-  background: var(--custom-color-secondary);
+  background: var(--custom-color-gold);
   border-radius: 25px;
 }
 
 /*  Colors */
 .text-turquoise {
   color: var(--custom-color-turquoise) !important;
+}
+
+.bg-turquoise {
+  background-color: var(--custom-color-turquoise) !important;
 }
 
 .text-gold {
@@ -99,13 +102,9 @@ p {
 }
 
 .how-it-works-step-num {
-  color: var(--custom-color-white);
-  background: var(--custom-color-black);
-  border: 3.5px solid var(--custom-color-gold);
-}
-
-.bg-pale-orange {
-  background-color: #f6c8a9 !important;
+  color: var(--custom-color-black);
+  background: var(--custom-color-white);
+  border: 2px solid var(--custom-color-gold);
 }
 
 .section {
@@ -274,7 +273,7 @@ p {
 .time-switcher-button-inactive,
 .student-switcher-button-active,
 .student-switcher-button-inactive {
-  transition: 0.2s linear;
+  transition: 100ms linear;
 }
 
 .time-switcher-button-active,
@@ -417,11 +416,10 @@ p {
 
 .text-highlight {
   color: var(--custom-color-turquoise) !important;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .simple-note {
-  /* border: 2px solid var(--custom-color-gold); */
   border-left: 5px solid var(--custom-color-gold);
   background-color: #f7f7f7;
   padding: 0.75rem;
@@ -479,10 +477,6 @@ p {
 .flag:hover {
   transform: scale(1.1);
   transition: transform 0.5s linear;
-}
-
-.bg-dark {
-  background-color: var(--custom-color-dark) !important;
 }
 
 button.collapsed:hover,
