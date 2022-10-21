@@ -99,8 +99,8 @@ p {
 }
 
 .how-it-works-step-num {
-  color: var(--custom-color-black);
-  background: var(--custom-color-white);
+  color: var(--custom-color-white);
+  background: var(--custom-color-black);
   border: 3.5px solid var(--custom-color-gold);
 }
 
@@ -123,6 +123,12 @@ p {
   color: var(--custom-color-white) !important;
   background-color: var(--custom-color-black) !important;
   border: 2px solid var(--custom-color-gold) !important;
+}
+
+.contact-me-btn:hover,
+.contact-me-btn:active,
+.contact-me-btn:focus {
+  color: var(--custom-color-gold) !important;
 }
 
 .secondary-btn {
@@ -192,12 +198,14 @@ p {
   margin: 0;
 }
 
-#language-dropdown {
-
-}
+#language-dropdown {}
 
 #language-dropdown a {
   color: var(--custom-color-turquoise) !important;
+}
+
+#language-dropdown a:last-child {
+  color: var(--custom-color-white) !important;
 }
 
 #language-dropdown a:hover {
@@ -300,13 +308,12 @@ p {
 }
 
 .pricing-rating img {
-  max-width: 50%;
+  max-width: 100%;
   margin: 0.1rem;
 }
 
 .pricing-card {
   width: 100%;
-  border-radius: 10px;
 }
 
 .plan-hidden {
@@ -549,7 +556,6 @@ button.collapsed:visited {
 
 /* mobile to desktop breakpoint */
 @media (max-width: 991.98px) {
-
   #book-a-lesson {
     display: none;
   }
@@ -597,11 +603,11 @@ button.collapsed:visited {
     color: var(--custom-color-black) !important;
   }
 
-  .navbar-nav .nav-item > .nav-link:hover,
-  .navbar-nav .nav-item > .nav-link:active,
-  .navbar-nav .nav-item > .nav-link:focus {
-     color: var(--custom-color-gold) !important;
-   }
+  .navbar-nav .nav-item>.nav-link:hover,
+  .navbar-nav .nav-item>.nav-link:active,
+  .navbar-nav .nav-item>.nav-link:focus {
+    color: var(--custom-color-gold) !important;
+  }
 
   .scale {
     transform: scale(1.0);
