@@ -1,7 +1,8 @@
 :root {
   --custom-color-primary: #e9b52d;
   --custom-color-secondary: #f78b77;
-  --custom-color-gold: #e9b52d;
+  --custom-color-gold: #e9b52d; /* same as primary color */
+  --custom-color-gold-light: #fefdf9;
   --custom-color-turquoise: #54dedc;
   --custom-color-black: #191d21;
   --custom-color-grey: #191d21c9;
@@ -63,6 +64,10 @@ html::-webkit-scrollbar-thumb {
 
 .border-gold {
   border: 2px solid var(--custom-color-gold) !important;
+}
+
+.bg-gold-light {
+  background-color: var(--custom-color-gold-light) !important;
 }
 
 .article-text {
@@ -415,8 +420,8 @@ p {
 }
 
 .text-highlight {
-  color: var(--custom-color-turquoise) !important;
-  /* font-weight: bold; */
+  color: var(--custom-color-gold) !important;
+  font-weight: 500;
 }
 
 .simple-note {
