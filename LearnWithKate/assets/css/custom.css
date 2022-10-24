@@ -106,10 +106,14 @@ p {
   flex-flow: row nowrap;
 }
 
+.how-it-works-step-icon {
+  max-width: 40px;
+}
+
 .how-it-works-step-num {
   color: var(--custom-color-black);
   background: var(--custom-color-white);
-  border: 2px solid var(--custom-color-gold);
+  /* border: 2px solid var(--custom-color-gold); */
 }
 
 .section {
