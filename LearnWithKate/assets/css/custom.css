@@ -2,7 +2,7 @@
   --custom-color-primary: #e9b52d;
   --custom-color-secondary: #f78b77;
   --custom-color-gold: #e9b52d; /* same as primary color */
-  --custom-color-gold-light: #fefdf9;
+  --custom-color-gold-light: #fdfaf0;
   --custom-color-turquoise: #54dedc;
   --custom-color-black: #191d21;
   --custom-color-grey: #191d21c9;
@@ -546,6 +546,11 @@ button.collapsed:visited {
   .logo-link .learn-logo {
     max-width: 200px;
   }
+}
+
+.section {
+  /* padding-left: 0; */
+  /* padding-right: 0; */
 }
 
 @media (min-width: 500px) {
