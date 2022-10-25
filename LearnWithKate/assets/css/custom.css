@@ -50,6 +50,10 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--custom-color-gold) !important;
 }
 
+.bg-black {
+  background-color: var(--custom-color-black) !important;
+}
+
 .text-black {
   color: var(--custom-color-black) !important;
 }
@@ -104,6 +108,11 @@ p {
 #how-it-works-steps {
   display: flex;
   flex-flow: row nowrap;
+}
+
+#how-it-works-steps .step-info {
+  max-width: 90%;
+  margin: auto;
 }
 
 .how-it-works-step-icon {
@@ -206,18 +215,20 @@ p {
   margin: 0;
 }
 
-#language-dropdown {}
+#language-dropdown {
+
+}
 
 #language-dropdown a {
-  color: var(--custom-color-turquoise) !important;
+  color: var(--custom-color-gold) !important;
 }
 
 #language-dropdown a:last-child {
-  color: var(--custom-color-white) !important;
+  color: var(--custom-color-gold) !important;
 }
 
 #language-dropdown a:hover {
-  color: var(--custom-color-gold) !important;
+  color: var(--custom-color-turquoise) !important;
 }
 
 .info-buttons {
@@ -425,7 +436,7 @@ p {
 
 .text-highlight {
   color: var(--custom-color-gold) !important;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .simple-note {
@@ -568,10 +579,6 @@ button.collapsed:visited {
     text-align: center;
   }
 
-  #how-it-works-steps .step-info {
-    max-width: 50ch;
-  }
-
   .slogan {
     letter-spacing: 3px;
     width: 80%;
@@ -624,7 +631,7 @@ button.collapsed:visited {
     height: 60px;
     width: 257px;
     right: -105px;
-    top: 30%;
+    top: 27%;
     transform: rotate(90deg);
     z-index: 99;
     opacity: 1;
