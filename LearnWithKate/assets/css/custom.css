@@ -398,6 +398,7 @@ p {
 .form_input {
   padding: 0.35rem 0.6rem 0.3rem 0.6rem;
   border: 3px solid var(--custom-color-grey-light);
+  outline: none;
   width: 100%;
 }
 
@@ -409,7 +410,7 @@ p {
 .form_input:active,
 .form_input:focus {
   border-color: var(--custom-color-gold);
-  outline: var(--custom-color-gold);
+  transition: all 300ms linear;
 }
 
 .social-media__contact-form {

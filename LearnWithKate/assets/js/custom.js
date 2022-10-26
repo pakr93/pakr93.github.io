@@ -22,12 +22,11 @@ const formLevel = document.getElementById('form_level');
 
 /**
   Checks if the language level was selected.
-  If it was, nothing happens, otherwise it shows an error message.
+  If it was, nothing happens, otherwise shows an error message.
  */
 const validateLanguageLevel = () => {
  if(formLevel.value === 'N/A') {
    formLevel.nextElementSibling.nextElementSibling.classList.add('show');
-   return;
  } else {
    formLevel.nextElementSibling.nextElementSibling.classList.remove('show');
  }
