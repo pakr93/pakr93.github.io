@@ -18,6 +18,21 @@ const navItems = document.getElementsByClassName('nav-item');
 const accordion1 = document.getElementById('accordion-1');
 const accordion2 = document.getElementById('accordion-2');
 
+const formLevel = document.getElementById('form_level');
+
+/**
+  Checks if the language level was selected.
+  If it was, nothing happens, otherwise it shows an error message.
+ */
+const validateLanguageLevel = () => {
+ if(formLevel.value === 'N/A') {
+   formLevel.nextElementSibling.nextElementSibling.classList.add('show');
+   return;
+ } else {
+   formLevel.nextElementSibling.nextElementSibling.classList.remove('show');
+ }
+};
+
 // represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
 let lastScrollY = 0;
 

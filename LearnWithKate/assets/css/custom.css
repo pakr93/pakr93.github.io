@@ -6,6 +6,7 @@
   --custom-color-turquoise: #54dedc;
   --custom-color-black: #191d21;
   --custom-color-grey: #191d21c9;
+  --custom-color-grey-light: #dadada;
   --custom-color-white: #fff;
 }
 
@@ -392,6 +393,23 @@ p {
 .book-a-lesson-btn {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.form_input {
+  padding: 0.35rem 0.6rem 0.3rem 0.6rem;
+  border: 3px solid var(--custom-color-grey-light);
+  width: 100%;
+}
+
+.form_input_label {
+  font-weight: 500;
+}
+
+.form_input:hover,
+.form_input:active,
+.form_input:focus {
+  border-color: var(--custom-color-gold);
+  outline: var(--custom-color-gold);
 }
 
 .social-media__contact-form {

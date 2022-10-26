@@ -47,7 +47,7 @@
                   <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#pricing">PRICING</a></li>
                   <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#faq">FAQ</a></li>
                 </ul>
-                <div id='contact-btns-mobile'>
+                <div onclick="closeNavBar()" id='contact-btns-mobile'>
                   <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
                   <span><a href='#contact-me' class="contact-me-btn btn-lg rounded-pill ff-jos-bold mt-4 text-center mx-auto mobile">HIT ME UP !</a></span>
                 </div>
@@ -1043,90 +1043,98 @@
               <form class=" contact-form needs-validation" method="post" action="./assets/php/contact.php" novalidate>
                 <div class=" messages "></div>
                 <div class=" row gx-4 ">
-                  <div class=" col-md-12">
-                    <div class=" form-floating mb-4 ">
-                      <input id=" form_email " type="email" name="email" class=" form-control " placeholder="Jane Doe" required>
-                      <label for=" form_email ">I am</label>
-                      <div class=" valid-feedback ">
-                        Looks good!
-                      </div>
-                      <div class=" invalid-feedback ">
-                        Please enter your name.
-                      </div>
+                  <div class='col-12 d-flex flex-column mx-auto mb-2'>
+                    <label for='form_name' class='fs-18 form_input_label ff-jos-reg'>I am</label>
+                    <input id='form_name' type='text' name='name' class='form_control form_input ff-jos-reg' required />
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please enter your name.
                     </div>
                   </div>
-                  <div class=" col-md-6 ">
-                    <div class=" form-floating mb-4 ">
-                      <input id=" form_email " type="email" name="email" class=" form-control" placeholder="jane.doe@example.com" required>
-                      <label for=" form_email ">My email is</label>
-                      <div class=" valid-feedback ">
-                        Looks good!
-                      </div>
-                      <div class=" invalid-feedback ">
-                        Please provide a valid email address.
-                      </div>
+                  <div class='col-lg-6 col-xl-6 col-md-12 col-sm-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_email' class='fs-18 form_input_label ff-jos-reg'>My email is</label>
+                    <input id='form_email' type='email' name='email' class='form_control form_input ff-jos-reg' required />
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please enter your email address.
                     </div>
                   </div>
-                  <div class=" col-md-6 ">
-                    <div class=" form-floating mb-4 ">
-                      <input id="form_phone" type="text" name="phone" class="form-control" placeholder="123 456 789">
-                      <label for="form_phone">My phone is (Optional)</label>
+                  <div class='col-lg-6 col-xl-6 col-md-12 col-sm-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_phone' class='fs-18 form_input_label ff-jos-reg'>My phone is (Optional)</label>
+                    <input id='form_phone' type='text' name='phone' class='form_control form_input ff-jos-reg' />
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please enter your phone number.
                     </div>
                   </div>
-                  <div class=" col-12 ">
-                    <div class=" form-floating mb-4 ">
-                      <textarea id="form_time" name="lesson_time" class="form-control" placeholder=" Your message " style=" height: 150px " required></textarea>
-                      <label for="form_time">What time is convenient for you?</label>
-                      <div class=" valid-feedback ">
-                        Looks good!
-                      </div>
-                      <div class=" invalid-feedback ">
-                        Please enter your message.
-                      </div>
+                  <div class='col-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_level' class='fs-18 form_input_label ff-jos-reg me'>Language Level
+                      <span class='d-block fs-13 text-grey'>Don't know your language level? Click
+                        <a class='text-turquoise' href="https://tracktest.eu/english-levels-cefr/" target="_blank">here</a>.
+                      </span>
+                    </label>
+                    <select onchange="validateLanguageLevel()" id='form_level' type='text' name='level' class='form_control form_input ff-jos-reg' required>
+                      <option value='N/A' selected disabled></option>
+                      <option value="A0">A0 - Complete beginner</option>
+                      <option value="A1">A1 - Beginner</option>
+                      <option value="A2">A2 - Elementary</option>
+                      <option value="B1">B1 - Intermediate</option>
+                      <option value="B2">B2 - Upper-Intermediate</option>
+                      <option value="C1">C1 - Advanced</option>
+                      <option value="C2">C2 - Proficient</option>
+                    </select>
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please choose your language level.
                     </div>
                   </div>
-                  <div class=" col-12 ">
-                    <div class=" form-floating mb-4 ">
-                      <div class="form-select-wrapper mb-4">
-                        <select id="form_language_level" class="form-select form-control" name="language_level" placeholder="Select your language level" aria-label="Select your language level">
-                          <option selected value="N/A">Language level</option>
-                          <option value="A0">A0 - Complete beginner</option>
-                          <option value="A1">A1 - Beginner</option>
-                          <option value="A2">A2 - Beginner</option>
-                          <option value="B1">B1 - Intermediate</option>
-                          <option value="B2">B2 - Intermediate</option>
-                          <option value="C1">C1 - Advanced</option>
-                          <option value="C2">C2 - Expert</option>
-                        </select>
-                      </div>
+                  <div class='col-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_time' class='fs-18 form_input_label ff-jos-reg'>What time is convenient for you?</label>
+                    <textarea style='height: 100px;' id='form_time' type='text' name='time' class='form_control form_input ff-jos-reg'
+                      placeholder="e.g.: I am available for lessons every Tuesday between 2pm and 7pm and every Friday between 10am and 2pm. I am interested in 2 lessons per week." required></textarea>
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please let me know what time is convenient for you.
                     </div>
                   </div>
-                  <div class=" col-12 ">
-                    <div class=" form-floating mb-4 ">
-                      <textarea id=" form_about_you " name="message" class=" form-control " placeholder=" Something about you " style=" height: 150px " required></textarea>
-                      <label for=" form_about_you ">About you / Your expectations</label>
-                      <div class=" valid-feedback ">
-                        Looks good!
-                      </div>
-                      <div class=" invalid-feedback ">
-                        Please enter your message.
-                      </div>
+                  <div class='col-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_about_you' class='fs-18 form_input_label ff-jos-reg'>About you / Your Expectations</label>
+                    <textarea style='height: 100px;' id='form_about_you' type='text' name='about_you' class='form_control form_input ff-jos-reg'
+                      placeholder="e.g.: I work as an engineer and use Czech at work. I would like to improve my grammar and conversation skills." required></textarea>
+                    <div class=" valid-feedback ">
+                      Looks good!
+                    </div>
+                    <div class=" invalid-feedback ">
+                      Please write a little about you and your expectations.
                     </div>
                   </div>
-                  <div class=" col-12 ">
-                    <div class=" form-floating mb-4 ">
-                      <textarea id=" form_message " name="message" class=" form-control " placeholder=" Your message " style=" height: 150px " required></textarea>
-                      <label for=" form_message ">Anything else you wanna share with me?</label>
-                      <div class=" valid-feedback ">
-                        Looks good!
-                      </div>
-                      <div class=" invalid-feedback ">
-                        Please enter your message.
-                      </div>
+                  <div class='col-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_call_time' class='fs-18 form_input_label ff-jos-reg'>When can we make a phone call?</label>
+                    <textarea style='height: 100px;' id='form_call_time' type='text' name='call_time' class='form_control form_input ff-jos-reg'
+                    placeholder="e.g.: We can have a call this week on Wednesday between 4pm and 8pm." required></textarea>
+                    <div class=" valid-feedback ">
+                      Looks good!
                     </div>
+                    <div class=" invalid-feedback ">
+                      Please let me know when we can make a phone call.
+                    </div>
+                  </div>
+                  <div class='col-12 d-flex flex-column mx-auto my-2'>
+                    <label for='form_other_info' class='fs-18 form_input_label ff-jos-reg'>Anything else you wanna share with me? (Optional)</label>
+                    <textarea style='height: 100px;' id='form_other_info' type='text' name='other_info' class='form_control form_input ff-jos-reg'></textarea>
                   </div>
                   <!-- /column -->
-                  <div class="col-12">
+                  <div class="col-12 mt-4">
                     <div class="form-check mb-4">
                       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                       <label class="form-check-label" for="invalidCheck">
@@ -1139,7 +1147,7 @@
                   </div>
                   <!-- /column -->
                   <div class="col-12">
-                    <button style='max-width: 250px;' type="submit ff-jos-bold" class="btn btn-green rounded-pill btn-send mb-3 w-50">S E N D</button>
+                    <button onclick="validateLanguageLevel()" style='max-width: 250px;' type="submit ff-jos-bold" class="btn secondary-btn rounded-pill btn-send mb-3 w-50">S E N D</button>
                   </div>
                   <!-- /column -->
                 </div>
@@ -1148,14 +1156,14 @@
               <!-- /form -->
             </div>
             <!--/column -->
-            <div class="col-lg-5 ">
+            <div class="col-lg-5 d-flex flex-column justify-content-center">
               <div class="d-flex flex-row mb-7">
                 <div>
                   <div class="icon text-primary me-3"><img class='contact-icon' src='./assets/img/icons/phone-icon.webp' /></div>
                 </div>
                 <div>
                   <h5 class="fs-22 mb-0 ff-jos-bold">PHONE</h5>
-                  <p><a class="fs-20 text-body ff-jos-reg" href="tel:+420733395686 ">+420 733 395 686</a></p>
+                  <p><a class="fs-20 ff-jos-reg" href="tel:+420733395686">+420 733 395 686</a></p>
                 </div>
               </div>
               <div class="d-flex flex-row mb-7">
@@ -1164,7 +1172,7 @@
                 </div>
                 <div>
                   <h5 class="fs-22 mb-0 ff-jos-bold">EMAIL</h5>
-                  <p><a href="mailto:hi@learnwkate.com" class="fs-20 text-body ff-jos-reg">hi@learnwkate.com</a></p>
+                  <p><a href="mailto:hi@learnwkate.com" class="fs-20 ff-jos-reg">hi@learnwkate.com</a></p>
                 </div>
               </div>
               <div class="d-flex flex-row ">
@@ -1200,7 +1208,7 @@
             <h2 class="fs-16 mb-6 text-center text-white">JOIN AN AMAZING COMMUNITY OF LANGUAGE TEACHERS</h2>
             <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Interested in teaching languages instead? </p>
             <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Join our amazing community and unleash your teaching career today!</p>
-            <a style="min-width:250px; max-width: 600px; width: 50%; letter-spacing: 3px" target='_blank' href="https://www.teachwkate.com" class="btn secondary-btn fs-18 btn-lg rounded-pill mt-4 ff-jos-bold">TEACH WITH KATE</a>
+            <a style="min-width:275px; max-width: 700px; width: 50%; letter-spacing: 3px" target='_blank' href="https://www.teachwkate.com" class="btn secondary-btn fs-18 btn-lg rounded-pill mt-4 ff-jos-bold">TEACH WITH KATE</a>
           </div>
           <!-- /column -->
         </div>
