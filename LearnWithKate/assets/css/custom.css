@@ -413,6 +413,12 @@ p {
   transition: all 300ms linear;
 }
 
+/* default height of textarea in form input is 100px */
+textarea.form_input {
+  min-height: 100px;
+  height: 150px;
+}
+
 .social-media__contact-form {
   width: 100%;
 }
