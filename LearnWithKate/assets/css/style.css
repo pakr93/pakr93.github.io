@@ -29695,7 +29695,7 @@ button:focus {
 .language-select .dropdown-menu {
   left: 50% !important;
   transform: translateX(-50%) !important;
-  top: 100% !important;
+  top: 25px !important;
   margin-top: 0.5rem !important;
   /* padding: 0.65rem 0; */
   position: absolute;

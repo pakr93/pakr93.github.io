@@ -25,11 +25,11 @@ const formLevel = document.getElementById('form_level');
   If it was, nothing happens, otherwise shows an error message.
  */
 const validateLanguageLevel = () => {
- if(formLevel.value === 'N/A') {
-   formLevel.nextElementSibling.nextElementSibling.classList.add('show');
- } else {
-   formLevel.nextElementSibling.nextElementSibling.classList.remove('show');
- }
+  if (formLevel.value === 'N/A') {
+    formLevel.nextElementSibling.nextElementSibling.classList.add('show');
+  } else {
+    formLevel.nextElementSibling.nextElementSibling.classList.remove('show');
+  }
 };
 
 // represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
@@ -89,9 +89,9 @@ const changeBGColor = (element, newColor) => {
 
 /** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
 const changeTextColor = (elements, prevColor, newColor) => {
-  for(const child of elements) {
+  for (const child of elements) {
     // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
-    if(child.classList.contains(newColor)) {
+    if (child.classList.contains(newColor)) {
       return;
     }
     child.classList.remove(prevColor); // remove the old color class
@@ -179,6 +179,15 @@ window.addEventListener('scroll', () => {
       loadingBar.style.top = '0px'; // put the loading bar to the top
     }
     lastScrollY = window.scrollY;
+  }
+});
+
+/**
+  When the navbar is clicked, scroll to the top.
+ */
+navbar.addEventListener('click', () => {
+  if (window.innerWidth < 991.98 && window.scrollY > 200) {
+    window.scrollTo(0, 0);
   }
 });
 
