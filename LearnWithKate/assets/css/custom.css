@@ -395,26 +395,26 @@ p {
   font-size: 1.2rem;
 }
 
-.form_input {
+.form-input {
   padding: 0.35rem 0.6rem 0.3rem 0.6rem;
   border: 3px solid var(--custom-color-grey-light);
   outline: none;
   width: 100%;
 }
 
-.form_input_label {
+.form-input_label {
   font-weight: 500;
 }
 
-.form_input:hover,
-.form_input:active,
-.form_input:focus {
+.form-input:hover,
+.form-input:active,
+.form-input:focus {
   border-color: var(--custom-color-gold);
   transition: all 300ms linear;
 }
 
 /* default height of textarea in form input is 100px */
-textarea.form_input {
+textarea.form-input {
   min-height: 100px;
   height: 150px;
 }
