@@ -576,6 +576,11 @@ button.collapsed:visited {
 
 /* mobile to desktop breakpoint */
 @media (max-width: 991.98px) {
+
+  html {
+    font-size: 18px;
+  }
+
   #book-a-lesson {
     display: none;
   }

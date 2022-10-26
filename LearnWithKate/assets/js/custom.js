@@ -183,15 +183,6 @@ window.addEventListener('scroll', () => {
 });
 
 /**
-  When the navbar is clicked, scroll to the top.
- */
-navbar.addEventListener('click', () => {
-  if (window.innerWidth < 991.98 && window.scrollY > 200) {
-    window.scrollTo(0, 0);
-  }
-});
-
-/**
  Hides all inactive FAQ items so that only the lastly activated item is visible
 */
 const hideInactiveItems = (list) => {
