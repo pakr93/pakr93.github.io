@@ -37,6 +37,7 @@ let lastScrollY = 0;
 
 const animateFlags = () => {
   const flagNames = ['Czech', 'French', 'US'];
+  const interval = 1.5; // seconds
   let counter = 0;
 
   setInterval(() => {
@@ -45,7 +46,7 @@ const animateFlags = () => {
     }
     const currentFlag = flagNames[counter++];
     flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
-  }, 1.5 * 1000); // change the flags in an interval
+  }, interval * 1000); // change the flags in an interval
 };
 
 // mark today with a red border-top & red border-bottom to let the user know what day it is

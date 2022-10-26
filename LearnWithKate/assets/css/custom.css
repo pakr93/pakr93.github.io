@@ -495,33 +495,9 @@ textarea.form_input {
   transition: background-color 350ms ease-in-out;
 }
 
-.flags {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-.flag {
-  position: static !important;
-  display: block;
-  margin: auto;
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
-  padding: 0 !important;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
 .shadow {
   -webkit-box-shadow: 0px 0px 15px 7px rgba(108, 108, 108, 0.5) !important;
   box-shadow: 0px 0px 15px 7px rgba(108, 108, 108, 0.5) !important;
-}
-
-.flag:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s linear;
 }
 
 button.collapsed:hover,
@@ -728,19 +704,6 @@ button.collapsed:visited {
   .book-a-lesson-btn {
     font-weight: bold;
     /* font-size: 1.3rem; */
-  }
-
-  .flags {
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%;
-  }
-
-  .flag {
-    margin: 1rem auto;
-    width: 125px;
-    height: 125px;
   }
 
   .switches {
