@@ -80,6 +80,10 @@ html::-webkit-scrollbar-thumb {
   color: var(--custom-color-grey) !important;
 }
 
+.text-grey {
+  color: var(--custom-color-grey) !important;
+}
+
 body {
   margin: 0;
   padding: 0;

@@ -18,13 +18,12 @@
   <script src="./assets/js/theme.js" defer></script>
   <script src="./assets/js/custom.js" defer></script>
 </head>
-
 <body>
   <div class="content-wrapper" id='navbar'>
     <header class="wrapper">
-      <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
+      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
-          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-2 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand bg-light">
               <a class="logo-link" href="./index.html">
                 <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
@@ -37,35 +36,35 @@
                 </a>
                 <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div style="margin:auto; opacity: 1.0" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <div style="margin:auto; opacity: 1.0; height: 85%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="#about-me">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#faq">FAQ</a></li>
-                  <li class="nav-item"><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn btn-green btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></li>
-                  <li class="nav-item"><a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#about-me">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./index.html#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./index.html#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./index.html#faq">FAQ</a></li>
                 </ul>
+                <div onclick="closeNavBar()" id='contact-btns-mobile'>
+                  <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
+                  <span><a href='./index.html#contact-me' class="contact-me-btn btn-lg rounded-pill ff-jos-bold mt-4 text-center mx-auto mobile">HIT ME UP !</a></span>
+                </div>
               </div>
             </div>
-            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto me-10 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto">
-              <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
-                <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
-                  <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
+            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-end">
+              <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
+                <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
+                  <a class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN
                   </a>
-                  <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
-                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
-                      <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
-                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
-                      </a>
+                  <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
+                    <li class="nav-item border-0">
+                      <a class="nav-link dropdown-item w-100 text-center p-2 text-white" href="./cs/index.html">CS</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP !</a>
+                  <a href='./index.html#contact-me' class="btn contact-me-btn btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
                 </li>
                 <li class="nav-item d-xs-flex d-lg-none">
                   <button class="hamburger offcanvas-nav-btn"><span></span></button>
@@ -80,17 +79,31 @@
         <!-- /.container -->
       </nav>
       <!-- /.offcanvas-footer -->
-      </header>
+    </header>
   </div>
-  <div id='loading-bar' class='bg-orange'></div>
-  <main class='mt-15'>
-    <div class=" row gx-lg-8 gx-xl-12 gy-10 align-items-center bg-soft-green section" id='about-me'>
-      <h1 class=" display-1 mx-0 mt-0 mb-10 text-center ff-jos-bold">ABOUT ME & WHAT I DO</h1>
-      <div class="col-lg-6 order-lg-2 order-sm-2 order-xs-2 d-flex mt-0 mb-6">
-        <img class=" img-fluid ms-auto mx-auto filter-grayscale" id='kate-photo' src="./assets/img/photos/Kate-en.webp" alt=" Katka Vanderpool, the teacher and owner of Learn with Kate " data-cue=" fadeIn " />
+  <div id='loading-bar' class='bg-orange mobile'></div>
+  <main class='mt-14'>
+    <div class='background-filter background-image'></div>
+    <div class=" row gx-lg-8 gx-xl-12 gy-10 align-items-start section bg-white" id='about-me'>
+      <h1 class=" display-4 mt-0 mb-10 text-center ff-jos-bold text-gold">ABOUT ME & WHAT I DO</h1>
+      <div class="d-flex flex-column flex-lg-column flex-xs-column flex-md-column flex-xl-column flex-sm-column col-lg-6 order-3 order-lg-3 order-sm-3 order-xs-3">
+        <div class='col-9 col-md-6 col-lg-8 col-xl-7 mb-xl-10'>
+          <figure class="rounded position-relative">
+            <img class='w-100' src="./assets/img/photos/Orlando-dreamcatcher.webp" srcset="./assets/img/photos/Orlando-dreamcatcher.webp 2x" alt=" Katka Vanderpool, the teacher and owner of Learn with Kate ">
+          </figure>
+        </div>
+        <div class='align-self-end col-10 col-md-7 col-lg-10 col-xl-8 p-4 p-sm-0 p-xs-3 p-lg-2 mt-4'>
+          <figure class="rounded position-relative">
+            <img class='w-100' src="./assets/img/photos/Prague-dreamcatcher.webp" srcset="./assets/img/photos/Prague-dreamcatcher.webp 2x" alt=" Katka Vanderpool, the teacher and owner of Learn with Kate ">
+          </figure>
+        </div>
+        </div>
+        <!--/.row -->
+      <div class="col-lg-7 order-lg-1 order-sm-1 order-xs-1 d-flex mt-0 mb-6">
+        <img class="img-fluid ms-auto mx-auto" id='kate-photo' src="./assets/img/photos/Kate-en.webp" alt=" Katka Vanderpool, the teacher and owner of Learn with Kate " data-cue=" fadeIn " />
       </div>
       <!--/column -->
-      <div class="col-lg-6 order-lg-1 order-sm-2 order-xs-2 mt-0">
+      <div class="col-lg-6 order-lg-1 order-sm-2 order-xs-2 mt-0 p-6">
         <p class=" lead fs-18 mb-4 pe-xxl-2 ">
           My name's <strong class="text-green">Katka Vanderpool</strong> and I’m a freelancer providing individual classes in English, French, and Czech for <strong>teenagers</strong> and <strong>adults</strong> of all language levels.
         </p>
@@ -131,8 +144,8 @@
         <p class=" lead fs-18 mb-4 pe-xxl-2 ">
         <div style=" flex-direction: column; " class=" d-flex justify-content-center justify-content-center
         align-items-center info-buttons mt-10" data-cues=" slideInDown " data-group=" page-title-buttons " data-delay=" 300 ">
-          <span><a href="./index.html#faq" class=" btn btn-lg btn-green rounded-pill mb-3 mx-2 ff-jos-bold">FREQUENTLY ASKED QUESTIONS</a></span>
-          <span><a href="./index.html#contact-me" class=" btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP!</a></span>
+          <span><a href="./index.html#faq" class=" btn btn-lg secondary-btn rounded-pill mb-3 mx-2 ff-jos-bold">FREQUENTLY ASKED QUESTIONS</a></span>
+          <span><a href="./index.html#contact-me" class=" btn contact-me-btn btn-lg rounded-pill ff-jos-bold">HIT ME UP!</a></span>
         </div>
       </div>
       <section class=" wrapper order-3 bg-pale-green rounded-4 py-6 ">
@@ -184,7 +197,7 @@
   <!-- /header -->
   <!-- /section -->
   </div>
-  <footer class="bg-soft-green ">
+  <footer>
     <div class="container py-14 pb-7 bg-white">
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2 ">

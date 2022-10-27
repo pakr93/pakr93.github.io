@@ -144,16 +144,16 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
-    if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
-      hideElement(bookALesson, true);
+      if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
+        hideElement(bookALesson, true);
+      } else {
+        hideElement(bookALesson, false);
+      }
     } else {
-      hideElement(bookALesson, false);
+      changeBGColor(navbar, 'transparent');
+      changeTextColor(navbarNavLinks, 'text-black', 'text-white');
+      changeOpacity(navbar, 1.0);
     }
-  } else {
-    changeBGColor(navbar, 'transparent');
-    changeTextColor(navbarNavLinks, 'text-black', 'text-white');
-    changeOpacity(navbar, 1.0);
-  }
 
   if (window.innerWidth < 991.98 && window.scrollY > 200) {
     // if the user scrolls up, show the navbar, else hide it
@@ -181,8 +181,10 @@ const hideInactiveItems = (list) => {
   }
 };
 
-accordion1.addEventListener('click', () => hideInactiveItems(accordion1));
-accordion2.addEventListener('click', () => hideInactiveItems(accordion2));
+if (accordion1 && accordion2) {
+  accordion1.addEventListener('click', () => hideInactiveItems(accordion1));
+  accordion2.addEventListener('click', () => hideInactiveItems(accordion2));
+}
 
 animateFlags();
 changeLoadingBarWidth();
