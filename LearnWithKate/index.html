@@ -188,9 +188,9 @@
           </div>
           <section class=" wrapper order-3 bg-pale-green rounded-4 py-6 ">
             <div class=" container ">
-              <div class=" row ">
+              <div class=" row align-items-center">
                 <div class=" col-lg-4 ">
-                  <h3 class=" display-4 mb-8 text-center ff-jos-bold text-gold">ABOUT ME IN A NUTSHELL</h3>
+                  <h3 class=" display-4 mb-8 text-center ff-jos-bold text-gold">ME IN A NUTSHELL</h3>
                 </div>
                 <!-- /column -->
                 <div class=" col-lg-8 ">
@@ -1080,8 +1080,8 @@
                         <a class='text-highlight fw-normal hover' href="https://tracktest.eu/english-levels-cefr/" target="_blank">HERE</a> for info.
                       </span>
                     </label>
-                    <select onchange="validateLanguageLevel()" id='form_level' type='text' name='level' class='form_control form-input ff-merriweather-reg' required>
-                      <option value='N/A' selected disabled></option>
+                    <select id='form_level' type='text' name='level' class='form_control form-input ff-merriweather-reg' required>
+                      <option value="" selected disabled>Select your language level</option>
                       <option value="A0">A0 - Complete beginner</option>
                       <option value="A1">A1 - Beginner</option>
                       <option value="A2">A2 - Elementary</option>
@@ -1090,11 +1090,11 @@
                       <option value="C1">C1 - Advanced</option>
                       <option value="C2">C2 - Proficient</option>
                     </select>
-                    <div class=" valid-feedback ">
+                    <div class="valid-feedback">
                       Looks good!
                     </div>
-                    <div class=" invalid-feedback ">
-                      Please choose your language level.
+                    <div class="invalid-feedback">
+                      Please select your language level.
                     </div>
                   </div>
                   <div class='col-12 d-flex flex-column mx-auto my-2'>
@@ -1148,7 +1148,7 @@
                   </div>
                   <!-- /column -->
                   <div class="col-12">
-                    <button onclick="validateLanguageLevel()" style='max-width: 250px;' type="submit ff-jos-bold" class="btn secondary-btn rounded-pill btn-send mb-3 w-50">S E N D</button>
+                    <button style='max-width: 250px; letter-spacing: 5px;' type="submit" class="btn secondary-btn rounded-pill btn-send mb-3 w-50 ff-jos-bold">SEND</button>
                   </div>
                   <!-- /column -->
                 </div>
@@ -1222,7 +1222,7 @@
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2">
           <div class="widget ">
-            <h4 class="widget-title mb-3 ff-jos-bold">LEARN MORE</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold text-gold">LEARN MORE</h4>
             <ul class="list-unstyled text-reset mb-0 ">
               <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="#">HOME</a></li>
               <li class="nav-item-footer ff-jos-bold"><a class="nav-link-footer" href="./about-me.html">ABOUT ME</a></li>
@@ -1236,7 +1236,7 @@
         </div>
         <div class="col-md-4 col-lg-2 ">
           <div class="widget align-text-right ">
-            <h4 class="widget-title mb-3 ff-jos-bold">USEFUL INFORMATION</h4>
+            <h4 class="widget-title mb-3 ff-jos-bold text-gold">USEFUL INFORMATION</h4>
             <ul class="list-unstyled text-reset mb-0 ">
               <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="https://cestina-pro-cizince.cz/trvaly-pobyt/a2/en/">EXAM IN CZECH FOR PERMANENT RESIDENCE</a></li>
               <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">TERMS & CONDITIONS</a></li>
@@ -1248,7 +1248,7 @@
         <div class="col-md-4 col-sm-6 col-lg-3 ">
           <div class="widget ">
             <div class="table-responsive ">
-              <h4 class="widget-title mb-3 ff-jos-bold">OPENING HOURS</h4>
+              <h4 class="widget-title mb-3 ff-jos-bold text-gold">OPENING HOURS</h4>
               <table class="table table-bordered ff-jos-regular" id='opening-hours'>
                 <tbody>
                   <tr class="opening-hours-row ">
