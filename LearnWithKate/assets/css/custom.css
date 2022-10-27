@@ -441,6 +441,10 @@ textarea.form-input {
   cursor: pointer;
 }
 
+.faq-item {
+  font-family: "Josefin Bold" !important;
+}
+
 .blockquote-details {
   margin-top: 1rem;
 }
