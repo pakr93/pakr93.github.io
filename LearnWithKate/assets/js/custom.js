@@ -74,7 +74,7 @@ const changeBGColor = (element, oldColorClass, newColorClass) => {
     element.classList.remove(oldColorClass);
     element.classList.remove('transition-bg-change');
   }
-  // apply the new color black
+  // apply the new background color class
   if (!element.classList.contains(newColorClass)) {
     element.classList.add(newColorClass);
     element.classList.add('transition-bg-change');
@@ -85,22 +85,27 @@ const changeBGColor = (element, oldColorClass, newColorClass) => {
 const changeTextColor = (elements, prevColor, newColor) => {
   for (const child of elements) {
     // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
-    if (child.classList.contains(newColor)) {
-      return;
+    if (!child.classList.contains(newColor)) {
+      child.classList.remove(prevColor); // remove the old color class
+      child.classList.add(newColor); // add a new color class
     }
-    child.classList.remove(prevColor); // remove the old color class
-    child.classList.add(newColor); // add a new color class
+
   }
 };
 
 const setAnchorListeners = () => {
+  if (window.innerWidth <= 991.98) {
+    return;
+  }
+
+  console.log('printing');
   for (const link of linkHooks) {
     // a listener must be assigned to each link because it's an HTML collection
     link.addEventListener('click', event => {
-      window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
       setTimeout(() => {
         window.scrollBy(0, -100); // wait 500ms, then scroll up to the title of the section/location
-      }, 500);
+      }, 800);
+      window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
     });
   }
 };
