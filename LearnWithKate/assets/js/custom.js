@@ -1,5 +1,6 @@
 const navbar = document.getElementById('navbar');
 const navbarNavLinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
+const linkHooks = document.getElementsByClassName('link-hook');
 
 const home = document.getElementById('home');
 const aboutMe = document.getElementById('about-me');
@@ -54,8 +55,6 @@ const tagTodayInOpeningHours = (day) => {
   }
 };
 
-tagTodayInOpeningHours(new Date().getDay());
-
 const closeNavBar = () => {
   const navbarMobile = document.getElementById("navbar-mobile");
   const backdrop = document.getElementsByClassName("offcanvas-backdrop")[0];
@@ -71,12 +70,12 @@ const closeNavBar = () => {
 
 const changeBGColor = (element, oldColorClass, newColorClass) => {
   // firstly remove the old background color
-  if(element.classList.contains(oldColorClass)) {
+  if (element.classList.contains(oldColorClass)) {
     element.classList.remove(oldColorClass);
     element.classList.remove('transition-bg-change');
   }
   // apply the new color black
-  if (!element.classList.contains( newColorClass ) ) {
+  if (!element.classList.contains(newColorClass)) {
     element.classList.add(newColorClass);
     element.classList.add('transition-bg-change');
   }
@@ -91,6 +90,18 @@ const changeTextColor = (elements, prevColor, newColor) => {
     }
     child.classList.remove(prevColor); // remove the old color class
     child.classList.add(newColor); // add a new color class
+  }
+};
+
+const setAnchorListeners = () => {
+  for (const link of linkHooks) {
+    // a listener must be assigned to each link because it's an HTML collection
+    link.addEventListener('click', event => {
+      window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
+      setTimeout(() => {
+        window.scrollBy(0, -100); // wait 500ms, then scroll up to the title of the section/location
+      }, 500);
+    });
   }
 };
 
@@ -151,16 +162,16 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'bg-transparent', 'bg-white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
-      if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
-        hideElement(bookALesson, true);
-      } else {
-        hideElement(bookALesson, false);
-      }
+    if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
+      hideElement(bookALesson, true);
     } else {
-      changeBGColor(navbar, 'bg-white', 'bg-transparent');
-      changeTextColor(navbarNavLinks, 'text-black', 'text-white');
-      changeOpacity(navbar, 1.0);
+      hideElement(bookALesson, false);
     }
+  } else {
+    changeBGColor(navbar, 'bg-white', 'bg-transparent');
+    changeTextColor(navbarNavLinks, 'text-black', 'text-white');
+    changeOpacity(navbar, 1.0);
+  }
 
   if (window.innerWidth < 991.98 && window.scrollY > 200) {
     // if the user scrolls up, show the navbar, else hide it
@@ -193,5 +204,9 @@ if (accordion1 && accordion2) {
   accordion2.addEventListener('click', () => hideInactiveItems(accordion2));
 }
 
-animateFlags();
-changeLoadingBarWidth();
+document.addEventListener("DOMContentLoaded", () => {
+  animateFlags();
+  changeLoadingBarWidth();
+  setAnchorListeners();
+  tagTodayInOpeningHours(new Date().getDay());
+});
