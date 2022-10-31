@@ -16,6 +16,7 @@ html {
   height: 100% !important;
   font-size: 16px;
   text-rendering: geometricPrecision;
+  /* user-select: none; */
 }
 
 /* custom scrollbar */
@@ -81,7 +82,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .text-grey {
-  color: var(--custom-color-grey) !important;
+  color: var(--custom-color-grey);
 }
 
 body {
@@ -168,8 +169,12 @@ p {
   font-weight: 700;
 }
 
-.navbar-nav .nav-item>.nav-link {
+.nav-link {
   font-size: 0.95rem;
+}
+
+.nav-link.letter-spacing {
+  letter-spacing: -0.08rem;
 }
 
 .nav-item .nav-link-footer,
@@ -254,10 +259,15 @@ p {
 .student-switcher {
   cursor: pointer;
   position: relative;
+  min-width: 50px;
   width: 50px;
   height: 25px;
   background-color: lightgrey;
   border-radius: 15px;
+}
+
+.switcher p {
+  font-family: "Josefin Bold";
 }
 
 .font-bold {
@@ -266,7 +276,8 @@ p {
 
 .switcher {
   display: flex;
-  flex-flow: column nowrap;
+  /* flex-flow: column nowrap; */
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -629,7 +640,6 @@ button.collapsed:visited {
   }
 
   .navbar-nav .nav-item>.nav-link {
-    font-size: 1rem;
     color: var(--custom-color-black) !important;
   }
 
@@ -746,7 +756,6 @@ button.collapsed:visited {
   }
 
   .book-a-lesson .nav-link {
-    /* color: var(--custom-color-secondary) !important; */
     color: black !important;
   }
 
@@ -755,8 +764,6 @@ button.collapsed:visited {
   }
 
   .nav-link {
-    /* padding: 0 0.5rem !important; */
-    font-size: 0.8rem;
     border-bottom: 4px solid transparent;
   }
 
@@ -771,9 +778,15 @@ button.collapsed:visited {
   }
 }
 
+@media (max-width: 1050px) {
+  .nav-link.letter-spacing {
+  }
+}
+
 @media (min-width: 1300px) {
-  .nav-link {
-    font-size: 1.05rem !important;
+
+  .nav-link.letter-spacing {
+    letter-spacing: 0.04rem;
   }
 }
 

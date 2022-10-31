@@ -36,16 +36,16 @@
                 <a class="logo-link" href="./index.html">
                   <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
                 </a>
-                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" title='Close menu' class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div style="margin:auto; opacity: 1.0; height: 85%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="./about-me.html">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-white ff-jos-reg" href="#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="./about-me.html">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link letter-spacing text-white ff-jos-bold" href="#faq">FAQ</a></li>
                 </ul>
                 <div onclick="closeNavBar()" id='contact-btns-mobile'>
                   <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
@@ -56,7 +56,7 @@
             <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-end">
               <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
                 <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
-                  <a class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a title='Change language' class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     EN
                   </a>
                   <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
@@ -68,8 +68,8 @@
                 <li class="nav-item d-none d-md-block">
                   <a href='#contact-me' class="btn contact-me-btn btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
                 </li>
-                <li class="nav-item d-xs-flex d-lg-none">
-                  <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                <li class="nav-item d-xs-flex d-lg-none border-0">
+                  <button title='Open menu' class="hamburger offcanvas-nav-btn"><span></span></button>
                 </li>
               </ul>
               <!-- /.navbar-nav -->
@@ -242,13 +242,13 @@
                     <div>
                       <h4 class=" mb-1 fs-20 ff-jos-bold text-center">READ THE INFORMATION</h4>
                       <p class="step-info mb-0 fs-17 text-center">Study this website, incl.
-                        the <a href="#faq" class="hover text-highlight">FAQ</a> and <a href="assets/docs/Concept-Conditions_LearnwKate.pdf" target="_blank " class="hover text-highlight ">Terms & Conditions</a>.
+                        the <a href="#faq" class="hover text-highlight">FAQ</a> and <a href="assets/docs/en/Concept-Conditions_LearnwKate.pdf" target="_blank " class="hover text-highlight ">Concept & Conditions</a>.
                       </p>
                     </div>
                   </div>
                   <div class=" d-flex flex-column align-items-center mb-10 mx-1">
                     <div class='d-flex flex-column align-items-center'>
-                      <img class='how-it-works-step-icon' src="./assets/img/icons/contact-icon.webp" alt='First contact icon'>
+                      <img class='how-it-works-step-icon' src="./assets/img/icons/contact-icon.webp" title='First contact icon' alt='First contact icon'>
                     </div>
                     <span class=" icon btn btn-circle disabled how-it-works-step-num">
                       <span class=" number fs-22">2</span>
@@ -409,7 +409,7 @@
                 <div class="pricing-switcher-wrapper switcher text-right mx-6">
                   <p class="mb-0 mx-4 text-center">60 minutes</p>
                   <div class='time-switcher bg-lightgrey' onclick="changeNumberOfMinutes()">
-                    <button class='time-switcher-button bg-black'>
+                    <button title='Change lesson length' class='time-switcher-button bg-black'>
                     </button>
                   </div>
                   <p class="mb-0 mx-4 text-center">90 minutes</p>
@@ -417,7 +417,7 @@
                 <div class="pricing-switcher-wrapper switcher text-right mx-6">
                   <p class="mb-0 mx-4 text-center"> 1 student</p>
                   <div class='student-switcher bg-lightgrey' onclick="changeNumberOfStudents()">
-                    <button class='student-switcher-button bg-black'>
+                    <button title='Change number of students' class='student-switcher-button bg-black'>
                     </button>
                   </div>
                   <p class="mb-0 mx-4 text-center">2-3 students</p>
@@ -588,8 +588,8 @@
                 <p class=" lead fs-17 mb-4 pe-xxl-2 ">Language is an important part of every social interaction.</p>
                 <p class=" lead fs-17 mb-4 pe-xxl-2 ">Choosing to learn a new language without proper guidance, could be a giant mistake!</p>
                 <p class=" lead fs-17 mb-4 pe-xxl-2 ">If you never master your chosen language, you will fall short in many aspects of your life - and you don't want that!</p>
-                <p class=" lead fs-17 mb-4 pe-xxl-2 ">Don't let the fear stop you from advancing your life!</p>
-                <p class=" lead fs-17 mb-8 pe-xxl-2 ">Do yourself a favor and start learning your chosen language today!</p>
+                <p class=" lead fs-17 mb-4 pe-xxl-2 ">Don't let the fear stop you from advancing your life.</p>
+                <p class=" lead fs-17 mb-8 pe-xxl-2 ">Do yourself a favor and start learning your chosen language TODAY.</p>
                 <h4 class=" mb-3 ff-jos-bold">IF YOU DON'T HANDLE YOUR LANGUAGE ISSUES, YOU WILL</h4>
                 <div class=" row gy-3 fs-17">
                   <div class=" col-xl-6 ">
@@ -653,7 +653,7 @@
     <div class="container">
       <h2 class="display-4 mb-4 text-center ff-jos-bold text-gold">FREQUENTLY ASKED QUESTIONS</h2>
 
-      <p class="lead fs-18 mb-8 pe-xxl-2 text-center px-6 mx-auto">Of course, If you don't see an answer to your question, don't hesitate to <a href="#contact-me" class="hover text-highlight">hit me up</a>!</p>
+      <p class="lead fs-18 mb-8 pe-xxl-2 text-center px-6 mx-auto">Of course, If you don't see an answer to your question, don't hesitate to <a href="#contact-me" class="hover text-highlight">contact me</a></p>
       <div class="row">
         <div class="col-lg-6 mb-0">
           <div id="accordion-1" class="accordion-wrapper">
@@ -1006,7 +1006,7 @@
               <div id="accordion-collapse-2-18" class="collapse" aria-labelledby="accordion-heading-2-18" data-bs-target="#accordion-2">
                 <div class="card-body">
                   <p>I'm going to need your:
-                  <ul>
+                  <ol>
                     <li>Name</li>
                     <li>E-mail address</li>
                     <li>Telephone number</li>
@@ -1014,7 +1014,7 @@
                     <li>Gmail address to share your Google Drive folder with you</li>
                     <li>Home address to put on the invoice</li>
                     That's it ☺
-                  </ul>
+                  </ol>
                   </p>
                 </div>
                 <!-- /.card-body -->
@@ -1065,7 +1065,7 @@
                     </div>
                   </div>
                   <div class='col-lg-6 col-xl-6 col-md-12 col-sm-12 d-flex flex-column mx-auto my-2'>
-                    <label for='form_phone' class='fs-18 form-input_label ff-jos-reg'>My phone is (Optional)</label>
+                    <label for='form_phone' class='fs-18 form-input_label ff-jos-reg'>My phone is (optional)</label>
                     <input id='form_phone' type='text' name='phone' class='form_control form-input ff-merriweather-reg' />
                     <div class=" valid-feedback ">
                       Looks good!
@@ -1077,7 +1077,7 @@
                   <div class='col-12 d-flex flex-column mx-auto my-2'>
                     <label for='form_level' class='fs-18 form-input_label ff-jos-reg'>Language Level
                       <span class='d-block fs-13 text-grey'>Don't know your language level? Click
-                        <a class='text-highlight fw-normal hover' href="https://tracktest.eu/english-levels-cefr/" target="_blank">HERE</a> for info.
+                        <a class='text-highlight fw-normal hover' href="./assets/docs/en/Language-Levels.pdf" target="_blank">HERE</a> for more info.
                       </span>
                     </label>
                     <select id='form_level' type='text' name='level' class='form_control form-input ff-merriweather-reg' required>
@@ -1121,8 +1121,7 @@
                   </div>
                   <div class='col-12 d-flex flex-column mx-auto my-2'>
                     <label for='form_call_time' class='fs-18 form-input_label ff-jos-reg'>When can we make a phone call?</label>
-                    <textarea id='form_call_time' type='text' name='call_time' class='form_control form-input ff-merriweather-reg'
-                    placeholder="e.g.: We can have a call this week on Wednesday between 4pm and 8pm." required></textarea>
+                    <textarea id='form_call_time' type='text' name='call_time' class='form_control form-input ff-merriweather-reg' placeholder="e.g.: We can have a call this week on Wednesday between 4pm and 8pm." required></textarea>
                     <div class=" valid-feedback ">
                       Looks good!
                     </div>
@@ -1131,7 +1130,7 @@
                     </div>
                   </div>
                   <div class='col-12 d-flex flex-column mx-auto my-2'>
-                    <label for='form_other_info' class='fs-18 form-input_label ff-jos-reg'>Anything else you wanna share with me? (Optional)</label>
+                    <label for='form_other_info' class='fs-18 form-input_label ff-jos-reg'>Anything else you wanna share with me? (optional)</label>
                     <textarea id='form_other_info' type='text' name='other_info' class='form_control form-input ff-merriweather-reg'></textarea>
                   </div>
                   <!-- /column -->
@@ -1139,7 +1138,7 @@
                     <div class="form-check mb-4">
                       <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                       <label class="form-check-label ff-jos-reg" for="invalidCheck">
-                        I agree to <a class="hover text-highlight" target="_blank" href="./assets/docs/Concept-Conditions_LearnwKate.pdf">Terms & Conditions</a>
+                        I agree to <a class="hover text-highlight" target="_blank" href="./assets/docs/en/Concept-Conditions_LearnwKate.pdf">Concept & Conditions</a>
                       </label>
                       <div class=" invalid-feedback ">
                         You must agree before submitting.
@@ -1160,7 +1159,7 @@
             <div class="col-lg-5 d-flex flex-column justify-content-center">
               <div class="d-flex flex-row mb-7">
                 <div>
-                  <div class="icon text-primary me-3"><img class='contact-icon' src='./assets/img/icons/phone-icon.webp' /></div>
+                  <div class="icon text-primary me-3"><img class='contact-icon' title='Phone' src='./assets/img/icons/phone-icon.webp' /></div>
                 </div>
                 <div>
                   <h5 class="fs-20 mb-0 ff-jos-bold">PHONE</h5>
@@ -1169,7 +1168,7 @@
               </div>
               <div class="d-flex flex-row mb-7">
                 <div>
-                  <div class="icon text-primary me-3"><img class='contact-icon' src='./assets/img/icons/email-icon.webp' /></div>
+                  <div class="icon text-primary me-3"><img class='contact-icon' title='Email' src='./assets/img/icons/email-icon.webp' /></div>
                 </div>
                 <div>
                   <h5 class="fs-20 mb-0 ff-jos-bold">EMAIL</h5>
@@ -1178,13 +1177,13 @@
               </div>
               <div class="d-flex flex-row ">
                 <div>
-                  <div class="icon text-primary me-3"><img class='contact-icon' src='./assets/img/icons/social-media-icon.webp' /></div>
+                  <div class="icon text-primary me-3"><img class='contact-icon' title='Social Media' src='./assets/img/icons/social-media-icon.webp' /></div>
                 </div>
                 <div>
                   <h5 class="fs-20 mb-1 ff-jos-bold">SOCIAL MEDIA</h5>
                   <div id="social-media__contact-form">
-                    <a class="social-media-link__contact-form " target="_blank" href="https://www.facebook.com/learnandteachwkate/ "><img src="./assets/img/icons/facebook-icon.webp" /></a>
-                    <a class="social-media-link__contact-form " target="_blank" href="https://www.linkedin.com/in/katka-vanderpool-887ab6ab?trk=people_directory "><img src="./assets/img/icons/linkedin-icon.webp" /></a>
+                    <a class="social-media-link__contact-form " title='Facebook' target="_blank" href="https://www.facebook.com/learnandteachwkate/ "><img title='Facebook' src="./assets/img/icons/facebook-icon.webp" /></a>
+                    <a class="social-media-link__contact-form " title='Linked In' target="_blank" href="https://www.linkedin.com/in/katka-vanderpool-887ab6ab?trk=people_directory "><img title='Linked In' src="./assets/img/icons/linkedin-icon.webp" /></a>
                   </div>
                 </div>
               </div>
@@ -1239,7 +1238,7 @@
             <h4 class="widget-title mb-3 ff-jos-bold text-gold">USEFUL INFORMATION</h4>
             <ul class="list-unstyled text-reset mb-0 ">
               <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="https://cestina-pro-cizince.cz/trvaly-pobyt/a2/en/">EXAM IN CZECH FOR PERMANENT RESIDENCE</a></li>
-              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/Concept-Conditions_LearnwKate.pdf ">TERMS & CONDITIONS</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/en/Concept-Conditions_LearnwKate.pdf ">CONCEPT & CONDITIONS</a></li>
               <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="./privacy-policy.html">PRIVACY POLICY</a></li>
             </ul>
           </div>
