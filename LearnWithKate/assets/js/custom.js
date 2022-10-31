@@ -94,16 +94,16 @@ const changeTextColor = (elements, prevColor, newColor) => {
 };
 
 const setAnchorListeners = () => {
+  // due to unpredictable scrolling behavior on smaller devices, leave this delayed scrolling out on these devices
   if (window.innerWidth <= 991.98) {
     return;
   }
 
-  console.log('printing');
   for (const link of linkHooks) {
     // a listener must be assigned to each link because it's an HTML collection
     link.addEventListener('click', event => {
       setTimeout(() => {
-        window.scrollBy(0, -100); // wait 500ms, then scroll up to the title of the section/location
+        window.scrollBy(0, -100); // wait a bit, then scroll up to the title of the section/location
       }, 800);
       window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
     });
