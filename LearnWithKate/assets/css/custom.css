@@ -56,6 +56,10 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--custom-color-black) !important;
 }
 
+.bg-transparent {
+  background-color: transparent !important;
+}
+
 .text-black {
   color: var(--custom-color-black) !important;
 }
@@ -74,6 +78,10 @@ html::-webkit-scrollbar-thumb {
 
 .bg-gold-light {
   background-color: var(--custom-color-gold-light) !important;
+}
+
+.transition-bg-change {
+  transition: background-color 750ms ease-in-out;
 }
 
 .article-text {
@@ -491,6 +499,11 @@ textarea.form-input {
   color: var(--bs-body-color) !important;
   max-width: 80%;
   font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.simple-note:last-child {
+  margin-bottom: auto;
 }
 
 .table tr:nth-child(odd) {

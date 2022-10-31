@@ -69,9 +69,16 @@ const closeNavBar = () => {
   }
 };
 
-const changeBGColor = (element, newColor) => {
-  if (element.style.backgroundColor !== newColor) {
-    element.style.backgroundColor = newColor;
+const changeBGColor = (element, oldColorClass, newColorClass) => {
+  // firstly remove the old background color
+  if(element.classList.contains(oldColorClass)) {
+    element.classList.remove(oldColorClass);
+    element.classList.remove('transition-bg-change');
+  }
+  // apply the new color black
+  if (!element.classList.contains( newColorClass ) ) {
+    element.classList.add(newColorClass);
+    element.classList.add('transition-bg-change');
   }
 };
 
@@ -141,7 +148,7 @@ window.addEventListener('scroll', () => {
 
 window.addEventListener('scroll', () => {
   if (window.innerWidth >= 991.98 && window.scrollY > 50) {
-    changeBGColor(navbar, 'white');
+    changeBGColor(navbar, 'bg-transparent', 'bg-white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
       if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
@@ -150,7 +157,7 @@ window.addEventListener('scroll', () => {
         hideElement(bookALesson, false);
       }
     } else {
-      changeBGColor(navbar, 'transparent');
+      changeBGColor(navbar, 'bg-white', 'bg-transparent');
       changeTextColor(navbarNavLinks, 'text-black', 'text-white');
       changeOpacity(navbar, 1.0);
     }
@@ -158,7 +165,7 @@ window.addEventListener('scroll', () => {
   if (window.innerWidth < 991.98 && window.scrollY > 200) {
     // if the user scrolls up, show the navbar, else hide it
     if (lastScrollY > window.scrollY) {
-      changeBGColor(navbar, 'white');
+      changeBGColor(navbar, 'bg-transparent', 'white');
       changeTextColor(navbarNavLinks, 'text-black', 'text-white');
       changeOpacity(navbar, 1.0);
       loadingBar.style.top = '97px'; // move the loading bar 97 down
