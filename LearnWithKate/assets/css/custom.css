@@ -114,7 +114,7 @@ p {
 #loading-bar {
   position: fixed;
   width: 0px;
-  top: 97px;
+  top: 91px;
   left: 0;
   height: 6px;
   z-index: 10;
@@ -160,15 +160,15 @@ p {
   margin: 0 auto !important;
 }
 
-.contact-me-btn {
+.main-btn {
   color: var(--custom-color-white) !important;
   background-color: var(--custom-color-black) !important;
   border: 2px solid var(--custom-color-gold) !important;
 }
 
-.contact-me-btn:hover,
-.contact-me-btn:active,
-.contact-me-btn:focus {
+.main-btn:hover,
+.main-btn:active,
+.main-btn:focus {
   color: var(--custom-color-gold) !important;
 }
 
