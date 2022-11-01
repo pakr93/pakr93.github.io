@@ -19,17 +19,19 @@
   <script src="./assets/js/custom.js" defer></script>
   <style>
     section {
-      width: 60%;
+      width: 80%;
       margin: auto;
-      margin-top: 8rem;
+      /* margin-top: 8rem; */
     }
 
     h2 {
       margin-top: 2rem;
+      color: var(--custom-color-gold);
     }
 
     p {
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
+      font-family: "Merriweather Regular";
     }
 
     p:last-child {
@@ -44,9 +46,9 @@
 <body>
   <div class="content-wrapper" id='navbar'>
     <header class="wrapper">
-      <nav style="background-color: transparent !important;" class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
+      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
-          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-2 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand bg-light">
               <a class="logo-link" href="./index.html">
                 <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
@@ -57,40 +59,40 @@
                 <a class="logo-link" href="./index.html">
                   <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
                 </a>
-                <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" title='Close menu' class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div style="margin:auto; opacity: 1.0" class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+              <div style="margin:auto; opacity: 1.0; height: 85%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
                 <ul class="navbar-nav" onclick="closeNavBar()">
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html">HOME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./about-me.html#about-me">ABOUT ME</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link text-muted ff-jos-bold" href="./index.html#faq">FAQ</a></li>
-                  <li class="nav-item"><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn btn-green btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></li>
-                  <li class="nav-item"><a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold mt-4 mx-auto mobile">HIT ME UP !</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#about-me">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#faq">FAQ</a></li>
                 </ul>
+                <div onclick="closeNavBar()" id='contact-btns-mobile'>
+                  <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
+                  <span><a href="./index.html#contact-me" class="contact-me-btn link-hook btn-lg rounded-pill ff-jos-bold mt-4 text-center mx-auto mobile">HIT ME UP !</a></span>
+                </div>
               </div>
             </div>
-            <div style="justify-content: flex-end;" class="navbar-other d-flex ms-auto me-10 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto">
-              <ul style="margin: auto;" class="navbar-nav flex-row align-items-center navbar-mini">
-                <li class="nav-item dropdown language-select text-uppercase" style='display: flex; align-items: center; justify-content: center;'>
-                  <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <img class='flag-lang mx-1' src="./assets/img/flags/US.svg" width='50px' height='25px' alt='an image of a US flag' />
+            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-end">
+              <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
+                <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
+                  <a title='Change language' class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN
                   </a>
-                  <ul class="dropdown-menu px-2 py-1 bg-soft-ash">
-                    <li class="nav-item" style='display: flex; flex-flow: row nowrap; align-items: center; justify-content: flex-start;'>
-                      <a class="dropdown-item px-0" style='width:10px' href="./cs/index.html">
-                        <img class='flag-lang mx-1 ml-3' src="./assets/img/flags/Czech.svg" width='50px' height='25px' alt='an image of a Czech flag' />
-                      </a>
+                  <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
+                    <li class="nav-item border-0">
+                      <a class="nav-link dropdown-item w-100 text-center p-2 text-white" href="./cs/index.html">CS</a>
                     </li>
                   </ul>
                 </li>
                 <li class="nav-item d-none d-md-block">
-                  <a href='./index.html#contact-me' class="btn btn-orange btn-lg rounded-pill ff-jos-bold">HIT ME UP !</a>
+                  <a href="./index.html#contact-me" class="btn contact-me-btn link-hook btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
                 </li>
-                <li class="nav-item d-xs-flex d-lg-none">
-                  <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                <li class="nav-item d-xs-flex d-lg-none border-0">
+                  <button title='Open menu' class="hamburger offcanvas-nav-btn"><span></span></button>
                 </li>
               </ul>
               <!-- /.navbar-nav -->
@@ -102,12 +104,13 @@
         <!-- /.container -->
       </nav>
       <!-- /.offcanvas-footer -->
-      </header>
+    </header>
   </div>
   <div id='loading-bar' class='bg-orange'></div>
-  <main class='bg-soft-green'>
+  <main class="mt-14 pt-11 bg-white px-4">
+    <div class='background-filter background-image'></div>
     <section>
-    <h1>Privacy Policy for Learn with Kate</h1>
+    <h1 class='display-4 mb-4 ff-jos-bold text-gold ff-jos-bold text-center'>Privacy Policy for Learn with Kate</h1>
 
     <p>At Learn with Kate, accessible from learnwkate.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Learn with Kate and how we use it.
     </p>
