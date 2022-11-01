@@ -34,7 +34,9 @@ const animateFlags = () => {
       counter = 0;
     }
     const currentFlag = flagNames[counter++];
-    flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
+    if (flagInANutshell) {
+      flagInANutshell.src = `assets/img/icons/lineal/${currentFlag}-Flag-icon.webp`;
+    }
   }, interval * 1000); // change the flags in an interval
 };
 
