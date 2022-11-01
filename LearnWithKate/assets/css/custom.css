@@ -130,10 +130,6 @@ p {
   margin: auto;
 }
 
-#page-not-found {
-  min-height: 30rem;
-}
-
 #page-not-found h1,
 #page-not-found h2 {
   text-align:center;
