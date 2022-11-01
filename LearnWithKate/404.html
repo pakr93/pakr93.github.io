@@ -1,10 +1,187 @@
-!<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Page Not Found | Learn with Kate</title>
-  </head>
-  <body>
-  <h2>This page does not exist</h2>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn with Kate. A website focused on Katka Vanderpool freelancing services. Katka is a professional freelance language teacher with focus on Czech, English and French languages." />
+  <meta name="keywords" content="french, english, czech, teaching, languages, language teacher, language tutor, prague, czech republic, expat, expats, french language, english language, czech language" />
+  <meta name="author" content="Patrik Kraus" />
+  <title>Page Not Found | Learn with Kate</title>
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+  <link rel="stylesheet" href="./assets/css/plugins.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/colors/colors.css" />
+  <link rel="preload" href="./assets/css/fonts/dm.css" as="style" onload="this.rel='stylesheet'" />
+  <link rel="stylesheet" href="./assets/css/custom.css" />
+  <script src="./assets/js/plugins.js" defer></script>
+  <script src="./assets/js/theme.js" defer></script>
+  <script src="./assets/js/custom.js" defer></script>
+  <script src="./assets/js/pricing.js" defer></script>
+</head>
+<body>
+  <div class="content-wrapper" id='navbar'>
+    <header class="wrapper">
+      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
+        <div class="container">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+            <div class="navbar-brand bg-light">
+              <a class="logo-link" href="./index.html">
+                <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
+              </a>
+            </div>
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
+              <div style="background-color: var(--bs-body-bg);" class="offcanvas-header d-lg-none">
+                <a class="logo-link" href="./index.html">
+                  <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
+                </a>
+                <button type="button" title='Close menu' class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div style="margin:auto; opacity: 1.0; height: 85%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
+                <ul class="navbar-nav" onclick="closeNavBar()">
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#about-me">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="#faq">FAQ</a></li>
+                </ul>
+                <div onclick="closeNavBar()" id='contact-btns-mobile'>
+                  <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
+                  <span><a href="#contact-me" class="contact-me-btn link-hook btn-lg rounded-pill ff-jos-bold mt-4 text-center mx-auto mobile">HIT ME UP !</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-end">
+              <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
+                <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
+                  <a title='Change language' class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN
+                  </a>
+                  <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
+                    <li class="nav-item border-0">
+                      <a class="nav-link dropdown-item w-100 text-center p-2 text-white" href="./cs/index.html">CS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                  <a href="#contact-me" class="btn contact-me-btn link-hook btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
+                </li>
+                <li class="nav-item d-xs-flex d-lg-none border-0">
+                  <button title='Open menu' class="hamburger offcanvas-nav-btn"><span></span></button>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+          </div>
+          <!-- /.navbar-collapse-wrapper -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.offcanvas-footer -->
+    </header>
+  </div>
+  <div id='loading-bar' class='bg-orange mobile'></div>
+  <main class='mt-14 pt-14 bg-white d-flex flex-column align-items-center px-4' id='page-not-found'>
+    <div class='background-filter background-image'></div>
+    <h1 class=' display-4 mb-4 ff-jos-bold text-gold ff-jos-bold'>This page cannot be found.</h1>
+    <h2 class=' mb-4 ff-jos-bold'>You're probably lost, just like John Travolta.</h2>
+    <figure>
+      <img src="./assets/img/gifs/travolta-lost.gif" alt='Page not found John Travolta gif' />
+    </figure>
+  </main>
+  <!-- /section -->
+  <footer class="bg-soft-green">
+    <!-- /section -->
+    <div class="container py-14 pb-7 bg-white">
+      <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
+        <div class="col-md-4 col-lg-2">
+          <div class="widget ">
+            <h4 class="widget-title mb-3 ff-jos-bold text-gold">LEARN MORE</h4>
+            <ul class="list-unstyled text-reset mb-0 ">
+              <li class=" nav-item-footer ff-jos-bold"><a class="nav-link-footer link-hook" href="#">HOME</a></li>
+              <li class=" nav-item-footer ff-jos-bold"><a class=" nav-link-footer link-hook" href="#about-me">ABOUT ME</a></li>
+              <li class=" nav-item-footer ff-jos-bold"><a class="nav-link-footer link-hook" href="#how-it-works">HOW IT WORKS</a></li>
+              <li class=" nav-item-footer ff-jos-bold"><a class=" nav-link-footer link-hook" href="#testimonials">TESTIMONIALS</a></li>
+              <li class="nav-item-footer ff-jos-bold"><a class=" nav-link-footer link-hook" href="#pricing">PRICING</a></li>
+              <li class=" nav-item-footer ff-jos-bold"><a class=" nav-link-footer link-hook" href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <div class="col-md-4 col-lg-2 ">
+          <div class="widget align-text-right ">
+            <h4 class="widget-title mb-3 ff-jos-bold text-gold">USEFUL INFORMATION</h4>
+            <ul class="list-unstyled text-reset mb-0 ">
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="https://cestina-pro-cizince.cz/trvaly-pobyt/a2/en/">EXAM IN CZECH FOR PERMANENT RESIDENCE</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="assets/docs/en/Concept-Conditions_LearnwKate.pdf ">CONCEPT & CONDITIONS</a></li>
+              <li class="nav-item-footer "><a class="nav-link-footer ff-jos-bold" target="_blank " href="./privacy-policy.html">PRIVACY POLICY</a></li>
+            </ul>
+          </div>
+          <!-- /.widget -->
+        </div>
+        <div class="col-md-4 col-sm-6 col-lg-3 ">
+          <div class="widget ">
+            <div class="table-responsive ">
+              <h4 class="widget-title mb-3 ff-jos-bold text-gold">OPENING HOURS</h4>
+              <table class="table table-bordered ff-jos-regular" id='opening-hours'>
+                <tbody>
+                  <tr class="opening-hours-row ">
+                    <th>MON</th>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                  <tr class="opening-hours-row ">
+                    <th>TUE</th>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                  <tr class="closed-opening-hours opening-hours-row ">
+                    <th>WED</th>
+                    <td>CLOSED</td>
+                    <td></td>
+                  </tr>
+                  <tr class="opening-hours-row ">
+                    <th>THU</th>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                  <tr class="opening-hours-row ">
+                    <th>FRI</th>
+                    <td>8:00 AM</td>
+                    <td>7:00 PM</td>
+                  </tr>
+                  <tr class="closed-opening-hours opening-hours-row ">
+                    <th>SAT</th>
+                    <td>CLOSED</td>
+                    <td></td>
+                  </tr>
+                  <tr class="closed-opening-hours opening-hours-row ">
+                    <th>SUN</th>
+                    <td>CLOSED</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!-- /.widget -->
+        </div>
+      </div>
+      <!--/.row -->
+      <div class="d-md-flex align-items-center justify-content-between ">
+        <p class="mb-2 mb-lg-0 ">© 2021 Sandbox. All rights reserved.</p>
+      </div>
+      <!-- /div -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <div class="progress-wrap ">
+    <svg class="progress-circle svg-content text-highlight " width="100% " height="100% " viewBox="-1 -1 102 102 ">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98 " />
+    </svg>
+  </div>
+</body>
+
 </html>

@@ -130,6 +130,19 @@ p {
   margin: auto;
 }
 
+#page-not-found {
+  min-height: 30rem;
+}
+
+#page-not-found h1,
+#page-not-found h2 {
+  text-align:center;
+}
+
+#page-not-found img {
+  max-width: 300px;
+}
+
 .how-it-works-step-icon {
   max-width: 40px;
 }
@@ -591,6 +604,10 @@ button.collapsed:visited {
 @media (min-width: 500px) {
   .switcher {
     flex-flow: row nowrap;
+  }
+
+  #page-not-found img {
+    max-width: 400px;
   }
 }
 
