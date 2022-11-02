@@ -108,7 +108,6 @@ p {
   left: 0px;
   z-index: 99;
   width: 100%;
-  min-height:100px;
 }
 
 #loading-bar {
@@ -227,20 +226,17 @@ p {
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 
 .logo-link .learn-logo {
   width: 100%;
   height: 100%;
+  max-width: 40px;
 }
 
 .logo-link .logo-text {
-  font-size: 1rem !important;
-  color: var(--custom-color-primary);
-  padding: 0;
-  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 #language-dropdown {
@@ -570,7 +566,7 @@ button.collapsed:visited {
   .logo-link .learn-logo {
     width: 120px;
     height: auto;
-    margin: 1rem;
+    /* margin: 1rem; */
   }
 }
 
@@ -583,12 +579,6 @@ button.collapsed:visited {
 @media (min-width: 400px) {
   .info-buttons {
     flex-direction: row;
-  }
-}
-
-@media (max-width: 500px) {
-  .logo-link .learn-logo {
-    max-width: 200px;
   }
 }
 
@@ -694,6 +684,16 @@ button.collapsed:visited {
     opacity: 1;
     animation: flash 3s ease infinite;
     border-radius: 0 0 15px 15px;
+  }
+
+  .logo-link {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0 1rem;
+  }
+
+  .logo-link .logo-text {
+    padding-left: 0.4rem;
   }
 
   #loading-bar {
