@@ -223,7 +223,7 @@ p {
 
 .logo-link {
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -237,6 +237,7 @@ p {
 .logo-link .logo-text {
   display: flex;
   flex-flow: column nowrap;
+  padding: 0.4rem;
 }
 
 #language-dropdown {
@@ -554,7 +555,6 @@ button.collapsed:visited {
 @media (max-width: 600px) {
   .logo-link {
     flex-direction: column;
-    /* max-width: 80px; */
   }
 
   .book-a-lesson-btn {
