@@ -24,19 +24,27 @@
       <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div class="container">
           <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
-            <div class="navbar-brand bg-light">
+            <div class="navbar-brand bg-transparent m-2 ps-2 ps-xl-0 ps-xxl-0 ps-lg-0 d-flex flex-row flex-nowrap align-items-center">
               <a class="logo-link" href="./index.html">
-                <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
+                <img class="learn-logo w-100" src="./assets/img/logo-avatar.webp" alt="Learn with Kate logo" />
+                <div class='logo-text'>
+                  <h2 style='font-family: "Poppins Bold";' class='fs-22 text-center text-turquoise mb-0'>Learn with Kate</h2>
+                  <em class='fs-11 ff-jos-reg text-center text-gold ff-jos-bold'>Catch your Dream Language</em>
+                </div>
               </a>
             </div>
             <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
-              <div style="background-color: var(--bs-body-bg);" class="offcanvas-header d-lg-none">
-                <a class="logo-link" href="./index.html">
-                  <img class="learn-logo" src="./assets/img/learn-logo.svg" alt="Learn with Kate logo" />
+              <div class="offcanvas-header d-lg-none">
+                <a class="logo-link p-4" href="./index.html">
+                  <img class="learn-logo w-100" src="./assets/img/logo-avatar.webp" alt="Learn with Kate logo" />
+                  <div class='logo-text'>
+                    <h2 style='font-family: "Poppins Bold";' class='fs-22 text-center text-turquoise mb-0'>Learn with Kate</h2>
+                    <em class='fs-11 ff-jos-reg text-center text-gold ff-jos-bold'>Catch your Dream Language</em>
+                  </div>
                 </a>
                 <button type="button" title='Close menu' class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
-              <div style="margin:auto; opacity: 1.0; height: 85%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
+              <div style="margin:auto; opacity: 1.0; height: 80%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
                 <ul class="navbar-nav" onclick="closeNavBar()">
                   <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#">HOME</a></li>
                   <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-bold" href="./index.html#about-me">ABOUT ME</a></li>
@@ -93,6 +101,22 @@
   </main>
   <!-- /section -->
   <footer class="bg-soft-green">
+    <section class="position-relative wrapper image-wrapper no-overlay bg-auto bg-image text-center bg-map bg-soft-green section py-16">
+      <div class='background-filter background-image bg-image-bottom'></div>
+      <div class="container py-0">
+        <div class="row">
+          <div class="col-lg-10 col-xl-10 mx-auto" style='text-transform: uppercase;'>
+            <h2 class="fs-16 mb-6 text-center text-white">JOIN AN AMAZING COMMUNITY OF LANGUAGE TEACHERS</h2>
+            <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Interested in teaching languages instead? </p>
+            <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Join our amazing community and unleash your teaching career today!</p>
+            <a style="min-width:275px; max-width: 700px; width: 50%; letter-spacing: 3px" target='_blank' href="https://www.teachwkate.com" class="btn secondary-btn fs-18 btn-lg rounded-pill mt-4 ff-jos-bold">TEACH WITH KATE</a>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
     <!-- /section -->
     <div class="container py-14 pb-7 bg-white">
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
