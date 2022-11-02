@@ -169,7 +169,7 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'bg-transparent', 'bg-white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
-    if (window.scrollY > home.getBoundingClientRect().bottom + 200) {
+    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 200)) {
       hideElement(bookALesson, true);
     } else {
       hideElement(bookALesson, false);
