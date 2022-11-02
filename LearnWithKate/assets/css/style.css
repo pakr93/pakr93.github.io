@@ -6237,7 +6237,7 @@ textarea.form-control.is-invalid {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 15rem;
+  width: 16rem;
   border-right: 0 solid transparent;
   transform: translateX(-100%);
 }
