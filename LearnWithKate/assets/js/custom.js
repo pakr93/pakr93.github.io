@@ -186,7 +186,11 @@ window.addEventListener('scroll', () => {
       changeBGColor(navbar, 'bg-transparent', 'white');
       changeTextColor(navbarNavLinks, 'text-black', 'text-white');
       changeOpacity(navbar, 1.0);
-      loadingBar.style.top = '97px'; // move the loading bar 97 down
+      loadingBar.style.top = '79px'; // move the loading bar 79px down
+
+      if(window.innerWidth <= 600) {
+        loadingBar.style.top = '127px';
+      }
     } else {
       changeOpacity(navbar, 0.0);
       loadingBar.style.top = '0px'; // put the loading bar to the top
