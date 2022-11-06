@@ -4000,7 +4000,6 @@ textarea.form-control.is-invalid {
   display: block;
   padding: 1.2rem 1rem;
   font-size: 1rem;
-  font-weight: 700;
   text-align: right;
   margin-right: 20%;
   color: #343f52;
@@ -22326,7 +22325,7 @@ blockquote.text-center.icon-top:before {
   color: #f78b77;
 }
 .icon-list.bullet-orange.bullet-bg i {
-  background-color:var(--custom-color-gold);
+  /* background-color:var(--custom-color-gold); */
   color: #fff;
 }
 .icon-list.bullet-bg i[class*="bullet-orange"] {
