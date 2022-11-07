@@ -85,7 +85,8 @@ html::-webkit-scrollbar-thumb {
 }
 
 .article-text {
-  font-size: 0.85rem !important;
+  font-family: "Merriweather Regular";
+  font-size: 0.75rem !important;
   color: var(--custom-color-grey) !important;
 }
 
@@ -169,6 +170,7 @@ p {
 .main-btn:active,
 .main-btn:focus {
   color: var(--custom-color-gold) !important;
+  transition: color 500ms ease;
 }
 
 .secondary-btn {
@@ -500,7 +502,7 @@ textarea.form-input {
 
 .text-highlight {
   color: var(--custom-color-gold) !important;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .simple-note {
