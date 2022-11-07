@@ -170,7 +170,6 @@ p {
 .main-btn:active,
 .main-btn:focus {
   color: var(--custom-color-gold) !important;
-  transition: color 500ms ease;
 }
 
 .secondary-btn {
