@@ -119,6 +119,11 @@ const changeOpacity = (element, newOpacity) => {
 };
 
 const hideElement = (element, isHidden) => {
+
+  if(!element) {
+    return;
+  }
+
   if (isHidden) {
     element.style.display = 'none';
   } else {
