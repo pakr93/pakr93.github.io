@@ -6237,7 +6237,8 @@ textarea.form-control.is-invalid {
 .offcanvas-start {
   top: 0;
   left: 0;
-  width: 16rem;
+  width: 17rem;
+  max-width: 90%;
   border-right: 0 solid transparent;
   transform: translateX(-100%);
 }
@@ -29993,7 +29994,7 @@ button.hamburger:before {
   width: 1.2rem;
   height: 0.15rem;
   transition: all 0.2s ease-in-out;
-  background: currentColor;
+  background: var(--custom-color-black);
   border-radius: 2rem;
 }
 @media (prefers-reduced-motion: reduce) {

@@ -21,9 +21,6 @@ const accordion2 = document.getElementById('accordion-2');
 
 const formLevel = document.getElementById('form_level');
 
-// represents last vertical scrolling position - to determine whether navbar bar should be visible or not (see below)
-let lastScrollY = 0;
-
 const animateFlags = () => {
   const flagNames = ['Czech', 'French', 'US'];
   const interval = 1.5; // seconds
@@ -170,7 +167,7 @@ window.addEventListener('scroll', () => {
 });
 
 window.addEventListener('scroll', () => {
-  if (window.innerWidth >= 991.98 && window.scrollY > 50) {
+  if (window.scrollY > 50) {
     changeBGColor(navbar, 'bg-transparent', 'bg-white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
 
@@ -183,24 +180,6 @@ window.addEventListener('scroll', () => {
     changeBGColor(navbar, 'bg-white', 'bg-transparent');
     changeTextColor(navbarNavLinks, 'text-black', 'text-white');
     changeOpacity(navbar, 1.0);
-  }
-
-  if (window.innerWidth < 991.98 && window.scrollY > 200) {
-    // if the user scrolls up, show the navbar, else hide it
-    if (lastScrollY > window.scrollY) {
-      changeBGColor(navbar, 'bg-transparent', 'white');
-      changeTextColor(navbarNavLinks, 'text-black', 'text-white');
-      changeOpacity(navbar, 1.0);
-      loadingBar.style.top = '79px'; // move the loading bar 79px down
-
-      if(window.innerWidth <= 600) {
-        loadingBar.style.top = '127px';
-      }
-    } else {
-      changeOpacity(navbar, 0.0);
-      loadingBar.style.top = '0px'; // put the loading bar to the top
-    }
-    lastScrollY = window.scrollY;
   }
 });
 
