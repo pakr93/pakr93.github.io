@@ -94,9 +94,9 @@ const changeTextColor = (elements, prevColor, newColor) => {
 
 const setAnchorListeners = () => {
   // due to unpredictable scrolling behavior on smaller devices, leave this delayed scrolling out on these devices
-  if (window.innerWidth <= 991.98) {
-    return;
-  }
+ // if (window.innerWidth <= 991.98) {
+//    return;
+//  }
 
   for (const link of linkHooks) {
     // a listener must be assigned to each link because it's an HTML collection
