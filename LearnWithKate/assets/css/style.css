@@ -117,8 +117,9 @@ h6 {
   margin-bottom: 0.5rem;
   font-weight: 700;
   line-height: 1.2;
-  color: #343f52;
+  color: var(--custom-color-black);
 }
+
 .h1,
 h1 {
   font-size: calc(1.27rem + 0.24vw);
@@ -20011,7 +20012,7 @@ h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 700;
-  color: #343f52;
+  color: var(--custom-color-black);
   word-spacing: 0.1rem;
   letter-spacing: -0.01rem;
 }
@@ -30183,7 +30184,7 @@ button.hamburger:before {
   color: #3f78e0;
 }
 .accordion-wrapper .card-header button.collapsed {
-  color: #343f52;
+  color: var(--custom-color-black);
 }
 .accordion-wrapper .card-header button.collapsed:before {
   content: url('../img/icons/arrow-down-small.webp');

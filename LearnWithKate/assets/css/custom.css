@@ -4,6 +4,7 @@
   --custom-color-gold: #e9b52d; /* same as primary color */
   --custom-color-gold-light: #fdfaf0;
   --custom-color-turquoise: #54dedc;
+  --custom-color-turquoise-light: #54dedc29;
   --custom-color-black: #191d21;
   --custom-color-grey: #191d21c9;
   --custom-color-grey-light: #dadada;
@@ -16,7 +17,7 @@ html {
   height: 100% !important;
   font-size: 16px;
   text-rendering: geometricPrecision;
-  /* user-select: none; */
+  color: var(--custom-color-black);
 }
 
 /* custom scrollbar */
@@ -42,6 +43,10 @@ html::-webkit-scrollbar-thumb {
 
 .bg-turquoise {
   background-color: var(--custom-color-turquoise) !important;
+}
+
+.bg-turquoise-light {
+  background-color: var(--custom-color-turquoise-light) !important;
 }
 
 .text-gold {
@@ -87,7 +92,7 @@ html::-webkit-scrollbar-thumb {
 .article-text {
   font-family: "Merriweather Regular";
   font-size: 0.75rem !important;
-  color: var(--custom-color-grey) !important;
+  color: var(--custom-color-black) !important;
 }
 
 .text-grey {
@@ -197,7 +202,7 @@ p {
 
 .nav-item .nav-link-footer,
 .nav-item-footer .nav-link-footer {
-  color: black !important;
+  color: var(--custom-color-black) !important;
 }
 
 .nav-item-footer {
@@ -269,6 +274,7 @@ p {
   display: flex;
   flex-flow: column nowrap;
   margin: 1rem auto;
+  font-family: "Josefin Bold";
 }
 
 .price-bundle-section {
@@ -363,7 +369,8 @@ p {
 }
 
 .pricing-rating img {
-  max-width: 100%;
+  width: 90px;
+  height: 90px;
   margin: 0.1rem;
 }
 
@@ -478,7 +485,8 @@ textarea.form-input {
 
 .faq-item {
   font-family: "Josefin Regular" !important;
-  font-size: 17px !important;
+  font-size: 0.65rem !important;
+  text-transform: uppercase;
 }
 
 .blockquote-details {
@@ -508,7 +516,7 @@ textarea.form-input {
   border-left: 5px solid var(--custom-color-gold);
   background-color: #f7f7f7;
   padding: 0.75rem;
-  color: var(--bs-body-color) !important;
+  color: var(--custom-color-black) !important;
   max-width: 80%;
   font-style: italic;
   margin-bottom: 0.75rem;
@@ -534,6 +542,10 @@ textarea.form-input {
 .today-opening-hours {
   border-top: 3px solid black !important;
   border-bottom: 3px solid black !important;
+}
+
+.opening-hours-row {
+  color: var(--custom-color-black);
 }
 
 .opening-hours-row:hover {
