@@ -394,7 +394,8 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* Background-attachment does not work on iOS small devices */
+  /* background-attachment: fixed; */
   background-image: url('../img/photos/Dreamcatcher1.webp');
 }
 
