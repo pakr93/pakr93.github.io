@@ -400,13 +400,6 @@ p {
   background-image: url('../img/photos/Dreamcatcher1.webp');
 }
 
-/* On all devices that support background-attachment (non-iOS devices), apply background-attachment*/
-@supports (background-attachment: fixed) {
-  .background-image {
-    background-attachment: fixed;
-  }
-}
-
 .bg-image-bottom {
   background-image: url('../img/photos/Dreamcatcher2.webp');
 }
