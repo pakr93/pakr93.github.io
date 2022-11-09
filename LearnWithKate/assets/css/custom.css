@@ -1,7 +1,7 @@
 :root {
   --custom-color-primary: #e9b52d;
   --custom-color-secondary: #f78b77;
-  --custom-color-gold: #e9b52d; /* same as primary color */
+  --custom-color-gold: #e9b52d;
   --custom-color-gold-light: #fdfaf0;
   --custom-color-turquoise: #54dedc;
   --custom-color-turquoise-light: #54dedc29;
@@ -119,10 +119,15 @@ p {
 #loading-bar {
   position: fixed;
   width: 0px;
-  top: 74px;
+  top: 68px;
   left: 0;
   height: 6px;
-  z-index: 10;
+  z-index: 99;
+}
+
+.box-shadow-navbar {
+  /* box-shadow: 1px 10px 12px -10px rgba(25, 29, 33, 0.87); */
+  box-shadow: 1px 5px 16px -10px var(--custom-color-black);
 }
 
 #how-it-works-steps {
@@ -137,7 +142,7 @@ p {
 
 #page-not-found h1,
 #page-not-found h2 {
-  text-align:center;
+  text-align: center;
 }
 
 #page-not-found img {
@@ -193,7 +198,7 @@ p {
 }
 
 .nav-link {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .nav-link.letter-spacing {
@@ -247,12 +252,10 @@ p {
 }
 
 .logo-link .logo-text h2 {
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
-#language-dropdown {
-
-}
+#language-dropdown {}
 
 #language-dropdown a {
   color: var(--custom-color-gold) !important;
@@ -532,17 +535,13 @@ textarea.form-input {
   margin-bottom: auto;
 }
 
-.table tr:nth-child(odd) {
-  background-color: #fef6f5;
-}
-
 .table tr:hover,
 .table tr:active {
-  background-color: var(--custom-color-primary);
+  background-color: var(--custom-color-turquoise);
 }
 
 .closed-opening-hours:hover {
-  background-color: var(--custom-color-secondary) !important;
+  background-color: var(--custom-color-gold) !important;
 }
 
 .today-opening-hours {
@@ -554,8 +553,13 @@ textarea.form-input {
   color: var(--custom-color-black);
 }
 
+tr.opening-hours-row td,
+tr.opening-hours-row th {
+  padding: 0.25rem;
+}
+
 .opening-hours-row:hover {
-  transition: background-color 350ms ease-in-out;
+  transition: background-color 500ms ease-in-out;
 }
 
 .shadow {
@@ -576,7 +580,6 @@ button.collapsed:visited {
 }
 
 @media (max-width: 600px) {
-
   .logo-link .logo-text h2 {
     font-size: 0.9rem !important;
   }
@@ -637,13 +640,16 @@ button.collapsed:visited {
 
 /* mobile to desktop breakpoint */
 @media (max-width: 991.98px) {
-
   html {
     font-size: 17px !important;
   }
 
   #book-a-lesson {
     display: none;
+  }
+
+  .nav-item {
+    border: none;
   }
 
   #how-it-works-steps {
@@ -702,7 +708,7 @@ button.collapsed:visited {
     height: 60px;
     width: 257px;
     right: -105px;
-    top: 27%;
+    top: 30%;
     transform: rotate(90deg);
     z-index: 99;
     opacity: 1;
@@ -830,12 +836,10 @@ button.collapsed:visited {
 }
 
 @media (max-width: 1050px) {
-  .nav-link.letter-spacing {
-  }
+  .nav-link.letter-spacing {}
 }
 
 @media (min-width: 1300px) {
-
   .nav-link.letter-spacing {
     letter-spacing: 0.04rem;
   }

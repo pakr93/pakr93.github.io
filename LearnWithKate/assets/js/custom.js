@@ -92,12 +92,15 @@ const changeTextColor = (elements, prevColor, newColor) => {
   }
 };
 
-const setAnchorListeners = () => {
-  // due to unpredictable scrolling behavior on smaller devices, leave this delayed scrolling out on these devices
- // if (window.innerWidth <= 991.98) {
-//    return;
-//  }
+const applyBoxShadowToNavbar = (isOn) => {
+  if(isOn /*&& window.innerWidth >= 991.92*/) {
+    navbar.classList.add('box-shadow-navbar');
+  } else {
+    navbar.classList.remove('box-shadow-navbar');
+  }
+};
 
+const setAnchorListeners = () => {
   for (const link of linkHooks) {
     // a listener must be assigned to each link because it's an HTML collection
     link.addEventListener('click', event => {
@@ -116,7 +119,6 @@ const changeOpacity = (element, newOpacity) => {
 };
 
 const hideElement = (element, isHidden) => {
-
   if(!element) {
     return;
   }
@@ -170,8 +172,9 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 50) {
     changeBGColor(navbar, 'bg-transparent', 'bg-white');
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
+    applyBoxShadowToNavbar(true);
 
-    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 200)) {
+    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 25)) {
       hideElement(bookALesson, true);
     } else {
       hideElement(bookALesson, false);
@@ -179,6 +182,7 @@ window.addEventListener('scroll', () => {
   } else {
     changeBGColor(navbar, 'bg-white', 'bg-transparent');
     changeTextColor(navbarNavLinks, 'text-black', 'text-white');
+    applyBoxShadowToNavbar(false);
     changeOpacity(navbar, 1.0);
   }
 });

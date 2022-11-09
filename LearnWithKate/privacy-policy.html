@@ -48,7 +48,7 @@
 <body>
   <div class="content-wrapper" id='navbar'>
     <header class="wrapper">
-      <nav class="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
+      <nav class="navbar navbar-expand-lg fancy navbar-light caret-none">
         <div class="container">
           <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand bg-transparent m-2 ps-xl-0 ps-xxl-0 ps-lg-0 d-flex flex-row flex-nowrap align-items-center">
@@ -78,7 +78,7 @@
                   <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#how-it-works">HOW IT WORKS</a></li>
                   <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#testimonials">TESTIMONIALS</a></li>
                   <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#pricing">PRICING</a></li>
-                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#faq">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg m-0" href="./index.html#faq">FAQ</a></li>
                 </ul>
                 <div onclick="closeNavBar()" id='contact-btns-mobile'>
                   <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
@@ -86,10 +86,10 @@
                 </div>
               </div>
             </div>
-            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-end">
+            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-sm-0 me-lg-0 ms-lg-auto justify-content-between">
               <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
                 <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
-                  <a title='Change language' class="nav-link dropdown-item dropdown-toggle mb-lg-1" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <a title='Change language' class=" dropdown-item dropdown-toggle mb-lg-2 ps-2" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     EN
                   </a>
                   <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
@@ -98,7 +98,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="nav-item d-none d-md-block">
+                <li class="nav-item d-none d-md-block border-0 m-0">
                   <a href="./index.html#contact-me" class="btn main-btn link-hook btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
                 </li>
                 <li class="nav-item d-xs-flex d-lg-none border-0">
@@ -208,7 +208,25 @@
         </section>
   </main>
   <!-- /.offcanvas-body -->
-  <footer class="bg-soft-green">
+  <footer>
+    <section class="position-relative wrapper image-wrapper no-overlay bg-auto bg-image text-center bg-map bg-soft-green section py-16">
+      <div class='background-filter background-image bg-image-bottom'></div>
+      <div class="container py-0">
+        <div class="row">
+          <div class="col-lg-10 col-xl-10 mx-auto" style='text-transform: uppercase;'>
+            <h2 class="fs-16 mb-6 text-center text-white">JOIN AN AMAZING COMMUNITY OF LANGUAGE TEACHERS</h2>
+            <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Interested in teaching languages instead? </p>
+            <p class=" display-6 mb-4 pe-xxl-2 ff-jos-bold text-white">Join our amazing community and unleash your teaching career today!</p>
+            <a style="min-width:275px; max-width: 700px; width: 50%; letter-spacing: 3px; color: var(--custom-color-turquoise) !important" target='_blank' href="https://www.teachwkate.com"
+              class="btn secondary-btn fs-15 btn-lg rounded-pill mt-4 text-gold ff-jos-bold">TEACH WITH KATE</a>
+          </div>
+          <!-- /column -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /section -->
     <div class="container py-14 pb-7 bg-white">
       <div class="row gy-6 mb-6 gy-lg-0 mx-4" style="justify-content: space-around; ">
         <div class="col-md-4 col-lg-2">
@@ -240,17 +258,17 @@
           <div class="widget ">
             <div class="table-responsive ">
               <h4 class="widget-title mb-3 ff-jos-bold text-gold">OPENING HOURS</h4>
-              <table class="table table-bordered ff-jos-regular" id='opening-hours'>
+              <table class="table table-bordered ff-jos-bold" id='opening-hours'>
                 <tbody>
                   <tr class="opening-hours-row ">
                     <th>MON</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <td>8 AM</td>
+                    <td>7 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
                     <th>TUE</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <td>8 AM</td>
+                    <td>7 PM</td>
                   </tr>
                   <tr class="closed-opening-hours opening-hours-row ">
                     <th>WED</th>
@@ -259,13 +277,13 @@
                   </tr>
                   <tr class="opening-hours-row ">
                     <th>THU</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <td>8 AM</td>
+                    <td>7 PM</td>
                   </tr>
                   <tr class="opening-hours-row ">
                     <th>FRI</th>
-                    <td>8:00 AM</td>
-                    <td>7:00 PM</td>
+                    <td>8 AM</td>
+                    <td>7 PM</td>
                   </tr>
                   <tr class="closed-opening-hours opening-hours-row ">
                     <th>SAT</th>

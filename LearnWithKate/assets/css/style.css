@@ -3818,7 +3818,7 @@ textarea.form-control.is-invalid {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.2rem 1.5rem;
+  padding: 0.2rem 1.5rem 0 1.5rem;
   clear: both;
   font-weight: 500;
   color: #343f52;
@@ -3999,10 +3999,8 @@ textarea.form-control.is-invalid {
 }
 .nav-link {
   display: block;
-  padding: 1.2rem 1rem;
   font-size: 1rem;
   text-align: right;
-  margin-right: 20%;
   color: #343f52;
   transition: color 0.2s ease-in-out;
 }
@@ -4566,7 +4564,7 @@ textarea.form-control.is-invalid {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: var(--custom-color-white);
   background-clip: border-box;
   border: 1px solid rgba(164, 174, 198, 0.2);
 }
@@ -28544,7 +28542,7 @@ button:focus {
     content: "\e92d";
   }
   .navbar-expand-lg .language-select .dropdown-toggle:after {
-    vertical-align: 0 !important;
+    vertical-align: -4px !important;
   }
   .navbar-expand-lg .navbar-other .nav-item.language-select .nav-link {
     font-size: 1.05rem;
@@ -28683,8 +28681,8 @@ button:focus {
     padding-bottom: 1.15rem;
   }
   .navbar-expand-lg.fancy:not(.fixed) .navbar-collapse .nav-link {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
   .navbar-expand-lg[class*="navbar-bg-"]:not(.fancy):not(.extended):not(.fixed)
     .navbar-collapse
@@ -29698,7 +29696,7 @@ button:focus {
   vertical-align: -1px !important;
 }
 .language-select .dropdown-menu {
-  left: 50% !important;
+  left: 35% !important;
   transform: translateX(-50%) !important;
   top: 25px !important;
   margin-top: 0.5rem !important;
