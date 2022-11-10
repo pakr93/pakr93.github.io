@@ -228,8 +228,10 @@ p {
   border-bottom: 4px solid transparent;
 }
 
+/* used in the navbar to show position on the page */
 .border-bottom-gold {
   border-bottom: 4px solid var(--custom-color-gold) !important;
+  transition: border-bottom 750ms ease-in;
 }
 
 .logo-link {

@@ -174,7 +174,7 @@ window.addEventListener('scroll', () => {
     changeTextColor(navbarNavLinks, 'text-white', 'text-black');
     applyBoxShadowToNavbar(true);
 
-    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 25)) {
+    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 15)) {
       hideElement(bookALesson, true);
     } else {
       hideElement(bookALesson, false);
