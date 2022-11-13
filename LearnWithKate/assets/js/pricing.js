@@ -14,9 +14,6 @@ const switchButton = buttonClassName => {
   }
 }
 
-/**
-  Returns a state of a button
- */
 const getButtonState = (btnClassName) => {
   const btn = document.getElementsByClassName(btnClassName)[0];
   return btn.classList.contains(btnClassName + '-active') ? true : false;
@@ -40,9 +37,9 @@ const changeNumberOfStudents = () => {
   }
 };
 
-for(const card of pricingCards) {
-  card.addEventListener('click', event => {
-    const targetClasses = event.target.classList;
+/* changes package type in the contact form */
+const changePackageTypeSelection = target => {
+    const targetClasses = target.classList;
     if(targetClasses.contains('pckg-trailblazer')) {
       packageType.value = "trailblazer";
     } else if(targetClasses.contains('pckg-achiever')) {
@@ -50,7 +47,10 @@ for(const card of pricingCards) {
     } else if(targetClasses.contains('pckg-binge-learner')) {
       packageType.value = "binge-learner";
     }
-  })
+  };
+
+for(const pricingCard of pricingCards) {
+  pricingCard.addEventListener('click', event => changePackageTypeSelection(event.target));
 }
 
 const togglePlans = (plans, isActive) => {
