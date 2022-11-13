@@ -1,3 +1,7 @@
+const packageType = document.getElementById('form_pckg_type');
+const lessonLength = document.getElementById('form_lesson_length');
+const numOfStudents = document.getElementById('form_num_of_students');
+const pricingCards = document.getElementsByClassName('pricing-card');
 
 const switchButton = buttonClassName => {
   const button = document.getElementsByClassName(buttonClassName);
@@ -10,13 +14,44 @@ const switchButton = buttonClassName => {
   }
 }
 
+/**
+  Returns a state of a button
+ */
+const getButtonState = (btnClassName) => {
+  const btn = document.getElementsByClassName(btnClassName)[0];
+  return btn.classList.contains(btnClassName + '-active') ? true : false;
+};
+
 const changeNumberOfMinutes = () => {
   switchButton('time-switcher-button');
+  if (getButtonState('time-switcher-button')) {
+    lessonLength.value = "90";
+  } else {
+    lessonLength.value = "60";
+  }
 }
 
 const changeNumberOfStudents = () => {
   switchButton('student-switcher-button');
+  if (getButtonState('student-switcher-button')) {
+    numOfStudents.value = "2-3";
+  } else {
+    numOfStudents.value = "1";
+  }
 };
+
+for(const card of pricingCards) {
+  card.addEventListener('click', event => {
+    const targetClasses = event.target.classList;
+    if(targetClasses.contains('pckg-trailblazer')) {
+      packageType.value = "trailblazer";
+    } else if(targetClasses.contains('pckg-achiever')) {
+      packageType.value = "achiever";
+    } else if(targetClasses.contains('pckg-binge-learner')) {
+      packageType.value = "binge-learner";
+    }
+  })
+}
 
 const togglePlans = (plans, isActive) => {
   if (isActive) {
