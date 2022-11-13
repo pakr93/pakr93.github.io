@@ -518,7 +518,7 @@ textarea.form-input {
 
 .simple-note {
   border-left: 5px solid var(--custom-color-gold);
-  background-color: #f7f7f7;
+  background-color: var(--custom-color-turquoise-light);
   padding: 0.75rem;
   color: var(--custom-color-black) !important;
   max-width: 80%;
@@ -602,6 +602,10 @@ button.collapsed:visited {
   .info-buttons {
     flex-direction: row;
   }
+
+  .pricing .bundle-name {
+    white-space: normal;
+  }
 }
 
 .section {
@@ -616,6 +620,12 @@ button.collapsed:visited {
 
   #page-not-found img {
     max-width: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pricing .bundle-name {
+    white-space:normal;
   }
 }
 

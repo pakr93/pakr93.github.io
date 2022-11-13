@@ -1,4 +1,4 @@
-const packageType = document.getElementById('form_pckg_type');
+const packageType = document.getElementById('form_bundle-name');
 const lessonLength = document.getElementById('form_lesson_length');
 const numOfStudents = document.getElementById('form_num_of_students');
 const pricingCards = document.getElementsByClassName('pricing-card');
@@ -16,7 +16,7 @@ const switchButton = buttonClassName => {
 
 const getButtonState = (btnClassName) => {
   const btn = document.getElementsByClassName(btnClassName)[0];
-  return btn.classList.contains(btnClassName + '-active') ? true : false;
+  return btn.classList.contains(btnClassName + '-active');
 };
 
 const changeNumberOfMinutes = () => {
@@ -40,11 +40,11 @@ const changeNumberOfStudents = () => {
 /* changes package type in the contact form */
 const changePackageTypeSelection = target => {
     const targetClasses = target.classList;
-    if(targetClasses.contains('pckg-trailblazer')) {
+    if(targetClasses.contains('bundle-name-trailblazer')) {
       packageType.value = "trailblazer";
-    } else if(targetClasses.contains('pckg-achiever')) {
+    } else if(targetClasses.contains('bundle-name-achiever')) {
       packageType.value = "achiever";
-    } else if(targetClasses.contains('pckg-binge-learner')) {
+    } else if(targetClasses.contains('bundle-name-binge-learner')) {
       packageType.value = "binge-learner";
     }
   };
