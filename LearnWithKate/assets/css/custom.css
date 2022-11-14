@@ -491,6 +491,14 @@ textarea.form-input {
   font-family: "Josefin Regular" !important;
   font-size: 0.65rem !important;
   text-transform: uppercase;
+  color: var(--custom-color-black) !important;
+  background-color: var(--custom-color-white) !important;
+}
+
+.faq-item:hover,
+.faq-item:active,
+.faq-item:visited {
+  color: var(--custom-color-gold) !important;
 }
 
 .blockquote-details {
