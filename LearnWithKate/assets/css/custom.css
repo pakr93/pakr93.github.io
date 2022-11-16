@@ -22,7 +22,7 @@ html {
 
 /* custom scrollbar */
 html::-webkit-scrollbar {
-  width: 12px;
+  width: 11px;
 }
 
 /* background of the scrollbar track */
@@ -119,7 +119,7 @@ p {
 #loading-bar {
   position: fixed;
   width: 0px;
-  top: 0;
+  top: 68px;
   left: 0;
   height: 6px;
   z-index: 99;
@@ -217,11 +217,14 @@ p {
 /* navbar link hover color */
 .nav-item .nav-link:hover,
 .nav-item .nav-link:active,
-.nav-item .nav-link:focus,
+.nav-item .nav-link:focus {
+  color: var(--custom-color-gold) !important;
+}
+
 .nav-item-footer .nav-link-footer:hover,
 .nav-item-footer .nav-link-footer:active,
 .nav-item-footer .nav-link-footer:focus {
-  color: var(--custom-color-gold) !important;
+  color: var(--custom-color-turquoise) !important;
 }
 
 .nav-item {
@@ -745,6 +748,7 @@ button.collapsed:visited {
 
   #how-it-works-steps {
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .simple-note {
