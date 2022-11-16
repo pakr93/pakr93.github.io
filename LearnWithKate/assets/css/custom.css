@@ -108,6 +108,8 @@ p {
   margin-bottom: 0.75rem;
 }
 
+
+
 #navbar {
   position: fixed;
   top: 0px;
@@ -258,6 +260,10 @@ p {
 
 .logo-link .logo-text h2 {
   white-space: nowrap;
+}
+
+.logo-link .logo-text strong {
+  font-size: 0.6rem;
 }
 
 #language-dropdown {}
@@ -664,8 +670,10 @@ button.collapsed:visited {
     display: none;
   }
 
-  .nav-item {
+  #navbar .nav-item .nav-link {
     border: none;
+    font-size: 1rem;
+    margin-top: 0.75rem;
   }
 
   #how-it-works-steps {
@@ -858,7 +866,9 @@ button.collapsed:visited {
 }
 
 @media (max-width: 1050px) {
-  .nav-link.letter-spacing {}
+  .nav-link.letter-spacing {
+    /* letter-spacing: -0.01rem; */
+  }
 }
 
 @media (max-width: 1250px) {
@@ -869,7 +879,7 @@ button.collapsed:visited {
 
 @media (max-width: 1100px) {
   #navbar .nav-link {
-    font-size: 0.7rem;
+    font-size: 0.72rem;
   }
 }
 
@@ -877,15 +887,17 @@ button.collapsed:visited {
   .logo-link .logo-text h2 {
     font-size: 0.9rem;
   }
-
-  .logo-link .logo-text strong {
-    font-size: 0.6rem;
-  }
 }
 
 @media (min-width: 1300px) {
   .nav-link.letter-spacing {
     letter-spacing: 0.01rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .logo-link .logo-text h2 {
+    font-size: 1rem;
   }
 }
 

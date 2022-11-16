@@ -125,11 +125,6 @@ h1 {
   font-size: calc(1.27rem + 0.24vw);
 }
 
-.h2,
-h2 {
-  font-size: calc(1.255rem + 0.06vw);
-}
-
 .h3,
 h3 {
   font-size: 1.1rem;
