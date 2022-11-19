@@ -21,6 +21,82 @@ const accordion2 = document.getElementById('accordion-2');
 
 const formLevel = document.getElementById('form_level');
 
+/*
+  A changer class that helps change certain behavior of the website
+*/
+class Changer {
+  constructor() {}
+
+  /* Changes background color*/
+  changeBGColor(element,oldColorClass, newColorClass) {
+    // firstly remove the old background color
+    if (element.classList.contains(oldColorClass)) {
+      element.classList.remove(oldColorClass);
+      element.classList.remove('transition-bg-change');
+    }
+    // apply the new background color class
+    if (!element.classList.contains(newColorClass)) {
+      element.classList.add(newColorClass);
+      element.classList.add('transition-bg-change');
+    }
+  }
+
+/** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
+  changeTextColor(elements, prevColor, newColor) {
+    for (const child of elements) {
+      // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
+      if (!child.classList.contains(newColor)) {
+        child.classList.remove(prevColor); // remove the old color class
+        child.classList.add(newColor); // add a new color class
+      }
+    }
+  }
+
+  changeOpacity(element, newOpacity) {
+    if (element.style.opacity !== newOpacity) {
+      element.style.opacity = newOpacity.toString();
+    }
+  }
+
+  changeNavbarBoxShadow(isOn) {
+    if(isOn /*&& window.innerWidth >= 991.92*/) {
+      navbar.classList.add('box-shadow-navbar');
+    } else {
+      navbar.classList.remove('box-shadow-navbar');
+    }
+  }
+
+  changeLoadingBarWidth() {
+    const scrollY = window.scrollY; // current scroll position in Y axis
+    const totalHeight = document.body.scrollHeight; // total scroll height of the page in Y axis
+    const windowWidth = window.innerWidth; // total window width
+
+    const loadingBarWidth = (((scrollY / (totalHeight - 1000)) * windowWidth)); // - 1000 is for a bug fix when at the end of the page, the loading bar was not 100% width of the total window width
+    // set loading bar width based on Y-axis scroll position
+    loadingBar.style.width = loadingBarWidth.toString() + 'px';
+  }
+
+  // when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
+  changePositionInNavbar(element, navItemIndex) {
+    if (!element) {
+      return;
+    }
+
+    const {
+      top,
+      bottom
+    } = element.getBoundingClientRect();
+
+    if (top <= 250 && bottom >= 250) {
+      navItems[navItemIndex].classList.add('border-bottom-gold');
+    } else {
+      navItems[navItemIndex].classList.remove('border-bottom-gold');
+    }
+  };
+}
+
+const changer = new Changer();
+
 const animateFlags = () => {
   const flagNames = ['Czech', 'French', 'US'];
   const interval = 1.5; // seconds
@@ -67,39 +143,6 @@ const closeNavBar = () => {
   }
 };
 
-const changeBGColor = (element, oldColorClass, newColorClass) => {
-  // firstly remove the old background color
-  if (element.classList.contains(oldColorClass)) {
-    element.classList.remove(oldColorClass);
-    element.classList.remove('transition-bg-change');
-  }
-  // apply the new background color class
-  if (!element.classList.contains(newColorClass)) {
-    element.classList.add(newColorClass);
-    element.classList.add('transition-bg-change');
-  }
-};
-
-/** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
-const changeTextColor = (elements, prevColor, newColor) => {
-  for (const child of elements) {
-    // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
-    if (!child.classList.contains(newColor)) {
-      child.classList.remove(prevColor); // remove the old color class
-      child.classList.add(newColor); // add a new color class
-    }
-
-  }
-};
-
-const applyBoxShadowToNavbar = (isOn) => {
-  if(isOn /*&& window.innerWidth >= 991.92*/) {
-    navbar.classList.add('box-shadow-navbar');
-  } else {
-    navbar.classList.remove('box-shadow-navbar');
-  }
-};
-
 const setAnchorListeners = () => {
   for (const link of linkHooks) {
     // a listener must be assigned to each link because it's an HTML collection
@@ -109,12 +152,6 @@ const setAnchorListeners = () => {
       }, 800);
       window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
     });
-  }
-};
-
-const changeOpacity = (element, newOpacity) => {
-  if (element.style.opacity !== newOpacity) {
-    element.style.opacity = newOpacity.toString();
   }
 };
 
@@ -130,63 +167,6 @@ const hideElement = (element, isHidden) => {
   }
 };
 
-// when the user scrolls, this function finds the position/section on the webpage and highlights given section in the navbar menu.
-const showPositionInNavbar = (element, navItemIndex) => {
-  if (!element) {
-    return;
-  }
-
-  const {
-    top,
-    bottom
-  } = element.getBoundingClientRect();
-
-  if (top <= 250 && bottom >= 250) {
-    navItems[navItemIndex].classList.add('border-bottom-gold');
-  } else {
-    navItems[navItemIndex].classList.remove('border-bottom-gold');
-  }
-};
-
-const changeLoadingBarWidth = () => {
-  const scrollY = window.scrollY; // current scroll position in Y axis
-  const totalHeight = document.body.scrollHeight; // total scroll height of the page in Y axis
-  const windowWidth = window.innerWidth; // total window width
-
-  const loadingBarWidth = (((scrollY / (totalHeight - 1000)) * windowWidth)); // - 1000 is for a bug fix when at the end of the page, the loading bar was not 100% width of the total window width
-  // set loading bar width based on Y-axis scroll position
-  loadingBar.style.width = loadingBarWidth.toString() + 'px';
-};
-
-window.addEventListener('scroll', () => {
-  showPositionInNavbar(home, 0);
-  showPositionInNavbar(aboutMe, 1);
-  showPositionInNavbar(howItWorks, 2);
-  showPositionInNavbar(testimonials, 3);
-  showPositionInNavbar(pricing, 4);
-  showPositionInNavbar(faq, 5);
-  changeLoadingBarWidth();
-});
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    changeBGColor(navbar, 'bg-transparent', 'bg-white');
-    changeTextColor(navbarNavLinks, 'text-white', 'text-black');
-    applyBoxShadowToNavbar(true);
-
-    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 15)) {
-      hideElement(bookALesson, true);
-    } else {
-      hideElement(bookALesson, false);
-    }
-  } else {
-    changeBGColor(navbar, 'bg-white', 'bg-transparent');
-    changeTextColor(navbarNavLinks, 'text-black', 'text-white');
-    applyBoxShadowToNavbar(false);
-    changeOpacity(navbar, 1.0);
-  }
-});
-
 /**
  Hides all inactive FAQ items so that only the lastly activated item is visible
 */
@@ -198,6 +178,35 @@ const hideInactiveItems = (list) => {
   }
 };
 
+window.addEventListener('scroll', () => {
+  changer.changePositionInNavbar(home, 0);
+  changer.changePositionInNavbar(aboutMe, 1);
+  changer.changePositionInNavbar(howItWorks, 2);
+  changer.changePositionInNavbar(testimonials, 3);
+  changer.changePositionInNavbar(pricing, 4);
+  changer.changePositionInNavbar(faq, 5);
+  changer.changeLoadingBarWidth();
+});
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    changer.changeBGColor(navbar, 'bg-transparent', 'bg-white');
+    changer.changeTextColor(navbarNavLinks, 'text-white', 'text-black');
+    changer.changeNavbarBoxShadow(true);
+
+    if (home && (window.scrollY > home.getBoundingClientRect().bottom + 15)) {
+      hideElement(bookALesson, true);
+    } else {
+      hideElement(bookALesson, false);
+    }
+  } else {
+    changer.changeBGColor(navbar, 'bg-white', 'bg-transparent');
+    changer.changeTextColor(navbarNavLinks, 'text-black', 'text-white');
+    changer.changeNavbarBoxShadow(false);
+    changer.changeOpacity(navbar, 1.0);
+  }
+});
+
 if (accordion1 && accordion2) {
   accordion1.addEventListener('click', () => hideInactiveItems(accordion1));
   accordion2.addEventListener('click', () => hideInactiveItems(accordion2));
@@ -205,7 +214,7 @@ if (accordion1 && accordion2) {
 
 document.addEventListener("DOMContentLoaded", () => {
   animateFlags();
-  changeLoadingBarWidth();
+  changer.changeLoadingBarWidth();
   setAnchorListeners();
   tagTodayInOpeningHours(new Date().getDay());
 });
