@@ -487,6 +487,14 @@ textarea.form-input {
   height: 25px;
 }
 
+.contact-info-text {
+  color: var(--custom-color-black);
+}
+
+.contact-info-text:hover {
+  color: var(--custom-color-turquoise);
+}
+
 .social-media-link__contact-form img {
   width: 25px;
   height: 25px;
