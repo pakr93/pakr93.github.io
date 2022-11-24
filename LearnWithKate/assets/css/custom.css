@@ -260,6 +260,7 @@ p {
 
 .logo-link .logo-text h2 {
   white-space: nowrap;
+  line-height: 1.0;
 }
 
 .logo-link .logo-text strong {

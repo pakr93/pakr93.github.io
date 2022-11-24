@@ -28677,7 +28677,7 @@ button:focus {
   }
   .navbar-expand-lg.fancy:not(.fixed) .navbar-collapse .nav-link {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.15rem;
   }
   .navbar-expand-lg[class*="navbar-bg-"]:not(.fancy):not(.extended):not(.fixed)
     .navbar-collapse
