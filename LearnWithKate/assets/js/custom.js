@@ -29,7 +29,7 @@ class Changer {
   constructor() {}
 
   /* Changes background color*/
-  changeBGColor(element,oldColorClass, newColorClass) {
+  changeBGColor(element, oldColorClass, newColorClass) {
     // firstly remove the old background color
     if (element.classList.contains(oldColorClass)) {
       element.classList.remove(oldColorClass);
@@ -42,7 +42,7 @@ class Changer {
     }
   }
 
-/** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
+  /** This function applies a @newColor to an array of children of the @elements and also removes the old color class */
   changeTextColor(elements, prevColor, newColor) {
     for (const child of elements) {
       // check if @newColor is already applied. If it is, stop and leave - no need to keep reapplying the same color
@@ -60,7 +60,7 @@ class Changer {
   }
 
   changeNavbarBoxShadow(isOn) {
-    if(isOn /*&& window.innerWidth >= 991.92*/) {
+    if (isOn /*&& window.innerWidth >= 991.92*/ ) {
       navbar.classList.add('box-shadow-navbar');
     } else {
       navbar.classList.remove('box-shadow-navbar');
@@ -149,15 +149,15 @@ const setAnchorListeners = () => {
     // a listener must be assigned to each link because it's an HTML collection
     link.addEventListener('click', event => {
       setTimeout(() => {
-        window.scrollBy(0, -100); // wait a bit, then scroll up to the title of the section/location
-      }, 800);
+        window.scrollBy(0, -75); // wait a bit, then scroll up to the title of the section/location
+      }, 0);
       window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
     });
   }
 };
 
 const hideElement = (element, isHidden) => {
-  if(!element) {
+  if (!element) {
     return;
   }
 
@@ -170,20 +170,20 @@ const hideElement = (element, isHidden) => {
 
 /** sets an event listener to testimonials to ensure a smooth effect on hover */
 const setCardsListener = () => {
-  if(window.innerWidth <= 991.92) {
+  if (window.innerWidth <= 991.92) {
     return;
   }
 
-  for(const card of swipeCards) {
-      card.addEventListener('mouseover', () => {
-        card.classList.add('hover-effect-on');
-        card.classList.remove('hover-effect-off');
-      });
+  for (const card of swipeCards) {
+    card.addEventListener('mouseover', () => {
+      card.classList.add('hover-effect-on');
+      card.classList.remove('hover-effect-off');
+    });
 
-      card.addEventListener('mouseleave', () => {
-        card.classList.add('hover-effect-off');
-        card.classList.remove('hover-effect-on');
-      });
+    card.addEventListener('mouseleave', () => {
+      card.classList.add('hover-effect-off');
+      card.classList.remove('hover-effect-on');
+    });
   }
 
 };
