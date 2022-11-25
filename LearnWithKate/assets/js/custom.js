@@ -20,6 +20,7 @@ const accordion1 = document.getElementById('accordion-1');
 const accordion2 = document.getElementById('accordion-2');
 
 const formLevel = document.getElementById('form_level');
+const swipeCards = document.getElementsByClassName('swiper-slide');
 
 /*
   A changer class that helps change certain behavior of the website
@@ -167,6 +168,26 @@ const hideElement = (element, isHidden) => {
   }
 };
 
+/** sets an event listener to testimonials to ensure a smooth effect on hover */
+const setCardsListener = () => {
+  if(window.innerWidth <= 991.92) {
+    return;
+  }
+
+  for(const card of swipeCards) {
+      card.addEventListener('mouseover', () => {
+        card.classList.add('hover-effect-on');
+        card.classList.remove('hover-effect-off');
+      });
+
+      card.addEventListener('mouseleave', () => {
+        card.classList.add('hover-effect-off');
+        card.classList.remove('hover-effect-on');
+      });
+  }
+
+};
+
 /**
  Hides all inactive FAQ items so that only the lastly activated item is visible
 */
@@ -216,5 +237,6 @@ document.addEventListener("DOMContentLoaded", () => {
   animateFlags();
   changer.changeLoadingBarWidth();
   setAnchorListeners();
+  setCardsListener();
   tagTodayInOpeningHours(new Date().getDay());
 });

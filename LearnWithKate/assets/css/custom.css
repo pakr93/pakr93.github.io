@@ -281,6 +281,11 @@ p {
   color: var(--custom-color-turquoise) !important;
 }
 
+.nutshell .nutshell-icon {
+  width: 35px;
+  height: 44px;
+}
+
 .info-buttons {
   flex-direction: column;
 }
@@ -444,6 +449,16 @@ p {
   margin: auto;
   height: 55px;
   border-radius: 0;
+}
+
+.hover-effect-on {
+  transform: scale(1.05);
+  transition: 500ms linear;
+}
+
+.hover-effect-off {
+  transform: scale(1.00);
+  transition: 1000ms linear;
 }
 
 .book-a-lesson-btn {
@@ -880,11 +895,6 @@ button.collapsed:visited {
   .navbar-links {
     margin: 0;
     height: 100%;
-  }
-
-  .swiper-slide:hover {
-    transform: scale(1.05);
-    transition: transform 250ms linear;
   }
 }
 
