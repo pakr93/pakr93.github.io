@@ -24,6 +24,74 @@
     <header class="wrapper">
       <nav class="navbar navbar-expand-lg fancy navbar-light caret-none">
         <div class="container">
+          <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-lg-2 flex-row flex-nowrap w-100 justify-content-between align-items-center">
+            <div class="navbar-brand bg-transparent m-2 ps-xl-0 ps-xxl-0 ps-lg-0 d-flex flex-row flex-nowrap align-items-center">
+              <a class="logo-link" href="./index.html">
+                <img class="learn-logo w-100" src="./assets/img/logo-avatar.webp" alt="Learn with Kate logo" />
+                <div class='logo-text'>
+                  <h2 style='font-family: "Josefin Regular";' class='text-center text-turquoise mb-0'>LEARN WITH KATE</h2>
+                </div>
+              </a>
+            </div>
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start rounded-2 navbar-links" id="navbar-mobile">
+              <div class="offcanvas-header d-lg-none ps-4 me-3">
+                <a class="logo-link py-4" href="./index.html">
+                  <img class="learn-logo w-100" src="./assets/img/logo-avatar.webp" alt="Learn with Kate logo" />
+                  <div class='logo-text'>
+                    <h2 style='font-family: "Josefin Regular";' class='fs-20 text-center text-turquoise mb-0'>LEARN WITH KATE</h2>
+                  </div>
+                </a>
+                <button type="button" title='Close menu' class="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div style="margin:auto; opacity: 1.0; height: 80%;" class="offcanvas-body ms-lg-auto d-flex flex-column justify-content-between">
+                <ul class="navbar-nav" onclick="closeNavBar()">
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#about-me">ABOUT ME</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#how-it-works">HOW IT WORKS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#testimonials">TESTIMONIALS</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg" href="./index.html#pricing">PRICING</a></li>
+                  <li class="nav-item"><a class="nav-link link-hook letter-spacing text-white ff-jos-reg mx-0" href="./index.html#faq">FAQ</a></li>
+                </ul>
+                <div onclick="closeNavBar()" id='contact-btns-mobile'>
+                  <span><a target='_blank' href="https://learnwithkate.setmore.com/" class="btn bg-white border-gold text-turquoise btn-lg rounded-pill ff-jos-bold mt-8 mx-auto mobile">BOOK A LESSON</a></span>
+                  <span><a href="./index.html#contact-me" class="main-btn link-hook btn-lg rounded-pill ff-jos-bold mt-4 text-center mx-auto mobile">HIT ME UP !</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="navbar-other d-flex ms-auto me-6 ms-xs-auto me-xs-4 ms-sm-auto me-lg-0 ms-lg-auto justify-content-between">
+              <ul class="navbar-nav flex-row align-items-center navbar-mini mx-auto">
+                <li id='language-dropdown' class="nav-item dropdown language-select text-uppercase">
+                  <a style='font-size: 0.92rem;' title='Change language' class=" dropdown-item dropdown-toggle mb-lg-1 ps-2 pe-" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    EN
+                  </a>
+                  <ul class="dropdown-menu text-center p-0 bg-black text-white border-gold">
+                    <li class="nav-item border-0">
+                      <a style='font-size: 0.92rem;' class="nav-link dropdown-item w-100 text-center p-2 m-0 border-0" href="./cs/index.html">CS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item d-none d-md-block border-0 m-0">
+                  <a href="./index.html#contact-me" class="btn main-btn link-hook btn-orange btn-lg rounded-pill ff-jos-bold desktop">HIT ME UP !</a>
+                </li>
+                <li class="nav-item d-xs-flex d-lg-none border-0">
+                  <button title='Open menu' class="hamburger offcanvas-nav-btn"><span></span></button>
+                </li>
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+          </div>
+          <!-- /.navbar-collapse-wrapper -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.offcanvas-footer -->
+    </header>
+  </div>
+    <div id='loading-bar' class='bg-gold mobile'></div>
+    <header class="wrapper">
+      <nav class="navbar navbar-expand-lg fancy navbar-light caret-none">
+        <div class="container">
           <div style="margin: auto;" class="navbar-collapse-wrapper d-flex pe-sm-8 flex-row flex-nowrap w-100 justify-content-between align-items-center">
             <div class="navbar-brand bg-transparent m-2 ps-xl-0 ps-xxl-0 ps-lg-0 d-flex flex-row flex-nowrap align-items-center">
               <a class="logo-link" href="./index.html">

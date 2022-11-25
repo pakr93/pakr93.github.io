@@ -624,6 +624,16 @@ button.collapsed:visited {
   }
 }
 
+@media (max-width: 310px) {
+  .language-select .dropdown-toggle:after {
+    display: none;
+  }
+
+  .logo-link .logo-text h2 {
+    font-size: 0.8rem !important;
+  }
+}
+
 @media (min-width: 400px) {
   .info-buttons {
     flex-direction: row;
@@ -688,6 +698,10 @@ button.collapsed:visited {
   #how-it-works-steps {
     flex-direction: column;
     text-align: center;
+  }
+
+  .dropdown-item {
+    padding-right: 0;
   }
 
   .slogan {
