@@ -19669,10 +19669,12 @@ body {
   background: rgba(63, 120, 224, 0.7);
   color: #fff;
 }
+
 ::selection {
-  background: rgba(63, 120, 224, 0.7);
-  color: #fff;
+  background: var(--custom-color-gold) !important;
+  color: var(--custom-color-black) !important;
 }
+
 a {
   transition: all 0.2s ease-in-out;
 }
