@@ -4,7 +4,7 @@
   --custom-color-gold: #e9b52d;
   --custom-color-gold-light: #fdfaf0;
   --custom-color-turquoise: #54dedc;
-  --custom-color-turquoise-light: #54dedc29;
+  --custom-color-turquoise-light: #54dedc70;
   --custom-color-black: #191d21;
   --custom-color-grey: #191d21c9;
   --custom-color-grey-light: #dadada;
@@ -341,7 +341,7 @@ p {
 .time-switcher-button,
 .student-switcher-button {
   position: absolute;
-  border-radius: 15px;
+  border-radius: 50%;
   left: 0px;
   top: 0px;
   margin: 0.13rem 0.2rem;
@@ -355,7 +355,7 @@ p {
 .time-switcher-button-inactive,
 .student-switcher-button-active,
 .student-switcher-button-inactive {
-  transition: 100ms linear;
+  transition: 300ms linear;
 }
 
 .time-switcher-button-active,
@@ -674,15 +674,13 @@ button.collapsed:visited {
   }
 }
 
-@media (max-width: 400px) {
-  .pricing .bundle-name {
-    white-space:normal;
-  }
-}
-
 @media (max-width: 576px) {
   .info-buttons {
     flex-direction: column;
+  }
+
+  .article-text h3 {
+    font-size: 1.5rem;
   }
 
   .blockquote-details {
@@ -692,6 +690,23 @@ button.collapsed:visited {
   .blockquote-details img {
     margin-bottom: 0.5rem;
   }
+}
+
+@media (max-width: 400px) {
+  .pricing .bundle-name {
+    white-space:normal;
+  }
+
+  .article-text h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 350px) {
+
+    .article-text h3 {
+      font-size: 1.2rem;
+    }
 }
 
 /* mobile to desktop breakpoint */
