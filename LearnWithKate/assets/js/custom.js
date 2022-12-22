@@ -1,6 +1,6 @@
 const navbar = document.getElementById('navbar');
 const navbarNavLinks = document.querySelectorAll('.navbar-nav > .nav-item > .nav-link');
-const linkHooks = document.getElementsByClassName('link-hook');
+// const linkHooks = document.getElementsByClassName('link-hook');
 
 const home = document.getElementById('home');
 const aboutMe = document.getElementById('about-me');
@@ -144,17 +144,17 @@ const closeNavBar = () => {
   }
 };
 
-const setAnchorListeners = () => {
-  for (const link of linkHooks) {
-    // a listener must be assigned to each link because it's an HTML collection
-    link.addEventListener('click', event => {
-      setTimeout(() => {
-        window.scrollBy(0, -75); // wait a bit, then scroll up to the title of the section/location
-      }, 0);
-      window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
-    });
-  }
-};
+// const setAnchorListeners = () => {
+//   for (const link of linkHooks) {
+//     // a listener must be assigned to each link because it's an HTML collection
+//     link.addEventListener('click', event => {
+//       setTimeout(() => {
+//         window.scrollBy(0, -75); // wait a bit, then scroll up to the title of the section/location
+//       }, 800);
+//       window.location.assign(location.href ? location.href + event.target.hash : event.target.hash); // scroll to the @hash location (e.g. #about-me)
+//     });
+//   }
+// };
 
 const hideElement = (element, isHidden) => {
   if (!element) {
@@ -236,7 +236,6 @@ if (accordion1 && accordion2) {
 document.addEventListener("DOMContentLoaded", () => {
   animateFlags();
   changer.changeLoadingBarWidth();
-  setAnchorListeners();
   setCardsListener();
   tagTodayInOpeningHours(new Date().getDay());
 });
